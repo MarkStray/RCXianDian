@@ -43,6 +43,15 @@
 		CE6D21551D3A1721002B780F /* XDBaseTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE6D21541D3A1721002B780F /* XDBaseTableViewController.swift */; };
 		CE6D21571D3A1756002B780F /* XDBaseTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE6D21561D3A1756002B780F /* XDBaseTabBarController.swift */; };
 		CE6D21591D3A17DB002B780F /* XDBaseNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE6D21581D3A17DB002B780F /* XDBaseNavigationController.swift */; };
+		CE7BE55A1D3F5B0300152B4F /* UtilityConst.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE7BE5591D3F5B0300152B4F /* UtilityConst.swift */; };
+		CE7BE55C1D3F5B5A00152B4F /* UIViewExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE7BE55B1D3F5B5A00152B4F /* UIViewExt.swift */; };
+		CE7BE5691D3F60DD00152B4F /* StoreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE7BE5681D3F60DD00152B4F /* StoreViewController.swift */; };
+		CE7BE5731D3F627600152B4F /* PersonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE7BE5721D3F627600152B4F /* PersonViewController.swift */; };
+		CE7BE5751D3F637A00152B4F /* XDTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE7BE5741D3F637A00152B4F /* XDTabBar.swift */; };
+		CE7BE5771D3F641600152B4F /* TabBarModel.plist in Resources */ = {isa = PBXBuildFile; fileRef = CE7BE5761D3F641600152B4F /* TabBarModel.plist */; };
+		CE7BE57E1D40639D00152B4F /* XDTabBarModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE7BE57D1D40639D00152B4F /* XDTabBarModel.swift */; };
+		CE7BE5821D40694A00152B4F /* LocalizationManagerTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE7BE5811D40694A00152B4F /* LocalizationManagerTool.swift */; };
+		CE7BE5841D4070C000152B4F /* ParsePlistUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE7BE5831D4070C000152B4F /* ParsePlistUtil.swift */; };
 		CEB1B69E1D38C9F400F92B45 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CEB1B69D1D38C9F400F92B45 /* Assets.xcassets */; };
 		CEB1B6AC1D38C9F500F92B45 /* RCXianDianTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEB1B6AB1D38C9F500F92B45 /* RCXianDianTests.swift */; };
 		CEB1B6B71D38C9F600F92B45 /* RCXianDianUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEB1B6B61D38C9F600F92B45 /* RCXianDianUITests.swift */; };
@@ -141,6 +150,15 @@
 		CE6D21541D3A1721002B780F /* XDBaseTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XDBaseTableViewController.swift; sourceTree = "<group>"; };
 		CE6D21561D3A1756002B780F /* XDBaseTabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XDBaseTabBarController.swift; sourceTree = "<group>"; };
 		CE6D21581D3A17DB002B780F /* XDBaseNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XDBaseNavigationController.swift; sourceTree = "<group>"; };
+		CE7BE5591D3F5B0300152B4F /* UtilityConst.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UtilityConst.swift; sourceTree = "<group>"; };
+		CE7BE55B1D3F5B5A00152B4F /* UIViewExt.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewExt.swift; sourceTree = "<group>"; };
+		CE7BE5681D3F60DD00152B4F /* StoreViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StoreViewController.swift; sourceTree = "<group>"; };
+		CE7BE5721D3F627600152B4F /* PersonViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PersonViewController.swift; sourceTree = "<group>"; };
+		CE7BE5741D3F637A00152B4F /* XDTabBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XDTabBar.swift; sourceTree = "<group>"; };
+		CE7BE5761D3F641600152B4F /* TabBarModel.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = TabBarModel.plist; sourceTree = "<group>"; };
+		CE7BE57D1D40639D00152B4F /* XDTabBarModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XDTabBarModel.swift; sourceTree = "<group>"; };
+		CE7BE5811D40694A00152B4F /* LocalizationManagerTool.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocalizationManagerTool.swift; sourceTree = "<group>"; };
+		CE7BE5831D4070C000152B4F /* ParsePlistUtil.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ParsePlistUtil.swift; sourceTree = "<group>"; };
 		CEB1B6931D38C9F400F92B45 /* RCXianDian.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RCXianDian.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CEB1B69D1D38C9F400F92B45 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CEB1B6A71D38C9F500F92B45 /* RCXianDianTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RCXianDianTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -284,6 +302,7 @@
 		CE6D20C61D3A099C002B780F /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				CE7BE5721D3F627600152B4F /* PersonViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -339,6 +358,7 @@
 		CE6D20CD1D3A099C002B780F /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				CE7BE5681D3F60DD00152B4F /* StoreViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -387,6 +407,7 @@
 		CE6D20D31D3A099C002B780F /* Category */ = {
 			isa = PBXGroup;
 			children = (
+				CE7BE55B1D3F5B5A00152B4F /* UIViewExt.swift */,
 			);
 			path = Category;
 			sourceTree = "<group>";
@@ -408,6 +429,7 @@
 		CE6D20D61D3A099C002B780F /* Helper */ = {
 			isa = PBXGroup;
 			children = (
+				CE7BE57D1D40639D00152B4F /* XDTabBarModel.swift */,
 			);
 			path = Helper;
 			sourceTree = "<group>";
@@ -415,6 +437,8 @@
 		CE6D20D71D3A099C002B780F /* Tools */ = {
 			isa = PBXGroup;
 			children = (
+				CE7BE5811D40694A00152B4F /* LocalizationManagerTool.swift */,
+				CE7BE5831D4070C000152B4F /* ParsePlistUtil.swift */,
 			);
 			path = Tools;
 			sourceTree = "<group>";
@@ -422,6 +446,7 @@
 		CE6D20D81D3A099C002B780F /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				CE7BE5741D3F637A00152B4F /* XDTabBar.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -443,6 +468,7 @@
 		CE6D20DA1D3A099C002B780F /* Const */ = {
 			isa = PBXGroup;
 			children = (
+				CE7BE5591D3F5B0300152B4F /* UtilityConst.swift */,
 			);
 			path = Const;
 			sourceTree = "<group>";
@@ -473,6 +499,7 @@
 			isa = PBXGroup;
 			children = (
 				CE6D20E01D3A099C002B780F /* Info.plist */,
+				CE7BE5761D3F641600152B4F /* TabBarModel.plist */,
 			);
 			path = Plist;
 			sourceTree = "<group>";
@@ -787,6 +814,7 @@
 				CE6D212D1D3A099C002B780F /* Info.plist in Resources */,
 				CEB1B69E1D38C9F400F92B45 /* Assets.xcassets in Resources */,
 				CE6D212F1D3A099C002B780F /* Main.storyboard in Resources */,
+				CE7BE5771D3F641600152B4F /* TabBarModel.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -863,8 +891,11 @@
 				CE6D214B1D3A099C002B780F /* UIImage+GIF.m in Sources */,
 				CE6D21481D3A099C002B780F /* SDWebImageManager.m in Sources */,
 				CE6D21471D3A099C002B780F /* SDWebImageDownloaderOperation.m in Sources */,
+				CE7BE5841D4070C000152B4F /* ParsePlistUtil.swift in Sources */,
 				CE6D21331D3A099C002B780F /* MASConstraint.m in Sources */,
 				CE6D21431D3A099C002B780F /* SDImageCache.m in Sources */,
+				CE7BE55A1D3F5B0300152B4F /* UtilityConst.swift in Sources */,
+				CE7BE5731D3F627600152B4F /* PersonViewController.swift in Sources */,
 				CE6D21511D3A16CC002B780F /* XDBaseViewController.swift in Sources */,
 				CE6D21361D3A099C002B780F /* MASViewAttribute.m in Sources */,
 				CE6D213B1D3A099C002B780F /* ViewController+MASAdditions.m in Sources */,
@@ -878,6 +909,7 @@
 				CE6D21321D3A099C002B780F /* MASCompositeConstraint.m in Sources */,
 				CE6D21441D3A099C002B780F /* SDWebImageCompat.m in Sources */,
 				CE6D21421D3A099C002B780F /* NSData+ImageContentType.m in Sources */,
+				CE7BE5691D3F60DD00152B4F /* StoreViewController.swift in Sources */,
 				CE6D21451D3A099C002B780F /* SDWebImageDecoder.m in Sources */,
 				CE6D21531D3A16D8002B780F /* XDBaseModel.swift in Sources */,
 				CE6D213A1D3A099C002B780F /* View+MASAdditions.m in Sources */,
@@ -885,10 +917,14 @@
 				CE6D21381D3A099C002B780F /* NSArray+MASAdditions.m in Sources */,
 				CE6D214F1D3A099C002B780F /* UIView+WebCacheOperation.m in Sources */,
 				CE6D21351D3A099C002B780F /* MASLayoutConstraint.m in Sources */,
+				CE7BE57E1D40639D00152B4F /* XDTabBarModel.swift in Sources */,
 				CE6D212C1D3A099C002B780F /* HomeViewController.swift in Sources */,
 				CE6D21371D3A099C002B780F /* MASViewConstraint.m in Sources */,
 				CE6D21461D3A099C002B780F /* SDWebImageDownloader.m in Sources */,
+				CE7BE55C1D3F5B5A00152B4F /* UIViewExt.swift in Sources */,
+				CE7BE5821D40694A00152B4F /* LocalizationManagerTool.swift in Sources */,
 				CE6D214E1D3A099C002B780F /* UIImageView+WebCache.m in Sources */,
+				CE7BE5751D3F637A00152B4F /* XDTabBar.swift in Sources */,
 				CE6D214D1D3A099C002B780F /* UIImageView+HighlightedWebCache.m in Sources */,
 				CE6D213E1D3A099C002B780F /* MBProgressHUD.m in Sources */,
 			);

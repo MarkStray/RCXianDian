@@ -6,4 +6,9 @@
 //  Copyright © 2016年 rrcc. All rights reserved.
 //
 
-import Foundation
+import UIKit
+
+class XDBaseModel: NSObject {
+    
+    
+}
