@@ -6,9 +6,9 @@
 		<key>class_name</key>
 		<string>HomeViewController</string>
 		<key>image</key>
-		<string>tabbar-mine</string>
+		<string>tabbar-main</string>
 		<key>image_selected</key>
-		<string>tabbar-mine-selected</string>
+		<string>tabbar-main-selected</string>
 		<key>title</key>
 		<string>首页</string>
 	</dict>

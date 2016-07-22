@@ -48,7 +48,9 @@ class ParsePlistUtil: NSObject {
             model.className = modelDic["class_name"]
             model.title = modelDic["title"]
             model.image = modelDic["image"]
-            model.imageSelected = modelDic["imageSelected"]
+            model.imageSelected = modelDic["image_selected"]
+            
+            print("\(model.className),\(model.title),\(model.image),\(model.imageSelected)")
             
             tabBarModelList.append(model)
         }

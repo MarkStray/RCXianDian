@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		51F46BD61D41EC9600D6B63A /* UILabelExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51F46BD51D41EC9600D6B63A /* UILabelExtension.swift */; };
 		6A7B4020C5830F8CE7EE6E96 /* Pods_RCXianDian.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FAAC2AB1E963EBD33FA4E428 /* Pods_RCXianDian.framework */; };
 		CE6D212C1D3A099C002B780F /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE6D20BF1D3A099C002B780F /* HomeViewController.swift */; };
 		CE6D212D1D3A099C002B780F /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = CE6D20E01D3A099C002B780F /* Info.plist */; };
@@ -75,6 +76,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		51F46BD51D41EC9600D6B63A /* UILabelExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UILabelExtension.swift; sourceTree = "<group>"; };
 		556B400483AF4696CA230A97 /* Pods-RCXianDian.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RCXianDian.release.xcconfig"; path = "Pods/Target Support Files/Pods-RCXianDian/Pods-RCXianDian.release.xcconfig"; sourceTree = "<group>"; };
 		8D0975F48D38B57010D9C165 /* Pods-RCXianDian.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RCXianDian.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RCXianDian/Pods-RCXianDian.debug.xcconfig"; sourceTree = "<group>"; };
 		CE6D20BF1D3A099C002B780F /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
@@ -408,6 +410,7 @@
 			isa = PBXGroup;
 			children = (
 				CE7BE55B1D3F5B5A00152B4F /* UIViewExt.swift */,
+				51F46BD51D41EC9600D6B63A /* UILabelExtension.swift */,
 			);
 			path = Category;
 			sourceTree = "<group>";
@@ -926,6 +929,7 @@
 				CE6D214E1D3A099C002B780F /* UIImageView+WebCache.m in Sources */,
 				CE7BE5751D3F637A00152B4F /* XDTabBar.swift in Sources */,
 				CE6D214D1D3A099C002B780F /* UIImageView+HighlightedWebCache.m in Sources */,
+				51F46BD61D41EC9600D6B63A /* UILabelExtension.swift in Sources */,
 				CE6D213E1D3A099C002B780F /* MBProgressHUD.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

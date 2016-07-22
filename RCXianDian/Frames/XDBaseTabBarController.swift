@@ -8,19 +8,34 @@
 
 import UIKit
 
+
+let tabBarModelList: [XDTabBarModel] = ParsePlistUtil.getTabBarModelList()
+
+/**
+ *  定义协议 处理tabbar事件
+ */
+protocol XDTabBarAction {
+    func selectedIndexChange(index: Int)
+    func shoppingCarHandle()
+}
+
 class XDBaseTabBarController: UITabBarController {
     
     //var navItemList: [XDBaseNavigationController] = [];
     var navItemList: [XDBaseNavigationController] = [XDBaseNavigationController]()
     
-    var tabBarModelList: [XDTabBarModel] = ParsePlistUtil.getTabBarModelList()
-
-    var baseTabBar: XDTabBar?
+    lazy var baseTabBar: XDTabBar = {
+        let tabbarFrame = CGRect(x: 0, y: self.view.height-65.0, width: self.view.width, height: 65.0)
+        let _tabbar: XDTabBar = XDTabBar.init(frame: tabbarFrame)
+        _tabbar.delegate = self
+        return _tabbar
+    }()
 
     override func viewDidLoad() {
         super.viewDidLoad()
         
         setupChildViewControllers()
+        setupTabBarView()
     }
     
     private func setupChildViewControllers() {
@@ -58,13 +73,32 @@ class XDBaseTabBarController: UITabBarController {
         
     }
     
+    func setupTabBarView() {
+        self.tabBar.hidden = true
+        
+        self.view.addSubview(baseTabBar)
+    }
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    
 }
 
+//拓展来实现协议
+extension XDBaseTabBarController: XDTabBarAction {
+    
+    func selectedIndexChange(index: Int) {
+        selectedIndex = index
+    }
+
+    func shoppingCarHandle() {
+        print(" handle ...")
+    }
+}
+////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////
 
 /**
  *  自定义 tabbar
@@ -72,52 +106,120 @@ class XDBaseTabBarController: UITabBarController {
 
 //private 只有当前文件可以访问
 
-private let base_tag = 1001
-private let right_retain = 80;
+private let baseView_tag = 1001
+private let right_retain = CGFloat(80);
 
 // iamge size 35*35 
 // title size width*14
 
 class XDTabBar: UIView {
     
-    var tabBarModelList: [XDTabBarModel]?
+    var imageViewList = [UIImageView]()
+    var labelList     = [UILabel]()
     
+    // 定义一个闭包
+    //var didSelectedIndex: (Int) -> () = (Int) -> ()
     
+    // 定义代理对象
+    var delegate: XDTabBarAction?
     
     override init(frame: CGRect) {
+        super.init(frame: frame)
+     
+        initUI(frame);
+    }
+    
+    required init?(coder aDecoder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
+    
+    
+    func initUI(frame: CGRect) -> () {
         
-        let itemCount = tabBarModelList!.count
+        let itemCount = tabBarModelList.count
         
-        let itemWidth: CGFloat = (SCREEN_WIDTH-80.0)/CGFloat(itemCount)
-
+        let itemWidth: CGFloat = (SCREEN_WIDTH-right_retain)/CGFloat(itemCount)
+        
         for i in 0 ..< itemCount {
             
             //view
-            let view: UIView = UIView(frame: CGRect(x: itemWidth*CGFloat(i), y: 0, width: itemWidth, height: frame.height))
+            let viewFrame: CGRect = CGRect(x: itemWidth*CGFloat(i), y: frame.height-49, width: itemWidth, height: 49)
+            let view: UIView = UIView(frame: viewFrame)
+            view.tag = baseView_tag + i
             view.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(selectedItemChange)))
             self.addSubview(view)
             
-            //imageView
-            let imageView: UIImageView = UIImageView(frame: CGRect(origin: CGPoint(x: view.centerX, y: 0), size: CGSize(width: 35.0, height: 35.0)))
-            imageView.image = UIImage(CGImage: tabBarModelList![i].image!)
+            let tabBarModel: XDTabBarModel = tabBarModelList[i]
+            
+            //imageView size 35*35
+            let imgViewFrame: CGRect = CGRect(origin: CGPoint(x: (view.width-35)/2, y: 0), size: CGSize(width: 35, height: 35))
+            let imageView: UIImageView = UIImageView(frame: imgViewFrame)
+            imageView.image = UIImage(named: tabBarModel.image!)
+            //imageView.image = UIImage(CGImage: tabBarModelList![i].image!)
+            view.addSubview(imageView)
+            imageViewList.append(imageView)
+            
+            print(NSStringFromCGRect(view.frame))
+            print(NSStringFromCGRect(imageView.frame))
+            
+            //label width*14
+            let labelFrame: CGRect = CGRect(x: 0, y: imageView.bottom, width: view.width, height: 14)
+            let label: UILabel = UILabel(frame: labelFrame)
+            label.textAlignment = .Center
+            label.text = tabBarModel.title
+            print("\(label.text)")
+            
+            label.font = UIFont.systemFontOfSize(12.0)
+            label.textColor = UIColor.grayColor()
+            view.addSubview(label)
+            labelList.append(label)
             
             if i == 0 {
-                imageView.image = UIImage(CGImage: tabBarModelList![i].imageSelected!)
+                imageView.image = UIImage(named: tabBarModel.imageSelected!)
+                label.textColor = GLOBAL_COLOR
             }
-            view.addSubview(imageView)
             
-            //label
-            let label: UILabel = UILabel()
-            
+            if i == itemCount-1 {
+                let btnFrame = CGRect(x: view.right, y: 0, width: right_retain, height: frame.height)
+                let shoppingBtn = UIButton(frame: btnFrame)
+                shoppingBtn.addTarget(self, action: #selector(shoppingCarHandle), forControlEvents: .TouchUpInside)
+                self.addSubview(shoppingBtn)
+            }
         }
         
+        self.backgroundColor = UIColor(patternImage: UIImage(named: "tabbar-background-\(Int(SCREEN_WIDTH))")!)
     }
     
-    
-    
-    func selectedItemChange() {
+    func selectedItemChange(geture: UITapGestureRecognizer) {
+        //print("tag: \(geture.view?.tag)")
         
+        let index = (geture.view?.tag)!-baseView_tag
+        
+        // 交给代理处理其他事情
+        delegate?.selectedIndexChange(index)
+        
+        for i in 0 ..< tabBarModelList.count {
+            
+            let label     = labelList[i]
+            let imageView = imageViewList[i]
+            
+            let tabBarModel: XDTabBarModel = tabBarModelList[i]
+
+            if i == index {
+                imageView.image = UIImage(named: tabBarModel.imageSelected!)
+                label.textColor = GLOBAL_COLOR
+            } else {
+                imageView.image = UIImage(named: tabBarModel.image!)
+                label.textColor = UIColor.grayColor()
+            }
+        }
     }
+    
+    func shoppingCarHandle() {
+        //print("shop handle")
+        delegate?.shoppingCarHandle()
+    }
+
 }
 
 
