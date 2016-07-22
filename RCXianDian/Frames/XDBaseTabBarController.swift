@@ -11,13 +11,17 @@ import UIKit
 
 let tabBarModelList: [XDTabBarModel] = ParsePlistUtil.getTabBarModelList()
 
-/**
- *  定义协议 处理tabbar事件
- */
+
+//MARK:- 定义协议 处理tabbar事件 协议
+
 protocol XDTabBarAction {
+    
     func selectedIndexChange(index: Int)
+    
     func shoppingCarHandle()
 }
+
+//MARK:- 根标签控制器
 
 class XDBaseTabBarController: UITabBarController {
     
@@ -35,7 +39,9 @@ class XDBaseTabBarController: UITabBarController {
         super.viewDidLoad()
         
         setupChildViewControllers()
+        
         setupTabBarView()
+        setupNavAppearance()
     }
     
     private func setupChildViewControllers() {
@@ -73,11 +79,21 @@ class XDBaseTabBarController: UITabBarController {
         
     }
     
+    
     func setupTabBarView() {
         self.tabBar.hidden = true
         
         self.view.addSubview(baseTabBar)
     }
+
+    
+    func setupNavAppearance() {
+        let navAppearance = UINavigationBar.appearance()
+        navAppearance.barStyle = .Black
+        navAppearance.barTintColor = GLOBAL_COLOR
+        navAppearance.titleTextAttributes = [NSFontAttributeName : UIFont.systemFontOfSize(18), NSForegroundColorAttributeName : UIColor.whiteColor()]
+    }
+    
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
@@ -85,7 +101,8 @@ class XDBaseTabBarController: UITabBarController {
     }
 }
 
-//拓展来实现协议
+//MARK:- 拓展来实现协议
+
 extension XDBaseTabBarController: XDTabBarAction {
     
     func selectedIndexChange(index: Int) {
@@ -96,13 +113,13 @@ extension XDBaseTabBarController: XDTabBarAction {
         print(" handle ...")
     }
 }
+
 ////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////
 
-/**
- *  自定义 tabbar
- */
+
+//MARK:- 自定义 tabbar
 
 //private 只有当前文件可以访问
 
@@ -159,15 +176,11 @@ class XDTabBar: UIView {
             view.addSubview(imageView)
             imageViewList.append(imageView)
             
-            print(NSStringFromCGRect(view.frame))
-            print(NSStringFromCGRect(imageView.frame))
-            
             //label width*14
             let labelFrame: CGRect = CGRect(x: 0, y: imageView.bottom, width: view.width, height: 14)
             let label: UILabel = UILabel(frame: labelFrame)
             label.textAlignment = .Center
             label.text = tabBarModel.title
-            print("\(label.text)")
             
             label.font = UIFont.systemFontOfSize(12.0)
             label.textColor = UIColor.grayColor()
