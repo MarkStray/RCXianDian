@@ -14,6 +14,8 @@ let GLOBAL_COLOR      = UIColorFromHEX(0x299C19)    // 绿色
 let BACKGROUND_COLOR  = UIColorFromHEX(0xf3f3f3)    // 灰色
 let TEXT_COLOR        = UIColorFromHEX(0xff4f00)    // 黄色
 
+let _TABBAR_TAG  = 9999  //TABBAR tag值
+
 func RGBColor(r: CGFloat, g: CGFloat, b: CGFloat) -> UIColor {
     return UIColor(red: r/255.0, green: g/255.0, blue: b/255.0, alpha: 1.0)
 }

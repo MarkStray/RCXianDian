@@ -29,8 +29,36 @@ class XDBaseViewController: UIViewController {
     }
 }
 
-//MARK:- 功能模块拓展
+//MARK:- TABBAR
 
 extension XDBaseViewController {
     
+    func showTabBar() {
+        setUpTabBarStatus(false)
+    }
+    
+    func hideTabBar() {
+        setUpTabBarStatus(true)
+    }
+    
+    private func setUpTabBarStatus(status: Bool) {
+        let subViews = self.tabBarController?.view.subviews
+        for view in subViews! {
+            if view.tag == _TABBAR_TAG {
+                view.hidden = status
+                return
+            }
+        }
+    }
+}
+
+//MARK:- HUD
+
+extension XDBaseViewController {
+    func showSuccessHUDWithStatus(status: String) {
+        SVProgressHUD.showSuccessWithStatus(status);
+    }
+    func showErrorHUDWithStatus(status: String) {
+        SVProgressHUD.showErrorWithStatus(status)
+    }
 }

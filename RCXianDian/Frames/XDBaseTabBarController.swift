@@ -31,6 +31,7 @@ class XDBaseTabBarController: UITabBarController {
     lazy var baseTabBar: XDTabBar = {
         let tabbarFrame = CGRect(x: 0, y: self.view.height-65.0, width: self.view.width, height: 65.0)
         let _tabbar: XDTabBar = XDTabBar.init(frame: tabbarFrame)
+        _tabbar.tag = _TABBAR_TAG
         _tabbar.delegate = self
         return _tabbar
     }()

@@ -7,7 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		518E6B941D46FED200814202 /* XDBaseADView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 518E6B931D46FED200814202 /* XDBaseADView.swift */; };
 		51F46BD61D41EC9600D6B63A /* UILabelExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51F46BD51D41EC9600D6B63A /* UILabelExtension.swift */; };
+		51F46C151D41F8DB00D6B63A /* FileManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51F46C141D41F8DB00D6B63A /* FileManager.swift */; };
 		6A7B4020C5830F8CE7EE6E96 /* Pods_RCXianDian.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FAAC2AB1E963EBD33FA4E428 /* Pods_RCXianDian.framework */; };
 		CE6D212C1D3A099C002B780F /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE6D20BF1D3A099C002B780F /* HomeViewController.swift */; };
 		CE6D212D1D3A099C002B780F /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = CE6D20E01D3A099C002B780F /* Info.plist */; };
@@ -56,6 +58,23 @@
 		CEB1B69E1D38C9F400F92B45 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CEB1B69D1D38C9F400F92B45 /* Assets.xcassets */; };
 		CEB1B6AC1D38C9F500F92B45 /* RCXianDianTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEB1B6AB1D38C9F500F92B45 /* RCXianDianTests.swift */; };
 		CEB1B6B71D38C9F600F92B45 /* RCXianDianUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEB1B6B61D38C9F600F92B45 /* RCXianDianUITests.swift */; };
+		CED318091D460E6000780409 /* SVIndefiniteAnimatedView.m in Sources */ = {isa = PBXBuildFile; fileRef = CED318001D460E5F00780409 /* SVIndefiniteAnimatedView.m */; };
+		CED3180A1D460E6000780409 /* SVProgressAnimatedView.m in Sources */ = {isa = PBXBuildFile; fileRef = CED318021D460E5F00780409 /* SVProgressAnimatedView.m */; };
+		CED3180B1D460E6000780409 /* SVProgressHUD.bundle in Resources */ = {isa = PBXBuildFile; fileRef = CED318041D460E5F00780409 /* SVProgressHUD.bundle */; };
+		CED3180C1D460E6000780409 /* SVProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = CED318061D460E5F00780409 /* SVProgressHUD.m */; };
+		CED3180D1D460E6000780409 /* SVRadialGradientLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = CED318081D460E5F00780409 /* SVRadialGradientLayer.m */; };
+		CED3180F1D461C9D00780409 /* HomeCallInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED3180E1D461C9D00780409 /* HomeCallInfo.swift */; };
+		CED318271D46371C00780409 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = CED318111D46371C00780409 /* Info.plist */; };
+		CED318281D46371C00780409 /* JSONModel.m in Sources */ = {isa = PBXBuildFile; fileRef = CED318141D46371C00780409 /* JSONModel.m */; };
+		CED318291D46371C00780409 /* JSONModelClassProperty.m in Sources */ = {isa = PBXBuildFile; fileRef = CED318161D46371C00780409 /* JSONModelClassProperty.m */; };
+		CED3182A1D46371C00780409 /* JSONModelError.m in Sources */ = {isa = PBXBuildFile; fileRef = CED318181D46371C00780409 /* JSONModelError.m */; };
+		CED3182B1D46371C00780409 /* JSONAPI.m in Sources */ = {isa = PBXBuildFile; fileRef = CED3181C1D46371C00780409 /* JSONAPI.m */; };
+		CED3182C1D46371C00780409 /* JSONHTTPClient.m in Sources */ = {isa = PBXBuildFile; fileRef = CED3181E1D46371C00780409 /* JSONHTTPClient.m */; };
+		CED3182D1D46371C00780409 /* JSONModel+networking.m in Sources */ = {isa = PBXBuildFile; fileRef = CED318201D46371C00780409 /* JSONModel+networking.m */; };
+		CED3182E1D46371C00780409 /* JSONKeyMapper.m in Sources */ = {isa = PBXBuildFile; fileRef = CED318231D46371C00780409 /* JSONKeyMapper.m */; };
+		CED3182F1D46371C00780409 /* JSONValueTransformer.m in Sources */ = {isa = PBXBuildFile; fileRef = CED318251D46371C00780409 /* JSONValueTransformer.m */; };
+		CED318541D47585300780409 /* String+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED318531D47585300780409 /* String+Extension.swift */; };
+		CED318581D476CA600780409 /* XDHTTPServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED318571D476CA600780409 /* XDHTTPServices.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -76,7 +95,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		518E6B931D46FED200814202 /* XDBaseADView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XDBaseADView.swift; sourceTree = "<group>"; };
 		51F46BD51D41EC9600D6B63A /* UILabelExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UILabelExtension.swift; sourceTree = "<group>"; };
+		51F46C141D41F8DB00D6B63A /* FileManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FileManager.swift; sourceTree = "<group>"; };
 		556B400483AF4696CA230A97 /* Pods-RCXianDian.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RCXianDian.release.xcconfig"; path = "Pods/Target Support Files/Pods-RCXianDian/Pods-RCXianDian.release.xcconfig"; sourceTree = "<group>"; };
 		8D0975F48D38B57010D9C165 /* Pods-RCXianDian.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RCXianDian.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RCXianDian/Pods-RCXianDian.debug.xcconfig"; sourceTree = "<group>"; };
 		CE6D20BF1D3A099C002B780F /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
@@ -169,6 +190,38 @@
 		CEB1B6B21D38C9F500F92B45 /* RCXianDianUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RCXianDianUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CEB1B6B61D38C9F600F92B45 /* RCXianDianUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RCXianDianUITests.swift; sourceTree = "<group>"; };
 		CEB1B6B81D38C9F600F92B45 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CED317FF1D460E5F00780409 /* SVIndefiniteAnimatedView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SVIndefiniteAnimatedView.h; sourceTree = "<group>"; };
+		CED318001D460E5F00780409 /* SVIndefiniteAnimatedView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SVIndefiniteAnimatedView.m; sourceTree = "<group>"; };
+		CED318011D460E5F00780409 /* SVProgressAnimatedView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SVProgressAnimatedView.h; sourceTree = "<group>"; };
+		CED318021D460E5F00780409 /* SVProgressAnimatedView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SVProgressAnimatedView.m; sourceTree = "<group>"; };
+		CED318031D460E5F00780409 /* SVProgressHUD-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SVProgressHUD-Prefix.pch"; sourceTree = "<group>"; };
+		CED318041D460E5F00780409 /* SVProgressHUD.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = SVProgressHUD.bundle; sourceTree = "<group>"; };
+		CED318051D460E5F00780409 /* SVProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SVProgressHUD.h; sourceTree = "<group>"; };
+		CED318061D460E5F00780409 /* SVProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SVProgressHUD.m; sourceTree = "<group>"; };
+		CED318071D460E5F00780409 /* SVRadialGradientLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SVRadialGradientLayer.h; sourceTree = "<group>"; };
+		CED318081D460E5F00780409 /* SVRadialGradientLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SVRadialGradientLayer.m; sourceTree = "<group>"; };
+		CED3180E1D461C9D00780409 /* HomeCallInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeCallInfo.swift; sourceTree = "<group>"; };
+		CED318111D46371C00780409 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CED318131D46371C00780409 /* JSONModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSONModel.h; sourceTree = "<group>"; };
+		CED318141D46371C00780409 /* JSONModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSONModel.m; sourceTree = "<group>"; };
+		CED318151D46371C00780409 /* JSONModelClassProperty.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSONModelClassProperty.h; sourceTree = "<group>"; };
+		CED318161D46371C00780409 /* JSONModelClassProperty.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSONModelClassProperty.m; sourceTree = "<group>"; };
+		CED318171D46371C00780409 /* JSONModelError.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSONModelError.h; sourceTree = "<group>"; };
+		CED318181D46371C00780409 /* JSONModelError.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSONModelError.m; sourceTree = "<group>"; };
+		CED318191D46371C00780409 /* JSONModelLib.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSONModelLib.h; sourceTree = "<group>"; };
+		CED3181B1D46371C00780409 /* JSONAPI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSONAPI.h; sourceTree = "<group>"; };
+		CED3181C1D46371C00780409 /* JSONAPI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSONAPI.m; sourceTree = "<group>"; };
+		CED3181D1D46371C00780409 /* JSONHTTPClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSONHTTPClient.h; sourceTree = "<group>"; };
+		CED3181E1D46371C00780409 /* JSONHTTPClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSONHTTPClient.m; sourceTree = "<group>"; };
+		CED3181F1D46371C00780409 /* JSONModel+networking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "JSONModel+networking.h"; sourceTree = "<group>"; };
+		CED318201D46371C00780409 /* JSONModel+networking.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "JSONModel+networking.m"; sourceTree = "<group>"; };
+		CED318221D46371C00780409 /* JSONKeyMapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSONKeyMapper.h; sourceTree = "<group>"; };
+		CED318231D46371C00780409 /* JSONKeyMapper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSONKeyMapper.m; sourceTree = "<group>"; };
+		CED318241D46371C00780409 /* JSONValueTransformer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSONValueTransformer.h; sourceTree = "<group>"; };
+		CED318251D46371C00780409 /* JSONValueTransformer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSONValueTransformer.m; sourceTree = "<group>"; };
+		CED318261D46371C00780409 /* module.modulemap */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = "sourcecode.module-map"; path = module.modulemap; sourceTree = "<group>"; };
+		CED318531D47585300780409 /* String+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+Extension.swift"; sourceTree = "<group>"; };
+		CED318571D476CA600780409 /* XDHTTPServices.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XDHTTPServices.swift; sourceTree = "<group>"; };
 		FAAC2AB1E963EBD33FA4E428 /* Pods_RCXianDian.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RCXianDian.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -263,6 +316,7 @@
 		CE6D20C11D3A099C002B780F /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				CED3180E1D461C9D00780409 /* HomeCallInfo.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -411,6 +465,7 @@
 			children = (
 				CE7BE55B1D3F5B5A00152B4F /* UIViewExt.swift */,
 				51F46BD51D41EC9600D6B63A /* UILabelExtension.swift */,
+				CED318531D47585300780409 /* String+Extension.swift */,
 			);
 			path = Category;
 			sourceTree = "<group>";
@@ -425,6 +480,7 @@
 		CE6D20D51D3A099C002B780F /* Handler */ = {
 			isa = PBXGroup;
 			children = (
+				CED318571D476CA600780409 /* XDHTTPServices.swift */,
 			);
 			path = Handler;
 			sourceTree = "<group>";
@@ -442,6 +498,7 @@
 			children = (
 				CE7BE5811D40694A00152B4F /* LocalizationManagerTool.swift */,
 				CE7BE5831D4070C000152B4F /* ParsePlistUtil.swift */,
+				51F46C141D41F8DB00D6B63A /* FileManager.swift */,
 			);
 			path = Tools;
 			sourceTree = "<group>";
@@ -532,6 +589,7 @@
 				CE6D21541D3A1721002B780F /* XDBaseTableViewController.swift */,
 				CE6D21581D3A17DB002B780F /* XDBaseNavigationController.swift */,
 				CE6D21561D3A1756002B780F /* XDBaseTabBarController.swift */,
+				518E6B931D46FED200814202 /* XDBaseADView.swift */,
 			);
 			path = Frames;
 			sourceTree = "<group>";
@@ -539,8 +597,10 @@
 		CE6D20E71D3A099C002B780F /* Public */ = {
 			isa = PBXGroup;
 			children = (
+				CED318101D46371C00780409 /* JSONModel */,
 				CE6D20E81D3A099C002B780F /* Masonry */,
 				CE6D21051D3A099C002B780F /* MBProgressHUD */,
+				CED317FE1D460E5F00780409 /* SVProgressHUD */,
 				CE6D210A1D3A099C002B780F /* SDWebImage */,
 			);
 			path = Public;
@@ -706,6 +766,73 @@
 			path = RCXianDianUITests;
 			sourceTree = "<group>";
 		};
+		CED317FE1D460E5F00780409 /* SVProgressHUD */ = {
+			isa = PBXGroup;
+			children = (
+				CED317FF1D460E5F00780409 /* SVIndefiniteAnimatedView.h */,
+				CED318001D460E5F00780409 /* SVIndefiniteAnimatedView.m */,
+				CED318011D460E5F00780409 /* SVProgressAnimatedView.h */,
+				CED318021D460E5F00780409 /* SVProgressAnimatedView.m */,
+				CED318031D460E5F00780409 /* SVProgressHUD-Prefix.pch */,
+				CED318041D460E5F00780409 /* SVProgressHUD.bundle */,
+				CED318051D460E5F00780409 /* SVProgressHUD.h */,
+				CED318061D460E5F00780409 /* SVProgressHUD.m */,
+				CED318071D460E5F00780409 /* SVRadialGradientLayer.h */,
+				CED318081D460E5F00780409 /* SVRadialGradientLayer.m */,
+			);
+			path = SVProgressHUD;
+			sourceTree = "<group>";
+		};
+		CED318101D46371C00780409 /* JSONModel */ = {
+			isa = PBXGroup;
+			children = (
+				CED318111D46371C00780409 /* Info.plist */,
+				CED318121D46371C00780409 /* JSONModel */,
+				CED318191D46371C00780409 /* JSONModelLib.h */,
+				CED3181A1D46371C00780409 /* JSONModelNetworking */,
+				CED318211D46371C00780409 /* JSONModelTransformations */,
+				CED318261D46371C00780409 /* module.modulemap */,
+			);
+			path = JSONModel;
+			sourceTree = "<group>";
+		};
+		CED318121D46371C00780409 /* JSONModel */ = {
+			isa = PBXGroup;
+			children = (
+				CED318131D46371C00780409 /* JSONModel.h */,
+				CED318141D46371C00780409 /* JSONModel.m */,
+				CED318151D46371C00780409 /* JSONModelClassProperty.h */,
+				CED318161D46371C00780409 /* JSONModelClassProperty.m */,
+				CED318171D46371C00780409 /* JSONModelError.h */,
+				CED318181D46371C00780409 /* JSONModelError.m */,
+			);
+			path = JSONModel;
+			sourceTree = "<group>";
+		};
+		CED3181A1D46371C00780409 /* JSONModelNetworking */ = {
+			isa = PBXGroup;
+			children = (
+				CED3181B1D46371C00780409 /* JSONAPI.h */,
+				CED3181C1D46371C00780409 /* JSONAPI.m */,
+				CED3181D1D46371C00780409 /* JSONHTTPClient.h */,
+				CED3181E1D46371C00780409 /* JSONHTTPClient.m */,
+				CED3181F1D46371C00780409 /* JSONModel+networking.h */,
+				CED318201D46371C00780409 /* JSONModel+networking.m */,
+			);
+			path = JSONModelNetworking;
+			sourceTree = "<group>";
+		};
+		CED318211D46371C00780409 /* JSONModelTransformations */ = {
+			isa = PBXGroup;
+			children = (
+				CED318221D46371C00780409 /* JSONKeyMapper.h */,
+				CED318231D46371C00780409 /* JSONKeyMapper.m */,
+				CED318241D46371C00780409 /* JSONValueTransformer.h */,
+				CED318251D46371C00780409 /* JSONValueTransformer.m */,
+			);
+			path = JSONModelTransformations;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -814,10 +941,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				CE6D212E1D3A099C002B780F /* LaunchScreen.storyboard in Resources */,
+				CED3180B1D460E6000780409 /* SVProgressHUD.bundle in Resources */,
 				CE6D212D1D3A099C002B780F /* Info.plist in Resources */,
 				CEB1B69E1D38C9F400F92B45 /* Assets.xcassets in Resources */,
 				CE6D212F1D3A099C002B780F /* Main.storyboard in Resources */,
 				CE7BE5771D3F641600152B4F /* TabBarModel.plist in Resources */,
+				CED318271D46371C00780409 /* Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -892,21 +1021,32 @@
 			files = (
 				CE6D21551D3A1721002B780F /* XDBaseTableViewController.swift in Sources */,
 				CE6D214B1D3A099C002B780F /* UIImage+GIF.m in Sources */,
+				518E6B941D46FED200814202 /* XDBaseADView.swift in Sources */,
 				CE6D21481D3A099C002B780F /* SDWebImageManager.m in Sources */,
+				51F46C151D41F8DB00D6B63A /* FileManager.swift in Sources */,
+				CED3182E1D46371C00780409 /* JSONKeyMapper.m in Sources */,
 				CE6D21471D3A099C002B780F /* SDWebImageDownloaderOperation.m in Sources */,
 				CE7BE5841D4070C000152B4F /* ParsePlistUtil.swift in Sources */,
+				CED318091D460E6000780409 /* SVIndefiniteAnimatedView.m in Sources */,
+				CED318291D46371C00780409 /* JSONModelClassProperty.m in Sources */,
 				CE6D21331D3A099C002B780F /* MASConstraint.m in Sources */,
+				CED3182A1D46371C00780409 /* JSONModelError.m in Sources */,
+				CED3182F1D46371C00780409 /* JSONValueTransformer.m in Sources */,
 				CE6D21431D3A099C002B780F /* SDImageCache.m in Sources */,
 				CE7BE55A1D3F5B0300152B4F /* UtilityConst.swift in Sources */,
+				CED3180C1D460E6000780409 /* SVProgressHUD.m in Sources */,
 				CE7BE5731D3F627600152B4F /* PersonViewController.swift in Sources */,
 				CE6D21511D3A16CC002B780F /* XDBaseViewController.swift in Sources */,
 				CE6D21361D3A099C002B780F /* MASViewAttribute.m in Sources */,
 				CE6D213B1D3A099C002B780F /* ViewController+MASAdditions.m in Sources */,
 				CE6D214C1D3A099C002B780F /* UIImage+MultiFormat.m in Sources */,
 				CE6D21341D3A099C002B780F /* MASConstraintMaker.m in Sources */,
+				CED318541D47585300780409 /* String+Extension.swift in Sources */,
 				CE6D21571D3A1756002B780F /* XDBaseTabBarController.swift in Sources */,
+				CED3182B1D46371C00780409 /* JSONAPI.m in Sources */,
 				CE6D21591D3A17DB002B780F /* XDBaseNavigationController.swift in Sources */,
 				CE6D21391D3A099C002B780F /* NSLayoutConstraint+MASDebugAdditions.m in Sources */,
+				CED3180D1D460E6000780409 /* SVRadialGradientLayer.m in Sources */,
 				CE6D21491D3A099C002B780F /* SDWebImagePrefetcher.m in Sources */,
 				CE6D21301D3A099C002B780F /* AppDelegate.swift in Sources */,
 				CE6D21321D3A099C002B780F /* MASCompositeConstraint.m in Sources */,
@@ -914,8 +1054,10 @@
 				CE6D21421D3A099C002B780F /* NSData+ImageContentType.m in Sources */,
 				CE7BE5691D3F60DD00152B4F /* StoreViewController.swift in Sources */,
 				CE6D21451D3A099C002B780F /* SDWebImageDecoder.m in Sources */,
+				CED318281D46371C00780409 /* JSONModel.m in Sources */,
 				CE6D21531D3A16D8002B780F /* XDBaseModel.swift in Sources */,
 				CE6D213A1D3A099C002B780F /* View+MASAdditions.m in Sources */,
+				CED3180F1D461C9D00780409 /* HomeCallInfo.swift in Sources */,
 				CE6D214A1D3A099C002B780F /* UIButton+WebCache.m in Sources */,
 				CE6D21381D3A099C002B780F /* NSArray+MASAdditions.m in Sources */,
 				CE6D214F1D3A099C002B780F /* UIView+WebCacheOperation.m in Sources */,
@@ -925,12 +1067,16 @@
 				CE6D21371D3A099C002B780F /* MASViewConstraint.m in Sources */,
 				CE6D21461D3A099C002B780F /* SDWebImageDownloader.m in Sources */,
 				CE7BE55C1D3F5B5A00152B4F /* UIViewExt.swift in Sources */,
+				CED3182C1D46371C00780409 /* JSONHTTPClient.m in Sources */,
 				CE7BE5821D40694A00152B4F /* LocalizationManagerTool.swift in Sources */,
 				CE6D214E1D3A099C002B780F /* UIImageView+WebCache.m in Sources */,
 				CE7BE5751D3F637A00152B4F /* XDTabBar.swift in Sources */,
+				CED3182D1D46371C00780409 /* JSONModel+networking.m in Sources */,
+				CED3180A1D460E6000780409 /* SVProgressAnimatedView.m in Sources */,
 				CE6D214D1D3A099C002B780F /* UIImageView+HighlightedWebCache.m in Sources */,
 				51F46BD61D41EC9600D6B63A /* UILabelExtension.swift in Sources */,
 				CE6D213E1D3A099C002B780F /* MBProgressHUD.m in Sources */,
+				CED318581D476CA600780409 /* XDHTTPServices.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

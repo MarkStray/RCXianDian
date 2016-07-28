@@ -8,7 +8,7 @@
 
 import UIKit
 
-class XDTabBarModel: XDBaseModel {
+class XDTabBarModel: NSObject {
     var className: String?;
     var title: String?;
     var image: String?;

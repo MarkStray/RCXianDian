@@ -7,30 +7,22 @@
 //
 
 import UIKit
-import Alamofire
+
 
 class HomeViewController: XDBaseViewController {
 
+    var homeTableView: UITableView?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        testNetLib();
-        
-    }
-    
-    func testNetLib() {
-        
-        Alamofire.request(.GET, "https://httpbin.org/get", parameters: ["foo": "bar"])
-            .responseJSON { response in
-                print(response.request)  // original URL request
-                print(response.response) // URL response
-                print(response.data)     // server data
-                print(response.result)   // result of response serialization
-                
-                if let JSON = response.result.value {
-                    print("JSON: \(JSON)")
-                }
-        };
+        HomeCallInfo.requestHomeData { (finished, data) in
+            if finished {
+                print("info --> \(data!.toDictionary())")
+            } else {
+                print("网络错误")
+            }
+        }
     }
 
     override func didReceiveMemoryWarning() {
@@ -38,4 +30,20 @@ class HomeViewController: XDBaseViewController {
         // Dispose of any resources that can be recreated.
     }
 }
+
+extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
+    
+    
+    func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return 10
+    }
+    func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
+        return 75
+    }
+    
+    func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+        return UITableViewCell()
+    }
+}
+
 
