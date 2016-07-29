@@ -8,11 +8,30 @@
 
 import Alamofire
 
-class XDHTTPServices {
+//MARK: 第三方网络框架的包装类 后续如果需要替换网络框架 直接在该类中替换
+
+typealias responseCompletionHandle = (responseJson: AnyObject?, error: NSError?) -> Void
+
+class XDHTTPServices: NSObject {
     
     //'Method' is ambiguous for type lookup in this context 
     // 和runtime Method冲突 需要加命名空间 Alamofire
     
+    //返回原生的数据
+    class func requestUrl(method: Alamofire.Method, urlStr: URLStringConvertible, param: [String: AnyObject]? = nil, completion: responseCompletionHandle) {
+        
+        print("-----urlStr -->\n \"\(urlStr)\"")
+        print("-----param -->\n \"\(param)\"")
+
+        Alamofire.request(method, urlStr, parameters: param).responseJSON(completionHandler: { (response) in
+            completion(responseJson: response.result.value, error: response.result.error)
+        })
+    }
+    
+    // finished 标记是否完成
+    //@available(*, deprecated, message="Use requestUrl(method: Alamofire.Method, urlStr: URLStringConvertible, param: [String: AnyObject]? = nil, completion: responseCompletionHandle")
+
+    /*
     class func requestUrl(method: Alamofire.Method, urlStr: URLStringConvertible, param: [String: AnyObject]? = nil, completion:(finished: Bool, response: AnyObject?) -> Void) {
         
         Alamofire.request(method, urlStr, parameters: param).responseJSON(completionHandler: { (response) in
@@ -33,7 +52,6 @@ class XDHTTPServices {
                 completion(finished: false, response:nil)
             }
         })
-    }
-    
+    }*/
     
 }

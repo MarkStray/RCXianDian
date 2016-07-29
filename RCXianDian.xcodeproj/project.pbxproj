@@ -75,6 +75,9 @@
 		CED3182F1D46371C00780409 /* JSONValueTransformer.m in Sources */ = {isa = PBXBuildFile; fileRef = CED318251D46371C00780409 /* JSONValueTransformer.m */; };
 		CED318541D47585300780409 /* String+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED318531D47585300780409 /* String+Extension.swift */; };
 		CED318581D476CA600780409 /* XDHTTPServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED318571D476CA600780409 /* XDHTTPServices.swift */; };
+		CED640BC1D4AFB7100DF53C9 /* XDRESTServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED640BB1D4AFB7100DF53C9 /* XDRESTServices.swift */; };
+		CED640C01D4B0AB900DF53C9 /* XDBaseRequestParam.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED640BF1D4B0AB900DF53C9 /* XDBaseRequestParam.swift */; };
+		CED640C41D4B55EF00DF53C9 /* ShopTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED640C31D4B55EF00DF53C9 /* ShopTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -222,6 +225,9 @@
 		CED318261D46371C00780409 /* module.modulemap */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = "sourcecode.module-map"; path = module.modulemap; sourceTree = "<group>"; };
 		CED318531D47585300780409 /* String+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+Extension.swift"; sourceTree = "<group>"; };
 		CED318571D476CA600780409 /* XDHTTPServices.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XDHTTPServices.swift; sourceTree = "<group>"; };
+		CED640BB1D4AFB7100DF53C9 /* XDRESTServices.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XDRESTServices.swift; sourceTree = "<group>"; };
+		CED640BF1D4B0AB900DF53C9 /* XDBaseRequestParam.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XDBaseRequestParam.swift; sourceTree = "<group>"; };
+		CED640C31D4B55EF00DF53C9 /* ShopTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShopTableViewCell.swift; sourceTree = "<group>"; };
 		FAAC2AB1E963EBD33FA4E428 /* Pods_RCXianDian.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RCXianDian.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -294,6 +300,7 @@
 		CE6D20BD1D3A099C002B780F /* Cells */ = {
 			isa = PBXGroup;
 			children = (
+				CED640C31D4B55EF00DF53C9 /* ShopTableViewCell.swift */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -481,6 +488,8 @@
 			isa = PBXGroup;
 			children = (
 				CED318571D476CA600780409 /* XDHTTPServices.swift */,
+				CED640BB1D4AFB7100DF53C9 /* XDRESTServices.swift */,
+				CED640BF1D4B0AB900DF53C9 /* XDBaseRequestParam.swift */,
 			);
 			path = Handler;
 			sourceTree = "<group>";
@@ -1043,11 +1052,13 @@
 				CE6D21341D3A099C002B780F /* MASConstraintMaker.m in Sources */,
 				CED318541D47585300780409 /* String+Extension.swift in Sources */,
 				CE6D21571D3A1756002B780F /* XDBaseTabBarController.swift in Sources */,
+				CED640C41D4B55EF00DF53C9 /* ShopTableViewCell.swift in Sources */,
 				CED3182B1D46371C00780409 /* JSONAPI.m in Sources */,
 				CE6D21591D3A17DB002B780F /* XDBaseNavigationController.swift in Sources */,
 				CE6D21391D3A099C002B780F /* NSLayoutConstraint+MASDebugAdditions.m in Sources */,
 				CED3180D1D460E6000780409 /* SVRadialGradientLayer.m in Sources */,
 				CE6D21491D3A099C002B780F /* SDWebImagePrefetcher.m in Sources */,
+				CED640BC1D4AFB7100DF53C9 /* XDRESTServices.swift in Sources */,
 				CE6D21301D3A099C002B780F /* AppDelegate.swift in Sources */,
 				CE6D21321D3A099C002B780F /* MASCompositeConstraint.m in Sources */,
 				CE6D21441D3A099C002B780F /* SDWebImageCompat.m in Sources */,
@@ -1074,6 +1085,7 @@
 				CED3182D1D46371C00780409 /* JSONModel+networking.m in Sources */,
 				CED3180A1D460E6000780409 /* SVProgressAnimatedView.m in Sources */,
 				CE6D214D1D3A099C002B780F /* UIImageView+HighlightedWebCache.m in Sources */,
+				CED640C01D4B0AB900DF53C9 /* XDBaseRequestParam.swift in Sources */,
 				51F46BD61D41EC9600D6B63A /* UILabelExtension.swift in Sources */,
 				CE6D213E1D3A099C002B780F /* MBProgressHUD.m in Sources */,
 				CED318581D476CA600780409 /* XDHTTPServices.swift in Sources */,

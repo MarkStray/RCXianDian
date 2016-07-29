@@ -9,21 +9,21 @@
 import UIKit
 import Alamofire
 
+
 class HomeCallInfo: XDBaseModel {
     
     var CallInfo: HomeCallInfoModel?;
     
     
-    class func requestHomeData(completion:(finished: Bool, data: HomeCallInfo?)-> Void) {
+    class func requestHomeData(completion:(homeCallInfo: HomeCallInfo?)-> Void) {
         
-        XDHTTPServices.requestUrl(.GET, urlStr: "http://rest.dev.2b.renrencaichang.com/SiteMarket/43924664", param: nil) { (finished, response) in
+        XDRESTServices().get("SiteMarket", resId: "43924664", query: nil) { (responseJson, error) in
             
             var homeModel: HomeCallInfo?
 
-            if finished {
-                
+            if error == nil {
                 do {
-                    try homeModel = HomeCallInfo(dictionary:response as! [NSObject : AnyObject])
+                    try homeModel = HomeCallInfo(dictionary:responseJson as! [NSObject : AnyObject])
                 } catch let error as NSError {
                     // 捕获数据解析错误
                     print ("Error: \(error.domain)")
@@ -31,19 +31,20 @@ class HomeCallInfo: XDBaseModel {
             } else {
                 homeModel = nil
             }
-            
-            completion(finished: finished, data: homeModel)
+
+            completion(homeCallInfo: homeModel)
         }
+        
     }
 
-//    override class func keyMapper() -> JSONKeyMapper {
-//        
-//        var mappingDict = [String: String]()
-//        
-//        mappingDict["CallInfo"] = "HomeCallInfoModel"
-//        
-//        return JSONKeyMapper(dictionary: mappingDict)
-//    }
+    override class func keyMapper() -> JSONKeyMapper {
+        
+        var mappingDict = [String: String]()
+        
+        mappingDict["CallInfo"] = "HomeCallInfoModel"
+        
+        return JSONKeyMapper(dictionary: mappingDict)
+    }
 
 //    override class func customClassMapping() -> [String : String]? {
 //        var mappingDict = [String: String]()
@@ -57,28 +58,35 @@ class HomeCallInfo: XDBaseModel {
 //    }
 }
 
+
 class HomeCallInfoModel: JSONModel {
     
-    var advertise: [AdvertiseModel]?
-    var itemList: [ItemModel]?
-    var presell: [PresellModel]?
-    var shop: [ShopModel]?
-    var hotBrandList: [HotBrandModel]?
+//    var advertise: [AdvertiseModel]?
+//    var itemList: [ItemModel]?
+//    var presell: [PresellModel]?
+//    var shop: [ShopModel]?
+//    var hotBrandList: [HotBrandModel]?
     
+    var advertise =  NSMutableArray()
+    var itemList =  NSMutableArray()
+    var presell =  NSMutableArray()
+    var shop =  NSMutableArray()
+    var hotBrandList =  NSMutableArray()
+
     
-//    override class func keyMapper() -> JSONKeyMapper {
-//        
-//        var mappingDict = [String: String]()
-//        
-//        mappingDict["advertise"] = "AdvertiseModel"
-//        mappingDict["itemList"] = "ItemModel"
-//        mappingDict["presell"] = "PresellModel"
-//        mappingDict["shop"] = "ShopModel"
-//        mappingDict["hotBrandList"] = "HotBrandModel"
-//        
-//        return JSONKeyMapper(dictionary: mappingDict)
-//    }
-//
+    override class func keyMapper() -> JSONKeyMapper {
+        
+        var mappingDict = [String: String]()
+        
+        mappingDict["advertise"] = "AdvertiseModel"
+        mappingDict["itemList"] = "ItemModel"
+        mappingDict["presell"] = "PresellModel"
+        mappingDict["shop"] = "ShopModel"
+        mappingDict["hotBrandList"] = "HotBrandModel"
+        
+        return JSONKeyMapper(dictionary: mappingDict)
+    }
+
 }
 
 
