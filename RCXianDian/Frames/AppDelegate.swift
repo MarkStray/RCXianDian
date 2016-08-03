@@ -8,6 +8,11 @@
 
 import UIKit
 
+/// 第三方框架导入
+import SnapKit
+import ObjectMapper
+
+
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 

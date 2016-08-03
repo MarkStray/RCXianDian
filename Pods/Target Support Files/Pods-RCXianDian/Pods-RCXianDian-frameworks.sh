@@ -85,9 +85,13 @@ strip_invalid_archs() {
 
 if [[ "$CONFIGURATION" == "Debug" ]]; then
   install_framework "Pods-RCXianDian/Alamofire.framework"
+  install_framework "Pods-RCXianDian/AlamofireObjectMapper.framework"
+  install_framework "Pods-RCXianDian/ObjectMapper.framework"
   install_framework "Pods-RCXianDian/SnapKit.framework"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
   install_framework "Pods-RCXianDian/Alamofire.framework"
+  install_framework "Pods-RCXianDian/AlamofireObjectMapper.framework"
+  install_framework "Pods-RCXianDian/ObjectMapper.framework"
   install_framework "Pods-RCXianDian/SnapKit.framework"
 fi

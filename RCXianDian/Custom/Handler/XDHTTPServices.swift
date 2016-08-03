@@ -28,6 +28,15 @@ class XDHTTPServices: NSObject {
         })
     }
     
+    //import AlamofireObjectMapper
+    /*
+    class func testAlamofireObjectMapper() {
+        Alamofire.request(.GET, "http://rest.dev.2b.renrencaichang.com/SiteMarket/43924664").responseObject { (response: Response<HomeCallInfo, NSError>) in
+            let homeModel = response.result.value
+            print("responseObject \(homeModel?.toJSONString())")
+        }
+    }*/
+    
     // finished 标记是否完成
     //@available(*, deprecated, message="Use requestUrl(method: Alamofire.Method, urlStr: URLStringConvertible, param: [String: AnyObject]? = nil, completion: responseCompletionHandle")
 

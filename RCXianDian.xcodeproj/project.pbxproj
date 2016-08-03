@@ -11,6 +11,35 @@
 		51F46BD61D41EC9600D6B63A /* UILabelExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51F46BD51D41EC9600D6B63A /* UILabelExtension.swift */; };
 		51F46C151D41F8DB00D6B63A /* FileManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51F46C141D41F8DB00D6B63A /* FileManager.swift */; };
 		6A7B4020C5830F8CE7EE6E96 /* Pods_RCXianDian.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FAAC2AB1E963EBD33FA4E428 /* Pods_RCXianDian.framework */; };
+		CE048E431D5191600023D286 /* XDTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE048E421D5191600023D286 /* XDTableView.swift */; };
+		CE048E451D51917C0023D286 /* XDCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE048E441D51917C0023D286 /* XDCollectionView.swift */; };
+		CE048E471D5195310023D286 /* DataStruct.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE048E461D5195310023D286 /* DataStruct.swift */; };
+		CE048E491D51C51C0023D286 /* PersonTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE048E481D51C51C0023D286 /* PersonTableViewCell.swift */; };
+		CE048E4B1D51C61C0023D286 /* PersonModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE048E4A1D51C61C0023D286 /* PersonModel.swift */; };
+		CE048E5B1D51CDCD0023D286 /* mine-arrow@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CE048E4C1D51CDCD0023D286 /* mine-arrow@2x.png */; };
+		CE048E5C1D51CDCD0023D286 /* mine-background@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CE048E4D1D51CDCD0023D286 /* mine-background@2x.png */; };
+		CE048E5D1D51CDCD0023D286 /* mine-balance@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CE048E4E1D51CDCD0023D286 /* mine-balance@2x.png */; };
+		CE048E5E1D51CDCD0023D286 /* mine-call@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CE048E4F1D51CDCD0023D286 /* mine-call@2x.png */; };
+		CE048E5F1D51CDCD0023D286 /* mine-exit@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CE048E501D51CDCD0023D286 /* mine-exit@2x.png */; };
+		CE048E601D51CDCD0023D286 /* mine-help@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CE048E511D51CDCD0023D286 /* mine-help@2x.png */; };
+		CE048E611D51CDCD0023D286 /* mine-history@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CE048E521D51CDCD0023D286 /* mine-history@2x.png */; };
+		CE048E621D51CDCD0023D286 /* mine-order@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CE048E531D51CDCD0023D286 /* mine-order@2x.png */; };
+		CE048E631D51CDCD0023D286 /* mine-redpage@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CE048E541D51CDCD0023D286 /* mine-redpage@2x.png */; };
+		CE048E641D51CDCD0023D286 /* mine-reset@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CE048E551D51CDCD0023D286 /* mine-reset@2x.png */; };
+		CE048E651D51CDCD0023D286 /* mine-score@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CE048E561D51CDCD0023D286 /* mine-score@2x.png */; };
+		CE048E661D51CDCD0023D286 /* mine-setting@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CE048E571D51CDCD0023D286 /* mine-setting@2x.png */; };
+		CE048E671D51CDCD0023D286 /* mine-share@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CE048E581D51CDCD0023D286 /* mine-share@2x.png */; };
+		CE048E681D51CDCD0023D286 /* mine-update@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CE048E591D51CDCD0023D286 /* mine-update@2x.png */; };
+		CE048E691D51CDCD0023D286 /* portrait@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CE048E5A1D51CDCD0023D286 /* portrait@2x.png */; };
+		CE048E6B1D51CF6A0023D286 /* PersonHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE048E6A1D51CF6A0023D286 /* PersonHeaderView.swift */; };
+		CE048E6D1D51E0450023D286 /* ProductViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE048E6C1D51E0450023D286 /* ProductViewController.swift */; };
+		CE048E6F1D51E0DE0023D286 /* CategoryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE048E6E1D51E0DE0023D286 /* CategoryTableViewCell.swift */; };
+		CE048E711D51E0F20023D286 /* ProductTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE048E701D51E0F20023D286 /* ProductTableViewCell.swift */; };
+		CE048E731D51E1F10023D286 /* XDTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE048E721D51E1F10023D286 /* XDTableViewCell.swift */; };
+		CE048E751D51E4CD0023D286 /* OrderListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE048E741D51E4CD0023D286 /* OrderListTableViewCell.swift */; };
+		CE048E771D51E8A10023D286 /* LineLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE048E761D51E8A10023D286 /* LineLabel.swift */; };
+		CE048E791D51F32B0023D286 /* ProductCallInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE048E781D51F32B0023D286 /* ProductCallInfo.swift */; };
+		CE5606E71D4F475D006B94D3 /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE5606E61D4F475D006B94D3 /* UIColor+Extension.swift */; };
 		CE6D212C1D3A099C002B780F /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE6D20BF1D3A099C002B780F /* HomeViewController.swift */; };
 		CE6D212D1D3A099C002B780F /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = CE6D20E01D3A099C002B780F /* Info.plist */; };
 		CE6D212E1D3A099C002B780F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE6D20E31D3A099C002B780F /* LaunchScreen.storyboard */; };
@@ -51,7 +80,6 @@
 		CE7BE5691D3F60DD00152B4F /* StoreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE7BE5681D3F60DD00152B4F /* StoreViewController.swift */; };
 		CE7BE5731D3F627600152B4F /* PersonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE7BE5721D3F627600152B4F /* PersonViewController.swift */; };
 		CE7BE5751D3F637A00152B4F /* XDTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE7BE5741D3F637A00152B4F /* XDTabBar.swift */; };
-		CE7BE5771D3F641600152B4F /* TabBarModel.plist in Resources */ = {isa = PBXBuildFile; fileRef = CE7BE5761D3F641600152B4F /* TabBarModel.plist */; };
 		CE7BE57E1D40639D00152B4F /* XDTabBarModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE7BE57D1D40639D00152B4F /* XDTabBarModel.swift */; };
 		CE7BE5821D40694A00152B4F /* LocalizationManagerTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE7BE5811D40694A00152B4F /* LocalizationManagerTool.swift */; };
 		CE7BE5841D4070C000152B4F /* ParsePlistUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE7BE5831D4070C000152B4F /* ParsePlistUtil.swift */; };
@@ -103,6 +131,35 @@
 		51F46C141D41F8DB00D6B63A /* FileManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FileManager.swift; sourceTree = "<group>"; };
 		556B400483AF4696CA230A97 /* Pods-RCXianDian.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RCXianDian.release.xcconfig"; path = "Pods/Target Support Files/Pods-RCXianDian/Pods-RCXianDian.release.xcconfig"; sourceTree = "<group>"; };
 		8D0975F48D38B57010D9C165 /* Pods-RCXianDian.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RCXianDian.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RCXianDian/Pods-RCXianDian.debug.xcconfig"; sourceTree = "<group>"; };
+		CE048E421D5191600023D286 /* XDTableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XDTableView.swift; sourceTree = "<group>"; };
+		CE048E441D51917C0023D286 /* XDCollectionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XDCollectionView.swift; sourceTree = "<group>"; };
+		CE048E461D5195310023D286 /* DataStruct.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataStruct.swift; sourceTree = "<group>"; };
+		CE048E481D51C51C0023D286 /* PersonTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PersonTableViewCell.swift; sourceTree = "<group>"; };
+		CE048E4A1D51C61C0023D286 /* PersonModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PersonModel.swift; sourceTree = "<group>"; };
+		CE048E4C1D51CDCD0023D286 /* mine-arrow@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "mine-arrow@2x.png"; sourceTree = "<group>"; };
+		CE048E4D1D51CDCD0023D286 /* mine-background@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "mine-background@2x.png"; sourceTree = "<group>"; };
+		CE048E4E1D51CDCD0023D286 /* mine-balance@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "mine-balance@2x.png"; sourceTree = "<group>"; };
+		CE048E4F1D51CDCD0023D286 /* mine-call@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "mine-call@2x.png"; sourceTree = "<group>"; };
+		CE048E501D51CDCD0023D286 /* mine-exit@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "mine-exit@2x.png"; sourceTree = "<group>"; };
+		CE048E511D51CDCD0023D286 /* mine-help@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "mine-help@2x.png"; sourceTree = "<group>"; };
+		CE048E521D51CDCD0023D286 /* mine-history@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "mine-history@2x.png"; sourceTree = "<group>"; };
+		CE048E531D51CDCD0023D286 /* mine-order@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "mine-order@2x.png"; sourceTree = "<group>"; };
+		CE048E541D51CDCD0023D286 /* mine-redpage@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "mine-redpage@2x.png"; sourceTree = "<group>"; };
+		CE048E551D51CDCD0023D286 /* mine-reset@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "mine-reset@2x.png"; sourceTree = "<group>"; };
+		CE048E561D51CDCD0023D286 /* mine-score@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "mine-score@2x.png"; sourceTree = "<group>"; };
+		CE048E571D51CDCD0023D286 /* mine-setting@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "mine-setting@2x.png"; sourceTree = "<group>"; };
+		CE048E581D51CDCD0023D286 /* mine-share@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "mine-share@2x.png"; sourceTree = "<group>"; };
+		CE048E591D51CDCD0023D286 /* mine-update@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "mine-update@2x.png"; sourceTree = "<group>"; };
+		CE048E5A1D51CDCD0023D286 /* portrait@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "portrait@2x.png"; sourceTree = "<group>"; };
+		CE048E6A1D51CF6A0023D286 /* PersonHeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PersonHeaderView.swift; sourceTree = "<group>"; };
+		CE048E6C1D51E0450023D286 /* ProductViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductViewController.swift; sourceTree = "<group>"; };
+		CE048E6E1D51E0DE0023D286 /* CategoryTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategoryTableViewCell.swift; sourceTree = "<group>"; };
+		CE048E701D51E0F20023D286 /* ProductTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductTableViewCell.swift; sourceTree = "<group>"; };
+		CE048E721D51E1F10023D286 /* XDTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XDTableViewCell.swift; sourceTree = "<group>"; };
+		CE048E741D51E4CD0023D286 /* OrderListTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OrderListTableViewCell.swift; sourceTree = "<group>"; };
+		CE048E761D51E8A10023D286 /* LineLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LineLabel.swift; sourceTree = "<group>"; };
+		CE048E781D51F32B0023D286 /* ProductCallInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductCallInfo.swift; sourceTree = "<group>"; };
+		CE5606E61D4F475D006B94D3 /* UIColor+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
 		CE6D20BF1D3A099C002B780F /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		CE6D20DC1D3A099C002B780F /* RCXianDian-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "RCXianDian-Bridging-Header.h"; sourceTree = "<group>"; };
 		CE6D20E01D3A099C002B780F /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -181,7 +238,6 @@
 		CE7BE5681D3F60DD00152B4F /* StoreViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StoreViewController.swift; sourceTree = "<group>"; };
 		CE7BE5721D3F627600152B4F /* PersonViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PersonViewController.swift; sourceTree = "<group>"; };
 		CE7BE5741D3F637A00152B4F /* XDTabBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XDTabBar.swift; sourceTree = "<group>"; };
-		CE7BE5761D3F641600152B4F /* TabBarModel.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = TabBarModel.plist; sourceTree = "<group>"; };
 		CE7BE57D1D40639D00152B4F /* XDTabBarModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XDTabBarModel.swift; sourceTree = "<group>"; };
 		CE7BE5811D40694A00152B4F /* LocalizationManagerTool.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocalizationManagerTool.swift; sourceTree = "<group>"; };
 		CE7BE5831D4070C000152B4F /* ParsePlistUtil.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ParsePlistUtil.swift; sourceTree = "<group>"; };
@@ -278,8 +334,8 @@
 			isa = PBXGroup;
 			children = (
 				CE6D20BC1D3A099C002B780F /* HomePartClasses */,
-				CE6D20C41D3A099C002B780F /* PersonPartClasses */,
 				CE6D20CB1D3A099C002B780F /* StorePartClasses */,
+				CE6D20C41D3A099C002B780F /* PersonPartClasses */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -358,6 +414,8 @@
 		CE6D20C51D3A099C002B780F /* Cells */ = {
 			isa = PBXGroup;
 			children = (
+				CE048E481D51C51C0023D286 /* PersonTableViewCell.swift */,
+				CE048E741D51E4CD0023D286 /* OrderListTableViewCell.swift */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -373,6 +431,21 @@
 		CE6D20C71D3A099C002B780F /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				CE048E4C1D51CDCD0023D286 /* mine-arrow@2x.png */,
+				CE048E4D1D51CDCD0023D286 /* mine-background@2x.png */,
+				CE048E4E1D51CDCD0023D286 /* mine-balance@2x.png */,
+				CE048E4F1D51CDCD0023D286 /* mine-call@2x.png */,
+				CE048E501D51CDCD0023D286 /* mine-exit@2x.png */,
+				CE048E511D51CDCD0023D286 /* mine-help@2x.png */,
+				CE048E521D51CDCD0023D286 /* mine-history@2x.png */,
+				CE048E531D51CDCD0023D286 /* mine-order@2x.png */,
+				CE048E541D51CDCD0023D286 /* mine-redpage@2x.png */,
+				CE048E551D51CDCD0023D286 /* mine-reset@2x.png */,
+				CE048E561D51CDCD0023D286 /* mine-score@2x.png */,
+				CE048E571D51CDCD0023D286 /* mine-setting@2x.png */,
+				CE048E581D51CDCD0023D286 /* mine-share@2x.png */,
+				CE048E591D51CDCD0023D286 /* mine-update@2x.png */,
+				CE048E5A1D51CDCD0023D286 /* portrait@2x.png */,
 			);
 			path = Images;
 			sourceTree = "<group>";
@@ -380,6 +453,7 @@
 		CE6D20C81D3A099C002B780F /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				CE048E4A1D51C61C0023D286 /* PersonModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -394,6 +468,7 @@
 		CE6D20CA1D3A099C002B780F /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				CE048E6A1D51CF6A0023D286 /* PersonHeaderView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -414,6 +489,8 @@
 		CE6D20CC1D3A099C002B780F /* Cells */ = {
 			isa = PBXGroup;
 			children = (
+				CE048E6E1D51E0DE0023D286 /* CategoryTableViewCell.swift */,
+				CE048E701D51E0F20023D286 /* ProductTableViewCell.swift */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -422,6 +499,7 @@
 			isa = PBXGroup;
 			children = (
 				CE7BE5681D3F60DD00152B4F /* StoreViewController.swift */,
+				CE048E6C1D51E0450023D286 /* ProductViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -436,6 +514,7 @@
 		CE6D20CF1D3A099C002B780F /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				CE048E781D51F32B0023D286 /* ProductCallInfo.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -473,6 +552,7 @@
 				CE7BE55B1D3F5B5A00152B4F /* UIViewExt.swift */,
 				51F46BD51D41EC9600D6B63A /* UILabelExtension.swift */,
 				CED318531D47585300780409 /* String+Extension.swift */,
+				CE5606E61D4F475D006B94D3 /* UIColor+Extension.swift */,
 			);
 			path = Category;
 			sourceTree = "<group>";
@@ -480,6 +560,7 @@
 		CE6D20D41D3A099C002B780F /* Config */ = {
 			isa = PBXGroup;
 			children = (
+				CE048E461D5195310023D286 /* DataStruct.swift */,
 			);
 			path = Config;
 			sourceTree = "<group>";
@@ -516,6 +597,7 @@
 			isa = PBXGroup;
 			children = (
 				CE7BE5741D3F637A00152B4F /* XDTabBar.swift */,
+				CE048E761D51E8A10023D286 /* LineLabel.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -568,7 +650,6 @@
 			isa = PBXGroup;
 			children = (
 				CE6D20E01D3A099C002B780F /* Info.plist */,
-				CE7BE5761D3F641600152B4F /* TabBarModel.plist */,
 			);
 			path = Plist;
 			sourceTree = "<group>";
@@ -599,6 +680,9 @@
 				CE6D21581D3A17DB002B780F /* XDBaseNavigationController.swift */,
 				CE6D21561D3A1756002B780F /* XDBaseTabBarController.swift */,
 				518E6B931D46FED200814202 /* XDBaseADView.swift */,
+				CE048E421D5191600023D286 /* XDTableView.swift */,
+				CE048E441D51917C0023D286 /* XDCollectionView.swift */,
+				CE048E721D51E1F10023D286 /* XDTableViewCell.swift */,
 			);
 			path = Frames;
 			sourceTree = "<group>";
@@ -913,6 +997,7 @@
 				TargetAttributes = {
 					CEB1B6921D38C9F400F92B45 = {
 						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = 623Z6D7UC6;
 					};
 					CEB1B6A61D38C9F500F92B45 = {
 						CreatedOnToolsVersion = 7.3.1;
@@ -949,12 +1034,26 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE048E601D51CDCD0023D286 /* mine-help@2x.png in Resources */,
+				CE048E5B1D51CDCD0023D286 /* mine-arrow@2x.png in Resources */,
+				CE048E5E1D51CDCD0023D286 /* mine-call@2x.png in Resources */,
+				CE048E631D51CDCD0023D286 /* mine-redpage@2x.png in Resources */,
+				CE048E611D51CDCD0023D286 /* mine-history@2x.png in Resources */,
+				CE048E5C1D51CDCD0023D286 /* mine-background@2x.png in Resources */,
+				CE048E661D51CDCD0023D286 /* mine-setting@2x.png in Resources */,
 				CE6D212E1D3A099C002B780F /* LaunchScreen.storyboard in Resources */,
+				CE048E641D51CDCD0023D286 /* mine-reset@2x.png in Resources */,
+				CE048E691D51CDCD0023D286 /* portrait@2x.png in Resources */,
 				CED3180B1D460E6000780409 /* SVProgressHUD.bundle in Resources */,
 				CE6D212D1D3A099C002B780F /* Info.plist in Resources */,
+				CE048E621D51CDCD0023D286 /* mine-order@2x.png in Resources */,
 				CEB1B69E1D38C9F400F92B45 /* Assets.xcassets in Resources */,
+				CE048E5D1D51CDCD0023D286 /* mine-balance@2x.png in Resources */,
+				CE048E5F1D51CDCD0023D286 /* mine-exit@2x.png in Resources */,
+				CE048E651D51CDCD0023D286 /* mine-score@2x.png in Resources */,
+				CE048E681D51CDCD0023D286 /* mine-update@2x.png in Resources */,
 				CE6D212F1D3A099C002B780F /* Main.storyboard in Resources */,
-				CE7BE5771D3F641600152B4F /* TabBarModel.plist in Resources */,
+				CE048E671D51CDCD0023D286 /* mine-share@2x.png in Resources */,
 				CED318271D46371C00780409 /* Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1033,6 +1132,7 @@
 				518E6B941D46FED200814202 /* XDBaseADView.swift in Sources */,
 				CE6D21481D3A099C002B780F /* SDWebImageManager.m in Sources */,
 				51F46C151D41F8DB00D6B63A /* FileManager.swift in Sources */,
+				CE048E471D5195310023D286 /* DataStruct.swift in Sources */,
 				CED3182E1D46371C00780409 /* JSONKeyMapper.m in Sources */,
 				CE6D21471D3A099C002B780F /* SDWebImageDownloaderOperation.m in Sources */,
 				CE7BE5841D4070C000152B4F /* ParsePlistUtil.swift in Sources */,
@@ -1046,18 +1146,23 @@
 				CED3180C1D460E6000780409 /* SVProgressHUD.m in Sources */,
 				CE7BE5731D3F627600152B4F /* PersonViewController.swift in Sources */,
 				CE6D21511D3A16CC002B780F /* XDBaseViewController.swift in Sources */,
+				CE048E791D51F32B0023D286 /* ProductCallInfo.swift in Sources */,
 				CE6D21361D3A099C002B780F /* MASViewAttribute.m in Sources */,
 				CE6D213B1D3A099C002B780F /* ViewController+MASAdditions.m in Sources */,
 				CE6D214C1D3A099C002B780F /* UIImage+MultiFormat.m in Sources */,
 				CE6D21341D3A099C002B780F /* MASConstraintMaker.m in Sources */,
 				CED318541D47585300780409 /* String+Extension.swift in Sources */,
 				CE6D21571D3A1756002B780F /* XDBaseTabBarController.swift in Sources */,
+				CE048E6F1D51E0DE0023D286 /* CategoryTableViewCell.swift in Sources */,
 				CED640C41D4B55EF00DF53C9 /* ShopTableViewCell.swift in Sources */,
 				CED3182B1D46371C00780409 /* JSONAPI.m in Sources */,
 				CE6D21591D3A17DB002B780F /* XDBaseNavigationController.swift in Sources */,
 				CE6D21391D3A099C002B780F /* NSLayoutConstraint+MASDebugAdditions.m in Sources */,
 				CED3180D1D460E6000780409 /* SVRadialGradientLayer.m in Sources */,
+				CE048E431D5191600023D286 /* XDTableView.swift in Sources */,
+				CE048E4B1D51C61C0023D286 /* PersonModel.swift in Sources */,
 				CE6D21491D3A099C002B780F /* SDWebImagePrefetcher.m in Sources */,
+				CE048E711D51E0F20023D286 /* ProductTableViewCell.swift in Sources */,
 				CED640BC1D4AFB7100DF53C9 /* XDRESTServices.swift in Sources */,
 				CE6D21301D3A099C002B780F /* AppDelegate.swift in Sources */,
 				CE6D21321D3A099C002B780F /* MASCompositeConstraint.m in Sources */,
@@ -1067,21 +1172,28 @@
 				CE6D21451D3A099C002B780F /* SDWebImageDecoder.m in Sources */,
 				CED318281D46371C00780409 /* JSONModel.m in Sources */,
 				CE6D21531D3A16D8002B780F /* XDBaseModel.swift in Sources */,
+				CE5606E71D4F475D006B94D3 /* UIColor+Extension.swift in Sources */,
 				CE6D213A1D3A099C002B780F /* View+MASAdditions.m in Sources */,
 				CED3180F1D461C9D00780409 /* HomeCallInfo.swift in Sources */,
+				CE048E6D1D51E0450023D286 /* ProductViewController.swift in Sources */,
+				CE048E771D51E8A10023D286 /* LineLabel.swift in Sources */,
 				CE6D214A1D3A099C002B780F /* UIButton+WebCache.m in Sources */,
 				CE6D21381D3A099C002B780F /* NSArray+MASAdditions.m in Sources */,
 				CE6D214F1D3A099C002B780F /* UIView+WebCacheOperation.m in Sources */,
 				CE6D21351D3A099C002B780F /* MASLayoutConstraint.m in Sources */,
+				CE048E491D51C51C0023D286 /* PersonTableViewCell.swift in Sources */,
 				CE7BE57E1D40639D00152B4F /* XDTabBarModel.swift in Sources */,
 				CE6D212C1D3A099C002B780F /* HomeViewController.swift in Sources */,
+				CE048E731D51E1F10023D286 /* XDTableViewCell.swift in Sources */,
 				CE6D21371D3A099C002B780F /* MASViewConstraint.m in Sources */,
 				CE6D21461D3A099C002B780F /* SDWebImageDownloader.m in Sources */,
 				CE7BE55C1D3F5B5A00152B4F /* UIViewExt.swift in Sources */,
+				CE048E451D51917C0023D286 /* XDCollectionView.swift in Sources */,
 				CED3182C1D46371C00780409 /* JSONHTTPClient.m in Sources */,
 				CE7BE5821D40694A00152B4F /* LocalizationManagerTool.swift in Sources */,
 				CE6D214E1D3A099C002B780F /* UIImageView+WebCache.m in Sources */,
 				CE7BE5751D3F637A00152B4F /* XDTabBar.swift in Sources */,
+				CE048E6B1D51CF6A0023D286 /* PersonHeaderView.swift in Sources */,
 				CED3182D1D46371C00780409 /* JSONModel+networking.m in Sources */,
 				CED3180A1D460E6000780409 /* SVProgressAnimatedView.m in Sources */,
 				CE6D214D1D3A099C002B780F /* UIImageView+HighlightedWebCache.m in Sources */,
@@ -1089,6 +1201,7 @@
 				51F46BD61D41EC9600D6B63A /* UILabelExtension.swift in Sources */,
 				CE6D213E1D3A099C002B780F /* MBProgressHUD.m in Sources */,
 				CED318581D476CA600780409 /* XDHTTPServices.swift in Sources */,
+				CE048E751D51E4CD0023D286 /* OrderListTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1214,11 +1327,14 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = RCXianDian/Files/Plist/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.renrencaichang.RCXianDian;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "RCXianDian/Files/Header/RCXianDian-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
@@ -1231,11 +1347,14 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = RCXianDian/Files/Plist/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.renrencaichang.RCXianDian;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "RCXianDian/Files/Header/RCXianDian-Bridging-Header.h";
 			};
 			name = Release;

@@ -12,7 +12,11 @@ class StoreViewController: XDBaseViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        // Do any additional setup after loading the view.
+        ProductCallInfo.requestStoreData { (productCallInfo) in
+            print("info --> \(productCallInfo!.toJSONString())")
+
+        }
+        
     }
     
     override func didReceiveMemoryWarning() {

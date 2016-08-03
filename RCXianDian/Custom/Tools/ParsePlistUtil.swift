@@ -34,11 +34,34 @@ class ParsePlistUtil: NSObject {
 //    }
 
     // Swift 集合类型风格
+//    class func getTabBarModelList() -> [XDTabBarModel] {
+//        
+//        let path: String = NSBundle.mainBundle().pathForResource("TabBarModel", ofType: "plist")!
+//        
+//        let modelDicList: [[String : String]] = NSArray(contentsOfFile: path)! as! [[String : String]]
+//        
+//        var tabBarModelList: [XDTabBarModel] =  [XDTabBarModel]()
+//        
+//        for modelDic: [String : String] in modelDicList {
+//            let model = XDTabBarModel()
+//            
+//            model.className = modelDic["class_name"]
+//            model.title = modelDic["title"]
+//            model.image = modelDic["image"]
+//            model.imageSelected = modelDic["image_selected"]
+//            
+//            //print("\(model.className),\(model.title),\(model.image),\(model.imageSelected)")
+//            
+//            tabBarModelList.append(model)
+//        }
+//        
+//        return tabBarModelList
+//    }
+    
+    //数据来自DataStruct
     class func getTabBarModelList() -> [XDTabBarModel] {
         
-        let path: String = NSBundle.mainBundle().pathForResource("TabBarModel", ofType: "plist")!
-        
-        let modelDicList: [[String : String]] = NSArray(contentsOfFile: path)! as! [[String : String]]
+        let modelDicList = DataStruct.tabBar
         
         var tabBarModelList: [XDTabBarModel] =  [XDTabBarModel]()
         
@@ -57,5 +80,5 @@ class ParsePlistUtil: NSObject {
         
         return tabBarModelList
     }
-    
+
 }

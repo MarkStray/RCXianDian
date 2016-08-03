@@ -7,7 +7,7 @@
 //
 
 import UIKit
-
+import ObjectMapper
 
 
 ////MARK:- 字典合并拓展
@@ -39,13 +39,32 @@ import UIKit
 //
 //}
 
-//MARK:- 继承自JSONModel
-class XDBaseModel: JSONModel {
+////MARK:- 继承自JSONModel
+//class XDBaseModel: JSONModel {
+//
+//    var Success = -999;
+//    var ErrorCode = -999;
+//    var ErrorMsg: String?;
+//}
 
+//MARK:- 使用AlamofireObjectMapper 需要实现Mappable协议
+class XDBaseModel: Mappable {
+    
     var Success = -999;
     var ErrorCode = -999;
     var ErrorMsg: String?;
+    
+    required init?(_ map: Map) {
+        
+    }
+    
+    func mapping(map: Map) {
+        Success <- map["Success"]
+        ErrorCode <- map["ErrorCode"]
+        ErrorMsg <- map["ErrorMsg"]
+    }
 }
+
 
 //
 ////MARK:- 实例化对象

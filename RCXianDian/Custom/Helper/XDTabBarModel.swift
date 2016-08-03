@@ -9,8 +9,8 @@
 import UIKit
 
 class XDTabBarModel: NSObject {
-    var className: String?;
-    var title: String?;
-    var image: String?;
-    var imageSelected: String?;
+    var className: String?
+    var title: String?
+    var image: String?
+    var imageSelected: String?
 }
