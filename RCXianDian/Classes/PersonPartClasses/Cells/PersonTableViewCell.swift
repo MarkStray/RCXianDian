@@ -25,7 +25,7 @@ class PersonTableViewCell: XDTableViewCell {
         titleLabel.font = UIFont.systemFontOfSize(12)
         
         arrowImgView.image = UIImage(named: "mine-arrow")
-        lineView.backgroundColor = BACKGROUND_COLOR
+        lineView.backgroundColor = LINE_COLOR
         
         self.contentView.addSubview(iconImgView)
         self.contentView.addSubview(arrowImgView)
@@ -80,6 +80,6 @@ class PersonTableViewCell: XDTableViewCell {
 
         //arrowImgView.hidden = (model?.arrowHidden)!
         
-        //lineView.hidden = (model?.lineHidden)!
+        lineView.hidden = (model?.lineHidden)!
     }
 }

@@ -20,8 +20,9 @@ class XDHTTPServices: NSObject {
     //返回原生的数据
     class func requestUrl(method: Alamofire.Method, urlStr: URLStringConvertible, param: [String: AnyObject]? = nil, completion: responseCompletionHandle) {
         
-        print("-----urlStr -->\n \"\(urlStr)\"")
-        print("-----param -->\n \"\(param)\"")
+        printLog("-----urlStr -->\n \"\(urlStr)\"")
+        printLog("-----param -->\n \"\(param)\"")
+        printLog("\n-----------分--割--线-------------\n")
 
         Alamofire.request(method, urlStr, parameters: param).responseJSON(completionHandler: { (response) in
             completion(responseJson: response.result.value, error: response.result.error)

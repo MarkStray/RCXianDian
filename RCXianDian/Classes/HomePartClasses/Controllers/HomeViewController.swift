@@ -9,10 +9,11 @@
 import UIKit
 
 class HomeViewController: XDBaseViewController {
-
+    
+    //MARK:- Instance Varible
     let cellHeight = CGFloat(75);
     
-    var homeTableView = UITableView(frame: CGRectMake(0, 0, SCREEN_WIDTH, SCREEN_HEIGHT-64-49), style: UITableViewStyle.Plain)
+    var homeTableView: XDTableView!
     
     var adView = XDBaseADView(frame: CGRectMake(0, 0, SCREEN_WIDTH, 120))
     
@@ -20,23 +21,40 @@ class HomeViewController: XDBaseViewController {
     
     var homeDataSource = [PresellModel]()
     
+    //MARK:- Life Circle
     override func viewDidLoad() {
         super.viewDidLoad()
         
         
-        
+        initialHomeTableView()
+
+        requestHomeData()
+    }
+    
+    //MARK:- UI Initial
+    func initialHomeTableView() {
+        homeTableView = XDTableView(frame: CGRectZero, style: .Grouped)
         homeTableView.delegate = self
         homeTableView.dataSource = self
+        
         adView.delegate = self
         homeTableView.tableHeaderView = adView
         homeTableView.tableFooterView = UIView()
-        self.view.addSubview(homeTableView)
-        
-        
+        view.backgroundColor = UIColor.redColor()
+        view.addSubview(homeTableView)
+
+        homeTableView.snp_makeConstraints { (make) in
+            make.top.left.right.equalTo(view)
+            make.height.equalTo(SCREEN_HEIGHT-64-49)
+        }
+    }
+    
+    //MARK:- Data Request
+    func requestHomeData() {
         
         HomeCallInfo.requestHomeData { (homeCallInfo) in
-            print("info --> \(homeCallInfo!.toJSONString())")
-
+            printLog(homeCallInfo!.toJSON())
+            
             self.homeCallInfoModel = homeCallInfo?.CallInfo
             
             let advertiseList = self.homeCallInfoModel?.advertise
@@ -50,21 +68,21 @@ class HomeViewController: XDBaseViewController {
             self.adView.initViewWithImageUrls(imagesArray)
             
             self.homeDataSource = (self.homeCallInfoModel?.presell)!
-
+            
             self.homeTableView.reloadData()
         }
     }
+    //MARK:- Action
+
     
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
 }
+
+//MARK:- Extension
 
 //MARK:- BaseADViewdelegate
 extension HomeViewController: BaseADViewdelegate {
     func BaseADViewClickIndex(index: NSInteger) {
-        print("index \(index)")
+        printLog("index \(index)")
     }
 }
 

@@ -111,7 +111,7 @@ extension XDBaseTabBarController: XDTabBarAction {
     }
 
     func shoppingCarHandle() {
-        print(" handle ...")
+        printLog(" handle ...")
     }
 }
 

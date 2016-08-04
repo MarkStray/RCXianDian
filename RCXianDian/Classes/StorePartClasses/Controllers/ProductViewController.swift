@@ -10,26 +10,60 @@ import UIKit
 
 class ProductViewController: XDBaseViewController {
 
-    override func viewDidLoad() {
-        super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
-    }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    var productTableView: XDTableView!
+    
+    var productDictList: [String: [ProductModel]]? {
+        didSet {
+            productTableView.reloadData()
+        }
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    var categoryList = [String]()//brandid list
+    var categoryDict = [String: String?]()//brandid:brandname
+    
+    var productCallInfo: ProductCallInfo? {
+        didSet {
+            productDictList = ProductCallInfo.filterCategoryMatchProducts(productCallInfo?.CallInfo, withCategoryList: categoryList)
+        }
     }
-    */
+
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        initialCategoryTableView()
+    }
+
+    func initialCategoryTableView() {
+        productTableView = XDTableView(frame: CGRectZero, style: .Plain)
+        productTableView.delegate = self
+        productTableView.dataSource = self
+        productTableView.backgroundColor = UIColor.whiteColor()
+    }
 
 }
+
+extension ProductViewController: UITableViewDataSource, UITableViewDelegate {
+    
+    func numberOfSectionsInTableView(tableView: UITableView) -> Int {
+        return categoryList.count
+    }
+    
+    func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return 0
+        //return productDictList![categoryList[section]]!.count
+    }
+    
+    func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+        let CELLIDENTIFIER = "ProductTableViewCell"
+        var cell = tableView.dequeueReusableCellWithIdentifier(CELLIDENTIFIER) as? ProductTableViewCell
+        if cell == nil {
+            cell = ProductTableViewCell(style: .Default, reuseIdentifier: CELLIDENTIFIER)
+        }
+        
+        return cell!
+    }
+}
+
+
+

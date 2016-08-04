@@ -11,7 +11,7 @@ import UIKit
 class PersonViewController: XDBaseViewController {
     
     //MARK:- Instance Varible
-    var personTableView: XDTableView?
+    var personTableView: XDTableView!
     
     var headerView = PersonHeaderView()
     
@@ -41,12 +41,12 @@ class PersonViewController: XDBaseViewController {
     }
     
     func initialTableView() -> () {
-        personTableView = XDTableView(frame: CGRectMake(0, 140, SCREEN_WIDTH, SCREEN_HEIGHT-140-49), style: .Grouped)
-        personTableView?.delegate = self
-        personTableView?.dataSource = self
-        view.addSubview(personTableView!)
+        personTableView = XDTableView(frame: CGRectZero, style: .Grouped)
+        personTableView.delegate = self
+        personTableView.dataSource = self
+        view.addSubview(personTableView)
         
-        personTableView?.snp_makeConstraints { (make) in
+        personTableView.snp_makeConstraints { (make) in
             make.top.equalTo(headerView.snp_bottom)
             make.left.right.equalTo(view)
             make.height.equalTo(SCREEN_HEIGHT-140-49)
@@ -63,6 +63,7 @@ class PersonViewController: XDBaseViewController {
     
 }
 
+//MARK:- Extension
 
 extension PersonViewController: UITableViewDelegate, UITableViewDataSource {
     

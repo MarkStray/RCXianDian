@@ -11,6 +11,7 @@ import UIKit
 class CategoryTableViewCell: XDTableViewCell {
 
     var titleLabel = UILabel()
+    var lineView = UIView()
     
     override func initialUI() {
         contentView.backgroundColor = BACKGROUND_COLOR
@@ -19,6 +20,9 @@ class CategoryTableViewCell: XDTableViewCell {
         titleLabel.font = UIFont.systemFontOfSize(14)
         titleLabel.textAlignment = .Center
         contentView.addSubview(titleLabel)
+        
+        lineView.backgroundColor = LINE_COLOR
+        contentView.addSubview(lineView)
     }
     
     override func layoutSubviews() {
@@ -26,6 +30,11 @@ class CategoryTableViewCell: XDTableViewCell {
         
         titleLabel.snp_makeConstraints { (make) in
             make.top.left.right.bottom.equalTo(contentView)
+        }
+        
+        lineView.snp_makeConstraints { (make) in
+            make.left.right.bottom.equalTo(contentView)
+            make.height.equalTo(1)
         }
     }
 

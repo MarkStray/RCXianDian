@@ -20,6 +20,29 @@ class ProductCallInfo: XDBaseModel {
         }
     }
     
+    /// 产品分类
+    class func filterCategoryMatchProducts(productCallInfo: [ProductModel]?, withCategoryList: [String]) -> [String: [ProductModel]]? {
+        var temDictList = [String: [ProductModel]]()
+        
+        for brandid in withCategoryList {
+            
+            var temList = temDictList[brandid]
+            if temList == nil {
+                temList = [ProductModel]?()
+            }
+            
+            for product in productCallInfo! {
+                if product.brandid==brandid {temList?.append(product)}
+            }
+
+            
+            //TODO: update form shopping car
+            
+            temDictList[brandid] = temList
+        }
+        return temDictList
+    }
+    
     override func mapping(map: Map) {CallInfo <- map["CallInfo"]}
     required init?(_ map: Map) {super.init(map)}
 }

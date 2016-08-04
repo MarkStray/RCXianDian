@@ -1,18 +1,18 @@
 {
-  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "0201f7ae-608e-4309-b546-9a25d12f9f3a++5777",
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "0201f7ae-608e-4309-b546-9a25d12f9f3a++3390",
   "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
-    "0201f7ae-608e-4309-b546-9a25d12f9f3a++5777" : {
+    "0201f7ae-608e-4309-b546-9a25d12f9f3a++3390" : {
 
     }
   },
   "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
-    "0201f7ae-608e-4309-b546-9a25d12f9f3a++5777" : 0,
-    "58AAB0051E2B4EEDF1845A552012E6D0EBAD9127" : 0
+    "58AAB0051E2B4EEDF1845A552012E6D0EBAD9127" : 0,
+    "0201f7ae-608e-4309-b546-9a25d12f9f3a++3390" : 0
   },
   "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "B31863B9-7AD3-4369-B27F-715BB03689FC",
   "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
-    "0201f7ae-608e-4309-b546-9a25d12f9f3a++5777" : "RCXianDian\/",
-    "58AAB0051E2B4EEDF1845A552012E6D0EBAD9127" : "RCXianDian\/ObjectMapper\/"
+    "58AAB0051E2B4EEDF1845A552012E6D0EBAD9127" : "RCXianDian\/ObjectMapper\/",
+    "0201f7ae-608e-4309-b546-9a25d12f9f3a++3390" : "RCXianDian\/"
   },
   "DVTSourceControlWorkspaceBlueprintNameKey" : "RCXianDian",
   "DVTSourceControlWorkspaceBlueprintVersion" : 204,
@@ -21,7 +21,7 @@
     {
       "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "svn:\/\/svn.renrencaichang.com\/rrcc",
       "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Subversion",
-      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "0201f7ae-608e-4309-b546-9a25d12f9f3a++5777"
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "0201f7ae-608e-4309-b546-9a25d12f9f3a++3390"
     },
     {
       "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/Hearst-DD\/ObjectMapper.git",

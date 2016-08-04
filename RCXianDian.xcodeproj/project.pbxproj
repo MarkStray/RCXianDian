@@ -39,6 +39,12 @@
 		CE048E751D51E4CD0023D286 /* OrderListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE048E741D51E4CD0023D286 /* OrderListTableViewCell.swift */; };
 		CE048E771D51E8A10023D286 /* LineLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE048E761D51E8A10023D286 /* LineLabel.swift */; };
 		CE048E791D51F32B0023D286 /* ProductCallInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE048E781D51F32B0023D286 /* ProductCallInfo.swift */; };
+		CE4E8D891D52EF7E00B03C2A /* add@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CE4E8D841D52EF7E00B03C2A /* add@2x.png */; };
+		CE4E8D8A1D52EF7E00B03C2A /* cellSelected@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CE4E8D851D52EF7E00B03C2A /* cellSelected@2x.png */; };
+		CE4E8D8B1D52EF7E00B03C2A /* onsale@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CE4E8D861D52EF7E00B03C2A /* onsale@2x.png */; };
+		CE4E8D8C1D52EF7E00B03C2A /* operation@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CE4E8D871D52EF7E00B03C2A /* operation@2x.png */; };
+		CE4E8D8D1D52EF7E00B03C2A /* reduce@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CE4E8D881D52EF7E00B03C2A /* reduce@2x.png */; };
+		CE4E8D8F1D5331F200B03C2A /* FunctionHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE4E8D8E1D5331F200B03C2A /* FunctionHelper.swift */; };
 		CE5606E71D4F475D006B94D3 /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE5606E61D4F475D006B94D3 /* UIColor+Extension.swift */; };
 		CE6D212C1D3A099C002B780F /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE6D20BF1D3A099C002B780F /* HomeViewController.swift */; };
 		CE6D212D1D3A099C002B780F /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = CE6D20E01D3A099C002B780F /* Info.plist */; };
@@ -159,6 +165,12 @@
 		CE048E741D51E4CD0023D286 /* OrderListTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OrderListTableViewCell.swift; sourceTree = "<group>"; };
 		CE048E761D51E8A10023D286 /* LineLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LineLabel.swift; sourceTree = "<group>"; };
 		CE048E781D51F32B0023D286 /* ProductCallInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductCallInfo.swift; sourceTree = "<group>"; };
+		CE4E8D841D52EF7E00B03C2A /* add@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "add@2x.png"; sourceTree = "<group>"; };
+		CE4E8D851D52EF7E00B03C2A /* cellSelected@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "cellSelected@2x.png"; sourceTree = "<group>"; };
+		CE4E8D861D52EF7E00B03C2A /* onsale@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "onsale@2x.png"; sourceTree = "<group>"; };
+		CE4E8D871D52EF7E00B03C2A /* operation@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "operation@2x.png"; sourceTree = "<group>"; };
+		CE4E8D881D52EF7E00B03C2A /* reduce@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "reduce@2x.png"; sourceTree = "<group>"; };
+		CE4E8D8E1D5331F200B03C2A /* FunctionHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FunctionHelper.swift; sourceTree = "<group>"; };
 		CE5606E61D4F475D006B94D3 /* UIColor+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
 		CE6D20BF1D3A099C002B780F /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		CE6D20DC1D3A099C002B780F /* RCXianDian-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "RCXianDian-Bridging-Header.h"; sourceTree = "<group>"; };
@@ -507,6 +519,11 @@
 		CE6D20CE1D3A099C002B780F /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				CE4E8D841D52EF7E00B03C2A /* add@2x.png */,
+				CE4E8D851D52EF7E00B03C2A /* cellSelected@2x.png */,
+				CE4E8D861D52EF7E00B03C2A /* onsale@2x.png */,
+				CE4E8D871D52EF7E00B03C2A /* operation@2x.png */,
+				CE4E8D881D52EF7E00B03C2A /* reduce@2x.png */,
 			);
 			path = Images;
 			sourceTree = "<group>";
@@ -579,6 +596,7 @@
 			isa = PBXGroup;
 			children = (
 				CE7BE57D1D40639D00152B4F /* XDTabBarModel.swift */,
+				CE4E8D8E1D5331F200B03C2A /* FunctionHelper.swift */,
 			);
 			path = Helper;
 			sourceTree = "<group>";
@@ -1034,6 +1052,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE4E8D8D1D52EF7E00B03C2A /* reduce@2x.png in Resources */,
 				CE048E601D51CDCD0023D286 /* mine-help@2x.png in Resources */,
 				CE048E5B1D51CDCD0023D286 /* mine-arrow@2x.png in Resources */,
 				CE048E5E1D51CDCD0023D286 /* mine-call@2x.png in Resources */,
@@ -1043,7 +1062,10 @@
 				CE048E661D51CDCD0023D286 /* mine-setting@2x.png in Resources */,
 				CE6D212E1D3A099C002B780F /* LaunchScreen.storyboard in Resources */,
 				CE048E641D51CDCD0023D286 /* mine-reset@2x.png in Resources */,
+				CE4E8D8C1D52EF7E00B03C2A /* operation@2x.png in Resources */,
 				CE048E691D51CDCD0023D286 /* portrait@2x.png in Resources */,
+				CE4E8D8A1D52EF7E00B03C2A /* cellSelected@2x.png in Resources */,
+				CE4E8D891D52EF7E00B03C2A /* add@2x.png in Resources */,
 				CED3180B1D460E6000780409 /* SVProgressHUD.bundle in Resources */,
 				CE6D212D1D3A099C002B780F /* Info.plist in Resources */,
 				CE048E621D51CDCD0023D286 /* mine-order@2x.png in Resources */,
@@ -1052,6 +1074,7 @@
 				CE048E5F1D51CDCD0023D286 /* mine-exit@2x.png in Resources */,
 				CE048E651D51CDCD0023D286 /* mine-score@2x.png in Resources */,
 				CE048E681D51CDCD0023D286 /* mine-update@2x.png in Resources */,
+				CE4E8D8B1D52EF7E00B03C2A /* onsale@2x.png in Resources */,
 				CE6D212F1D3A099C002B780F /* Main.storyboard in Resources */,
 				CE048E671D51CDCD0023D286 /* mine-share@2x.png in Resources */,
 				CED318271D46371C00780409 /* Info.plist in Resources */,
@@ -1144,6 +1167,7 @@
 				CE6D21431D3A099C002B780F /* SDImageCache.m in Sources */,
 				CE7BE55A1D3F5B0300152B4F /* UtilityConst.swift in Sources */,
 				CED3180C1D460E6000780409 /* SVProgressHUD.m in Sources */,
+				CE4E8D8F1D5331F200B03C2A /* FunctionHelper.swift in Sources */,
 				CE7BE5731D3F627600152B4F /* PersonViewController.swift in Sources */,
 				CE6D21511D3A16CC002B780F /* XDBaseViewController.swift in Sources */,
 				CE048E791D51F32B0023D286 /* ProductCallInfo.swift in Sources */,
@@ -1332,6 +1356,7 @@
 				INFOPLIST_FILE = RCXianDian/Files/Plist/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_SWIFT_FLAGS = "$(inherited) \"-D\" \"COCOAPODS\" \"-D\" \"DEBUG\"";
 				PRODUCT_BUNDLE_IDENTIFIER = com.renrencaichang.RCXianDian;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
@@ -1352,6 +1377,7 @@
 				INFOPLIST_FILE = RCXianDian/Files/Plist/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_SWIFT_FLAGS = "$(inherited) \"-D\" \"COCOAPODS\"";
 				PRODUCT_BUNDLE_IDENTIFIER = com.renrencaichang.RCXianDian;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
