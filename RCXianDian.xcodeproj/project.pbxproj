@@ -45,6 +45,11 @@
 		CE4E8D8C1D52EF7E00B03C2A /* operation@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CE4E8D871D52EF7E00B03C2A /* operation@2x.png */; };
 		CE4E8D8D1D52EF7E00B03C2A /* reduce@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CE4E8D881D52EF7E00B03C2A /* reduce@2x.png */; };
 		CE4E8D8F1D5331F200B03C2A /* FunctionHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE4E8D8E1D5331F200B03C2A /* FunctionHelper.swift */; };
+		CE4E8D911D54664200B03C2A /* ProductHeadView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE4E8D901D54664200B03C2A /* ProductHeadView.swift */; };
+		CE4E8D931D54692900B03C2A /* ProductTableFooterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE4E8D921D54692900B03C2A /* ProductTableFooterView.swift */; };
+		CE4E8D951D54780000B03C2A /* StoreSearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE4E8D941D54780000B03C2A /* StoreSearchView.swift */; };
+		CE4E8D9A1D54810800B03C2A /* search_b@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CE4E8D981D54810800B03C2A /* search_b@2x.png */; };
+		CE4E8D9B1D54810800B03C2A /* search_w@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CE4E8D991D54810800B03C2A /* search_w@2x.png */; };
 		CE5606E71D4F475D006B94D3 /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE5606E61D4F475D006B94D3 /* UIColor+Extension.swift */; };
 		CE6D212C1D3A099C002B780F /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE6D20BF1D3A099C002B780F /* HomeViewController.swift */; };
 		CE6D212D1D3A099C002B780F /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = CE6D20E01D3A099C002B780F /* Info.plist */; };
@@ -171,6 +176,11 @@
 		CE4E8D871D52EF7E00B03C2A /* operation@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "operation@2x.png"; sourceTree = "<group>"; };
 		CE4E8D881D52EF7E00B03C2A /* reduce@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "reduce@2x.png"; sourceTree = "<group>"; };
 		CE4E8D8E1D5331F200B03C2A /* FunctionHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FunctionHelper.swift; sourceTree = "<group>"; };
+		CE4E8D901D54664200B03C2A /* ProductHeadView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductHeadView.swift; sourceTree = "<group>"; };
+		CE4E8D921D54692900B03C2A /* ProductTableFooterView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductTableFooterView.swift; sourceTree = "<group>"; };
+		CE4E8D941D54780000B03C2A /* StoreSearchView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StoreSearchView.swift; sourceTree = "<group>"; };
+		CE4E8D981D54810800B03C2A /* search_b@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "search_b@2x.png"; sourceTree = "<group>"; };
+		CE4E8D991D54810800B03C2A /* search_w@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "search_w@2x.png"; sourceTree = "<group>"; };
 		CE5606E61D4F475D006B94D3 /* UIColor+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
 		CE6D20BF1D3A099C002B780F /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		CE6D20DC1D3A099C002B780F /* RCXianDian-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "RCXianDian-Bridging-Header.h"; sourceTree = "<group>"; };
@@ -519,6 +529,8 @@
 		CE6D20CE1D3A099C002B780F /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				CE4E8D981D54810800B03C2A /* search_b@2x.png */,
+				CE4E8D991D54810800B03C2A /* search_w@2x.png */,
 				CE4E8D841D52EF7E00B03C2A /* add@2x.png */,
 				CE4E8D851D52EF7E00B03C2A /* cellSelected@2x.png */,
 				CE4E8D861D52EF7E00B03C2A /* onsale@2x.png */,
@@ -546,6 +558,9 @@
 		CE6D20D11D3A099C002B780F /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				CE4E8D901D54664200B03C2A /* ProductHeadView.swift */,
+				CE4E8D921D54692900B03C2A /* ProductTableFooterView.swift */,
+				CE4E8D941D54780000B03C2A /* StoreSearchView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -1060,6 +1075,8 @@
 				CE048E611D51CDCD0023D286 /* mine-history@2x.png in Resources */,
 				CE048E5C1D51CDCD0023D286 /* mine-background@2x.png in Resources */,
 				CE048E661D51CDCD0023D286 /* mine-setting@2x.png in Resources */,
+				CE4E8D9B1D54810800B03C2A /* search_w@2x.png in Resources */,
+				CE4E8D9A1D54810800B03C2A /* search_b@2x.png in Resources */,
 				CE6D212E1D3A099C002B780F /* LaunchScreen.storyboard in Resources */,
 				CE048E641D51CDCD0023D286 /* mine-reset@2x.png in Resources */,
 				CE4E8D8C1D52EF7E00B03C2A /* operation@2x.png in Resources */,
@@ -1156,8 +1173,10 @@
 				CE6D21481D3A099C002B780F /* SDWebImageManager.m in Sources */,
 				51F46C151D41F8DB00D6B63A /* FileManager.swift in Sources */,
 				CE048E471D5195310023D286 /* DataStruct.swift in Sources */,
+				CE4E8D931D54692900B03C2A /* ProductTableFooterView.swift in Sources */,
 				CED3182E1D46371C00780409 /* JSONKeyMapper.m in Sources */,
 				CE6D21471D3A099C002B780F /* SDWebImageDownloaderOperation.m in Sources */,
+				CE4E8D911D54664200B03C2A /* ProductHeadView.swift in Sources */,
 				CE7BE5841D4070C000152B4F /* ParsePlistUtil.swift in Sources */,
 				CED318091D460E6000780409 /* SVIndefiniteAnimatedView.m in Sources */,
 				CED318291D46371C00780409 /* JSONModelClassProperty.m in Sources */,
@@ -1223,6 +1242,7 @@
 				CE6D214D1D3A099C002B780F /* UIImageView+HighlightedWebCache.m in Sources */,
 				CED640C01D4B0AB900DF53C9 /* XDBaseRequestParam.swift in Sources */,
 				51F46BD61D41EC9600D6B63A /* UILabelExtension.swift in Sources */,
+				CE4E8D951D54780000B03C2A /* StoreSearchView.swift in Sources */,
 				CE6D213E1D3A099C002B780F /* MBProgressHUD.m in Sources */,
 				CED318581D476CA600780409 /* XDHTTPServices.swift in Sources */,
 				CE048E751D51E4CD0023D286 /* OrderListTableViewCell.swift in Sources */,

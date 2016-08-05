@@ -92,7 +92,7 @@ class XDBaseTabBarController: UITabBarController {
         let navAppearance = UINavigationBar.appearance()
         navAppearance.barStyle = .Black
         navAppearance.barTintColor = GLOBAL_COLOR
-        navAppearance.titleTextAttributes = [NSFontAttributeName : UIFont.systemFontOfSize(18), NSForegroundColorAttributeName : UIColor.whiteColor()]
+        navAppearance.titleTextAttributes = [NSFontAttributeName : FONTSIZE_LARGE, NSForegroundColorAttributeName : UIColor.whiteColor()]
     }
     
     
@@ -183,7 +183,7 @@ class XDTabBar: UIView {
             label.textAlignment = .Center
             label.text = tabBarModel.title
             
-            label.font = UIFont.systemFontOfSize(12.0)
+            label.font = FONTSIZE_SMALL
             label.textColor = UIColor.grayColor()
             view.addSubview(label)
             labelList.append(label)

@@ -91,7 +91,6 @@ extension PersonViewController: UITableViewDelegate, UITableViewDataSource {
         
         if cell == nil {
             cell = PersonTableViewCell(style: .Default, reuseIdentifier: CELLIDENTIFIER)
-            cell?.selectionStyle = .None
         }
         
         let model = personData[indexPath.section][indexPath.row]

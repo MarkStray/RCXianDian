@@ -11,30 +11,31 @@ import UIKit
 class CategoryTableViewCell: XDTableViewCell {
 
     var titleLabel = UILabel()
-    var lineView = UIView()
+    var backgView = UIImageView()
     
     override func initialUI() {
         contentView.backgroundColor = BACKGROUND_COLOR
         
+        backgView.image = UIImage(named: "cellSelected")
+        backgView.hidden = true
+        contentView.addSubview(backgView)
+        
         titleLabel.textColor = CELL_DARK_COLOR
+        titleLabel.backgroundColor = UIColor.clearColor()
         titleLabel.font = UIFont.systemFontOfSize(14)
         titleLabel.textAlignment = .Center
         contentView.addSubview(titleLabel)
-        
-        lineView.backgroundColor = LINE_COLOR
-        contentView.addSubview(lineView)
     }
     
     override func layoutSubviews() {
         super.layoutSubviews()
         
-        titleLabel.snp_makeConstraints { (make) in
+        backgView.snp_makeConstraints { (make) in
             make.top.left.right.bottom.equalTo(contentView)
         }
         
-        lineView.snp_makeConstraints { (make) in
-            make.left.right.bottom.equalTo(contentView)
-            make.height.equalTo(1)
+        titleLabel.snp_makeConstraints { (make) in
+            make.top.left.right.bottom.equalTo(contentView)
         }
     }
 
@@ -44,8 +45,10 @@ class CategoryTableViewCell: XDTableViewCell {
         
         if selected {
             titleLabel.textColor = GLOBAL_COLOR
+            backgView.hidden = false
         } else {
             titleLabel.textColor = CELL_DARK_COLOR
+            backgView.hidden = true
         }
     }
 }

@@ -28,14 +28,17 @@ class ProductCallInfo: XDBaseModel {
             
             var temList = temDictList[brandid]
             if temList == nil {
-                temList = [ProductModel]?()
+                temList = [ProductModel]()
             }
             
             for product in productCallInfo! {
-                if product.brandid==brandid {temList?.append(product)}
+                if product.brandid == brandid {
+                    temList!.append(product)
+                }
             }
 
-            
+            printLog("brandid: \(brandid), list: \(temList)")
+
             //TODO: update form shopping car
             
             temDictList[brandid] = temList

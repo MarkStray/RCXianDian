@@ -14,7 +14,6 @@ class PersonTableViewCell: XDTableViewCell {
     var titleLabel = UILabel()
     var detailTitleLabel = UILabel()
     var arrowImgView = UIImageView()
-    var lineView = UIView()
     
     override func initialUI() {
         
@@ -25,13 +24,11 @@ class PersonTableViewCell: XDTableViewCell {
         titleLabel.font = UIFont.systemFontOfSize(12)
         
         arrowImgView.image = UIImage(named: "mine-arrow")
-        lineView.backgroundColor = LINE_COLOR
         
         self.contentView.addSubview(iconImgView)
         self.contentView.addSubview(arrowImgView)
         self.contentView.addSubview(titleLabel)
         self.contentView.addSubview(detailTitleLabel)
-        self.contentView.addSubview(lineView)
     }
     
 
@@ -62,7 +59,7 @@ class PersonTableViewCell: XDTableViewCell {
             make.height.equalTo(21)
         }
         
-        lineView.snp_makeConstraints { (make) in
+        lineView.snp_updateConstraints { (make) in
             make.bottom.equalTo(contentView.snp_bottom)
             make.left.equalTo(contentView.snp_left).offset(16)
             make.right.equalTo(contentView.snp_right).offset(-16)

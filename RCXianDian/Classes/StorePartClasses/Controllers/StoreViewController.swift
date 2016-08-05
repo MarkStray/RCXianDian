@@ -10,7 +10,8 @@ import UIKit
 
 class StoreViewController: XDBaseViewController {
     
-    var headerSearchBar: UISearchBar!
+    //MARK:- Instance Varible
+    var headerSearchView: StoreSearchView!
 
     var categoryTableView: XDTableView!
     
@@ -37,7 +38,7 @@ class StoreViewController: XDBaseViewController {
         }
     }
     
-    
+    //MARK:- Life Circle
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -50,8 +51,13 @@ class StoreViewController: XDBaseViewController {
         requestStoreData()
     }
     
+    //MARK:- UI Initial
     func initialSearchView() {
+        headerSearchView = StoreSearchView(frame: CGRectZero, searchViewAction: {
+            printLog("---header click")
+        })
         
+        view.addSubview(headerSearchView)
     }
     
     func initialCategoryTableView() {
@@ -60,25 +66,33 @@ class StoreViewController: XDBaseViewController {
         categoryTableView.delegate = self
         categoryTableView.dataSource = self
         view.addSubview(categoryTableView)
-        
-        categoryTableView.snp_makeConstraints { (make) in
-            make.top.left.equalTo(view)
-            make.width.equalTo(SCREEN_WIDTH/4)
-            make.height.equalTo(SCREEN_HEIGHT-64-49)
-        }
     }
     
     func initialProductTableView() {
-        productVC.view.hidden = true
-        view.addSubview(productVC.productTableView)
-
-        productVC.productTableView.snp_makeConstraints { (make) in
-            make.top.right.equalTo(view)
-            make.width.equalTo(SCREEN_WIDTH/4*3)
-            make.height.equalTo(SCREEN_HEIGHT-64-49)
-        }
+        productVC.delegate = self
+        view.addSubview(productVC.view)
+        addChildViewController(productVC)
     }
     
+    //MARK:- Layout
+    override func viewWillLayoutSubviews() {
+        super.viewWillLayoutSubviews()
+        
+        headerSearchView.snp_makeConstraints { (make) in
+            make.top.left.right.equalTo(view)
+            make.height.equalTo(40)
+        }
+        
+        categoryTableView.snp_makeConstraints { (make) in
+            make.top.equalTo(headerSearchView.snp_bottom)
+            make.left.equalTo(view)
+            make.width.equalTo(SCREEN_WIDTH/4)
+            make.height.equalTo(SCREEN_HEIGHT-64-49-40)
+        }
+    }
+
+    
+    //MARK:- Data Request
     func requestStoreData() {
         ProductCallInfo.requestStoreData { (productCallInfo) in
             printLog(productCallInfo!.toJSON())
@@ -86,15 +100,21 @@ class StoreViewController: XDBaseViewController {
             self.productCallInfo = productCallInfo
         }
     }
-
+    //MARK:- Action
     
 }
 
+//MARK:- Extension
 
+//MARK:- UITableView delegate & dataSource
 extension StoreViewController: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return categoryList.count
+    }
+    
+    func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
+        return 50
     }
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
@@ -102,18 +122,29 @@ extension StoreViewController: UITableViewDelegate, UITableViewDataSource {
         var cell = tableView.dequeueReusableCellWithIdentifier(CELLIDENTIFIER) as? CategoryTableViewCell
         if cell == nil {
             cell = CategoryTableViewCell(style: .Default, reuseIdentifier: CELLIDENTIFIER)
-            
-            let selImgView = UIImageView(frame: cell!.bounds)
-            selImgView.image = UIImage(named: "cellSelected")
-            
-            cell?.selectedBackgroundView = selImgView
+            cell?.selectionStyle = .Default
         }
         
         cell?.titleLabel.text = categoryDict[categoryList[indexPath.row]]!
         
         return cell!
     }
+    
+    func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+        productVC.categortSelectedIndexPath = indexPath
+    }
 }
 
+//MARK:- ProductViewControllerDelegate
+extension StoreViewController: ProductViewControllerDelegate {
+    
+    func willDisplayHeaderView(section: Int) {
+        categoryTableView.selectRowAtIndexPath(NSIndexPath(forRow: section, inSection: 0), animated: true, scrollPosition: UITableViewScrollPosition.Middle)
+    }
 
+    func didEndDisplayingHeaderView(section: Int) {
+        categoryTableView.selectRowAtIndexPath(NSIndexPath(forRow: section + 1, inSection: 0), animated: true, scrollPosition: UITableViewScrollPosition.Middle)
+    }
+    
+}
 

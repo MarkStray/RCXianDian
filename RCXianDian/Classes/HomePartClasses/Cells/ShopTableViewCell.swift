@@ -31,6 +31,7 @@ class ShopTableViewCell: XDTableViewCell {
         descLabel.textColor = CELL_LIGHT_COLOR
         descLabel.font = UIFont.systemFontOfSize(14)
         
+        lineView.hidden = true
         
         self.contentView.addSubview(avatarImageView)
         self.contentView.addSubview(arrowImageView)

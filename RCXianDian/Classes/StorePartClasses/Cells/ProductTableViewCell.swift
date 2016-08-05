@@ -32,9 +32,19 @@ class ProductTableViewCell: XDTableViewCell {
         brandLabel.layer.cornerRadius = 5
         brandLabel.layer.borderWidth = 1
         brandLabel.layer.borderColor = GLOBAL_COLOR.CGColor
-
-        contentView.addSubview(onsaleImgView)
+        
+        brandLabel.text = "鲜店"
+        brandLabel.textAlignment = .Center
+        brandLabel.textColor = GLOBAL_COLOR
+        onsaleImgView.image = UIImage(named: "onsale")
+        
+        nameLabel.textColor = CELL_DARK_COLOR
+        specLabel.textColor = CELL_LIGHT_COLOR
+        avgLabel.textColor = CELL_DARK_COLOR
+        salePriceLabel.textColor = CELL_RED_COLOR
+        
         contentView.addSubview(logoImgView)
+        contentView.addSubview(onsaleImgView)
         contentView.addSubview(brandLabel)
         contentView.addSubview(nameLabel)
         contentView.addSubview(specLabel)
@@ -60,12 +70,12 @@ class ProductTableViewCell: XDTableViewCell {
             make.width.equalTo(40)
             make.height.equalTo(20)
             make.top.equalTo(logoImgView)
-            make.left.equalTo(logoImgView).offset(5)
+            make.left.equalTo(logoImgView.snp_right).offset(5)
         }
 
         nameLabel.snp_makeConstraints { (make) in
             make.top.equalTo(logoImgView)
-            make.left.equalTo(brandLabel.right).offset(5)
+            make.left.equalTo(brandLabel.snp_right).offset(5)
             make.right.equalTo(contentView).offset(-8)
             make.height.equalTo(20)
         }
@@ -73,7 +83,7 @@ class ProductTableViewCell: XDTableViewCell {
         specLabel.snp_makeConstraints { (make) in
             make.height.equalTo(20)
             make.top.equalTo(brandLabel.snp_bottom)
-            make.left.equalTo(logoImgView).offset(5)
+            make.left.equalTo(logoImgView.snp_right).offset(5)
         }
         
         avgLabel.snp_makeConstraints { (make) in
@@ -86,14 +96,38 @@ class ProductTableViewCell: XDTableViewCell {
         salePriceLabel.snp_makeConstraints { (make) in
             make.height.equalTo(20)
             make.top.equalTo(specLabel.snp_bottom)
-            make.left.equalTo(logoImgView).offset(5)
+            make.left.equalTo(logoImgView.snp_right).offset(5)
         }
         
         //TODO:
+        
+        lineView.snp_updateConstraints { (make) in
+            make.bottom.equalTo(contentView.snp_bottom)
+            make.left.equalTo(contentView.snp_left).offset(8)
+            make.right.equalTo(contentView.snp_right).offset(-8)
+            make.height.equalTo(1)
+        }
     }
     
-    func updateUIWithModel() {
+    func updateUIWithModel(model: ProductModel?) {
         
+        let url = NSURL(string: model!.imgurl!.stringByRemovingPercentEncoding!)
+        logoImgView.sd_setImageWithURL(url, placeholderImage: UIImage(named: "loading"))
+        
+        
+        onsaleImgView.hidden = model?.onsale == 0
+        
+        nameLabel.text = model?.skuname
+        
+        specLabel.text = model?.spec
+        
+        avgLabel.text = "市场价￥" + String(format: "%.2f",(model?.avgprice)!)
+
+        if ((model?.onsale) != nil) {
+            salePriceLabel.text = "￥" + (model?.price)!
+        } else {
+            salePriceLabel.text = "￥" + (model?.saleprice)!
+        }
     }
 
 }
