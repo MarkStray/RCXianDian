@@ -16,6 +16,7 @@ class XDBaseViewController: UIViewController {
         super.viewDidLoad()
         
         self.edgesForExtendedLayout = .Bottom
+        view.backgroundColor = UIColor.whiteColor()
     }
     
     //FIXME:- 子类配置

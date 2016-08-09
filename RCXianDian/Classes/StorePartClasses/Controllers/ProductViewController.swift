@@ -47,7 +47,12 @@ class ProductViewController: XDBaseViewController {
         super.viewDidLoad()
         
         initialView()
-        initialCategoryTableView()
+        initialTableView()
+    }
+    
+    override func viewWillAppear(animated: Bool) {
+        super.viewWillAppear(animated)
+        productTableView.reloadData()
     }
     
     //MARK:- UI Initial
@@ -55,7 +60,7 @@ class ProductViewController: XDBaseViewController {
         view = UIView(frame: CGRectMake(SCREEN_WIDTH/4, 40, SCREEN_WIDTH/4*3, SCREEN_HEIGHT-64-40))
     }
     
-    func initialCategoryTableView() {
+    func initialTableView() {
         productTableView = XDTableView(frame: CGRectZero, style: .Plain)
         productTableView.delegate = self
         productTableView.dataSource = self

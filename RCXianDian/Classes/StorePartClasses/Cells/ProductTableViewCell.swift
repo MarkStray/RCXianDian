@@ -19,6 +19,9 @@ class ProductTableViewCell: XDTableViewCell {
     var salePriceLabel = UILabel()
     
     //TODO: buyView
+    var purchaseView = PurchaseView()
+    
+    private var productModel: ProductModel!
     
     override func initialUI() {
         
@@ -50,6 +53,9 @@ class ProductTableViewCell: XDTableViewCell {
         contentView.addSubview(specLabel)
         contentView.addSubview(avgLabel)
         contentView.addSubview(salePriceLabel)
+        
+        purchaseView.delegate = self
+        contentView.addSubview(purchaseView)
     }
 
     override func layoutSubviews() {
@@ -100,6 +106,12 @@ class ProductTableViewCell: XDTableViewCell {
         }
         
         //TODO:
+        purchaseView.snp_makeConstraints { (make) in
+            make.right.equalTo(contentView.snp_right).offset(-8)
+            make.bottom.equalTo(contentView.snp_bottom).offset(-3)
+            make.width.equalTo(80)
+            make.height.equalTo(25)
+        }
         
         lineView.snp_updateConstraints { (make) in
             make.bottom.equalTo(contentView.snp_bottom)
@@ -111,9 +123,11 @@ class ProductTableViewCell: XDTableViewCell {
     
     func updateUIWithModel(model: ProductModel?) {
         
+        productModel = model
+        purchaseView.number = (model?.count)!
+        
         let url = NSURL(string: model!.imgurl!.stringByRemovingPercentEncoding!)
         logoImgView.sd_setImageWithURL(url, placeholderImage: UIImage(named: "loading"))
-        
         
         onsaleImgView.hidden = model?.onsale == 0
         
@@ -129,5 +143,37 @@ class ProductTableViewCell: XDTableViewCell {
             salePriceLabel.text = "￥" + (model?.saleprice)!
         }
     }
-
 }
+
+
+extension ProductTableViewCell: PurchaseViewDelegate {
+    
+    func purchaseViewAddBtnClicked() {
+        if productModel.onsale == 1 {
+            if purchaseView.number == Int(productModel.saleamount!)! {
+                showAlertView("亲,本促销品每单限购\(Int(productModel.saleamount!)!)份!")
+                return
+            }
+        }
+        
+        productModel.count += 1
+        
+        if !(ShoppingCarManager.sharedShoppingCar.updateCarProductsModel(productModel)) {
+            productModel.count -= 1;
+        }
+        
+        purchaseView.number = productModel.count
+    }
+    
+    func purchaseViewReduceBtnClicked() {
+        productModel.count -= 1
+        purchaseView.number = productModel.count
+        ShoppingCarManager.sharedShoppingCar.updateCarProductsModel(productModel)
+    }
+    
+    func purchaseViewInputViewClicked() {
+        printLog("input")
+    }
+}
+
+

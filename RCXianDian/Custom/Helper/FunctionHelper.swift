@@ -31,3 +31,17 @@ func printLog<T>(message: T, file: String = #file, method: String = #function, l
 }
 
 
+//MARK:- AlertView
+
+func showAlertView(msg: String) {
+    UIAlertView(title: "提示", message: msg, delegate: nil, cancelButtonTitle: "取消", otherButtonTitles: "确定").show()
+}
+
+func showAnimationAlertView(msg: String) {
+    let animationAlert = UIAlertView(title: "提示", message: msg, delegate: nil, cancelButtonTitle: nil)
+    animationAlert.show()
+    animationAlert.dismissWithClickedButtonIndex(animationAlert.cancelButtonIndex, animated: true)
+}
+
+
+

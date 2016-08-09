@@ -27,7 +27,13 @@ class PersonViewController: XDBaseViewController {
     
     override func viewWillAppear(animated: Bool) {
         super.viewWillAppear(animated)
+        self.showTabBar()
         navigationController?.navigationBarHidden = true
+    }
+    
+    override func viewWillDisappear(animated: Bool) {
+        super.viewWillDisappear(animated)
+        navigationController?.navigationBarHidden = false
     }
     
     //MARK:- UI Initial

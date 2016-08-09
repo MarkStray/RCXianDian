@@ -52,6 +52,10 @@ class ProductCallInfo: XDBaseModel {
 
 class ProductModel: Mappable {
     
+    //产品模型辅助属性
+    var count = 0
+    
+    
     var avgprice: Double = 0
 
     var brandid: String?

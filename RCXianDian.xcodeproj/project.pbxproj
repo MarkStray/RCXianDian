@@ -97,6 +97,18 @@
 		CEB1B69E1D38C9F400F92B45 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CEB1B69D1D38C9F400F92B45 /* Assets.xcassets */; };
 		CEB1B6AC1D38C9F500F92B45 /* RCXianDianTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEB1B6AB1D38C9F500F92B45 /* RCXianDianTests.swift */; };
 		CEB1B6B71D38C9F600F92B45 /* RCXianDianUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEB1B6B61D38C9F600F92B45 /* RCXianDianUITests.swift */; };
+		CECE0CF51D580F7E007B7FE4 /* RedDot.swift in Sources */ = {isa = PBXBuildFile; fileRef = CECE0CF41D580F7E007B7FE4 /* RedDot.swift */; };
+		CECE0CF71D582EB0007B7FE4 /* PurchaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CECE0CF61D582EB0007B7FE4 /* PurchaseView.swift */; };
+		CECE0CF91D582EE5007B7FE4 /* ShoppingCarManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CECE0CF81D582EE5007B7FE4 /* ShoppingCarManager.swift */; };
+		CECE0CFB1D582F18007B7FE4 /* UserInfoManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CECE0CFA1D582F18007B7FE4 /* UserInfoManager.swift */; };
+		CECE0CFD1D582FCC007B7FE4 /* PurchaseInputViewManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CECE0CFC1D582FCC007B7FE4 /* PurchaseInputViewManager.swift */; };
+		CECE0CFF1D582FFC007B7FE4 /* InputViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CECE0CFE1D582FFC007B7FE4 /* InputViewController.swift */; };
+		CECE0D091D588827007B7FE4 /* ShoppingCarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CECE0D081D588827007B7FE4 /* ShoppingCarViewController.swift */; };
+		CECE0D0B1D589776007B7FE4 /* ProductDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CECE0D0A1D589776007B7FE4 /* ProductDetailViewController.swift */; };
+		CECE0D0D1D5973CE007B7FE4 /* ShoppingCarBottomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CECE0D0C1D5973CE007B7FE4 /* ShoppingCarBottomView.swift */; };
+		CECE0D0F1D59B57C007B7FE4 /* ShoppingCarEmptyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CECE0D0E1D59B57C007B7FE4 /* ShoppingCarEmptyView.swift */; };
+		CECE0D121D59B672007B7FE4 /* car@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CECE0D101D59B672007B7FE4 /* car@2x.png */; };
+		CECE0D131D59B672007B7FE4 /* dustbin@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CECE0D111D59B672007B7FE4 /* dustbin@2x.png */; };
 		CED318091D460E6000780409 /* SVIndefiniteAnimatedView.m in Sources */ = {isa = PBXBuildFile; fileRef = CED318001D460E5F00780409 /* SVIndefiniteAnimatedView.m */; };
 		CED3180A1D460E6000780409 /* SVProgressAnimatedView.m in Sources */ = {isa = PBXBuildFile; fileRef = CED318021D460E5F00780409 /* SVProgressAnimatedView.m */; };
 		CED3180B1D460E6000780409 /* SVProgressHUD.bundle in Resources */ = {isa = PBXBuildFile; fileRef = CED318041D460E5F00780409 /* SVProgressHUD.bundle */; };
@@ -271,6 +283,18 @@
 		CEB1B6B21D38C9F500F92B45 /* RCXianDianUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RCXianDianUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CEB1B6B61D38C9F600F92B45 /* RCXianDianUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RCXianDianUITests.swift; sourceTree = "<group>"; };
 		CEB1B6B81D38C9F600F92B45 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CECE0CF41D580F7E007B7FE4 /* RedDot.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RedDot.swift; sourceTree = "<group>"; };
+		CECE0CF61D582EB0007B7FE4 /* PurchaseView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PurchaseView.swift; sourceTree = "<group>"; };
+		CECE0CF81D582EE5007B7FE4 /* ShoppingCarManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShoppingCarManager.swift; sourceTree = "<group>"; };
+		CECE0CFA1D582F18007B7FE4 /* UserInfoManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserInfoManager.swift; sourceTree = "<group>"; };
+		CECE0CFC1D582FCC007B7FE4 /* PurchaseInputViewManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PurchaseInputViewManager.swift; sourceTree = "<group>"; };
+		CECE0CFE1D582FFC007B7FE4 /* InputViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InputViewController.swift; sourceTree = "<group>"; };
+		CECE0D081D588827007B7FE4 /* ShoppingCarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShoppingCarViewController.swift; sourceTree = "<group>"; };
+		CECE0D0A1D589776007B7FE4 /* ProductDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductDetailViewController.swift; sourceTree = "<group>"; };
+		CECE0D0C1D5973CE007B7FE4 /* ShoppingCarBottomView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShoppingCarBottomView.swift; sourceTree = "<group>"; };
+		CECE0D0E1D59B57C007B7FE4 /* ShoppingCarEmptyView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShoppingCarEmptyView.swift; sourceTree = "<group>"; };
+		CECE0D101D59B672007B7FE4 /* car@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "car@2x.png"; sourceTree = "<group>"; };
+		CECE0D111D59B672007B7FE4 /* dustbin@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "dustbin@2x.png"; sourceTree = "<group>"; };
 		CED317FF1D460E5F00780409 /* SVIndefiniteAnimatedView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SVIndefiniteAnimatedView.h; sourceTree = "<group>"; };
 		CED318001D460E5F00780409 /* SVIndefiniteAnimatedView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SVIndefiniteAnimatedView.m; sourceTree = "<group>"; };
 		CED318011D460E5F00780409 /* SVProgressAnimatedView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SVProgressAnimatedView.h; sourceTree = "<group>"; };
@@ -355,6 +379,7 @@
 		CE6D20BB1D3A099C002B780F /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				CECE0D011D5887F9007B7FE4 /* OthersClasses */,
 				CE6D20BC1D3A099C002B780F /* HomePartClasses */,
 				CE6D20CB1D3A099C002B780F /* StorePartClasses */,
 				CE6D20C41D3A099C002B780F /* PersonPartClasses */,
@@ -522,6 +547,7 @@
 			children = (
 				CE7BE5681D3F60DD00152B4F /* StoreViewController.swift */,
 				CE048E6C1D51E0450023D286 /* ProductViewController.swift */,
+				CECE0D0A1D589776007B7FE4 /* ProductDetailViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -622,6 +648,9 @@
 				CE7BE5811D40694A00152B4F /* LocalizationManagerTool.swift */,
 				CE7BE5831D4070C000152B4F /* ParsePlistUtil.swift */,
 				51F46C141D41F8DB00D6B63A /* FileManager.swift */,
+				CECE0CF81D582EE5007B7FE4 /* ShoppingCarManager.swift */,
+				CECE0CFA1D582F18007B7FE4 /* UserInfoManager.swift */,
+				CECE0CFC1D582FCC007B7FE4 /* PurchaseInputViewManager.swift */,
 			);
 			path = Tools;
 			sourceTree = "<group>";
@@ -631,6 +660,9 @@
 			children = (
 				CE7BE5741D3F637A00152B4F /* XDTabBar.swift */,
 				CE048E761D51E8A10023D286 /* LineLabel.swift */,
+				CECE0CF41D580F7E007B7FE4 /* RedDot.swift */,
+				CECE0CF61D582EB0007B7FE4 /* PurchaseView.swift */,
+				CECE0CFE1D582FFC007B7FE4 /* InputViewController.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -892,6 +924,66 @@
 			path = RCXianDianUITests;
 			sourceTree = "<group>";
 		};
+		CECE0D011D5887F9007B7FE4 /* OthersClasses */ = {
+			isa = PBXGroup;
+			children = (
+				CECE0D021D5887F9007B7FE4 /* Cells */,
+				CECE0D031D5887F9007B7FE4 /* Controllers */,
+				CECE0D041D5887F9007B7FE4 /* Images */,
+				CECE0D051D5887F9007B7FE4 /* Models */,
+				CECE0D061D5887F9007B7FE4 /* Others */,
+				CECE0D071D5887F9007B7FE4 /* Views */,
+			);
+			path = OthersClasses;
+			sourceTree = "<group>";
+		};
+		CECE0D021D5887F9007B7FE4 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		CECE0D031D5887F9007B7FE4 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				CECE0D081D588827007B7FE4 /* ShoppingCarViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		CECE0D041D5887F9007B7FE4 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				CECE0D101D59B672007B7FE4 /* car@2x.png */,
+				CECE0D111D59B672007B7FE4 /* dustbin@2x.png */,
+			);
+			path = Images;
+			sourceTree = "<group>";
+		};
+		CECE0D051D5887F9007B7FE4 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		CECE0D061D5887F9007B7FE4 /* Others */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Others;
+			sourceTree = "<group>";
+		};
+		CECE0D071D5887F9007B7FE4 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				CECE0D0C1D5973CE007B7FE4 /* ShoppingCarBottomView.swift */,
+				CECE0D0E1D59B57C007B7FE4 /* ShoppingCarEmptyView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		CED317FE1D460E5F00780409 /* SVProgressHUD */ = {
 			isa = PBXGroup;
 			children = (
@@ -1067,6 +1159,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CECE0D121D59B672007B7FE4 /* car@2x.png in Resources */,
 				CE4E8D8D1D52EF7E00B03C2A /* reduce@2x.png in Resources */,
 				CE048E601D51CDCD0023D286 /* mine-help@2x.png in Resources */,
 				CE048E5B1D51CDCD0023D286 /* mine-arrow@2x.png in Resources */,
@@ -1074,6 +1167,7 @@
 				CE048E631D51CDCD0023D286 /* mine-redpage@2x.png in Resources */,
 				CE048E611D51CDCD0023D286 /* mine-history@2x.png in Resources */,
 				CE048E5C1D51CDCD0023D286 /* mine-background@2x.png in Resources */,
+				CECE0D131D59B672007B7FE4 /* dustbin@2x.png in Resources */,
 				CE048E661D51CDCD0023D286 /* mine-setting@2x.png in Resources */,
 				CE4E8D9B1D54810800B03C2A /* search_w@2x.png in Resources */,
 				CE4E8D9A1D54810800B03C2A /* search_b@2x.png in Resources */,
@@ -1174,19 +1268,23 @@
 				51F46C151D41F8DB00D6B63A /* FileManager.swift in Sources */,
 				CE048E471D5195310023D286 /* DataStruct.swift in Sources */,
 				CE4E8D931D54692900B03C2A /* ProductTableFooterView.swift in Sources */,
+				CECE0D091D588827007B7FE4 /* ShoppingCarViewController.swift in Sources */,
 				CED3182E1D46371C00780409 /* JSONKeyMapper.m in Sources */,
 				CE6D21471D3A099C002B780F /* SDWebImageDownloaderOperation.m in Sources */,
 				CE4E8D911D54664200B03C2A /* ProductHeadView.swift in Sources */,
 				CE7BE5841D4070C000152B4F /* ParsePlistUtil.swift in Sources */,
 				CED318091D460E6000780409 /* SVIndefiniteAnimatedView.m in Sources */,
 				CED318291D46371C00780409 /* JSONModelClassProperty.m in Sources */,
+				CECE0D0F1D59B57C007B7FE4 /* ShoppingCarEmptyView.swift in Sources */,
 				CE6D21331D3A099C002B780F /* MASConstraint.m in Sources */,
+				CECE0CFD1D582FCC007B7FE4 /* PurchaseInputViewManager.swift in Sources */,
 				CED3182A1D46371C00780409 /* JSONModelError.m in Sources */,
 				CED3182F1D46371C00780409 /* JSONValueTransformer.m in Sources */,
 				CE6D21431D3A099C002B780F /* SDImageCache.m in Sources */,
 				CE7BE55A1D3F5B0300152B4F /* UtilityConst.swift in Sources */,
 				CED3180C1D460E6000780409 /* SVProgressHUD.m in Sources */,
 				CE4E8D8F1D5331F200B03C2A /* FunctionHelper.swift in Sources */,
+				CECE0CFF1D582FFC007B7FE4 /* InputViewController.swift in Sources */,
 				CE7BE5731D3F627600152B4F /* PersonViewController.swift in Sources */,
 				CE6D21511D3A16CC002B780F /* XDBaseViewController.swift in Sources */,
 				CE048E791D51F32B0023D286 /* ProductCallInfo.swift in Sources */,
@@ -1206,8 +1304,11 @@
 				CE048E4B1D51C61C0023D286 /* PersonModel.swift in Sources */,
 				CE6D21491D3A099C002B780F /* SDWebImagePrefetcher.m in Sources */,
 				CE048E711D51E0F20023D286 /* ProductTableViewCell.swift in Sources */,
+				CECE0CF71D582EB0007B7FE4 /* PurchaseView.swift in Sources */,
 				CED640BC1D4AFB7100DF53C9 /* XDRESTServices.swift in Sources */,
 				CE6D21301D3A099C002B780F /* AppDelegate.swift in Sources */,
+				CECE0CF91D582EE5007B7FE4 /* ShoppingCarManager.swift in Sources */,
+				CECE0CF51D580F7E007B7FE4 /* RedDot.swift in Sources */,
 				CE6D21321D3A099C002B780F /* MASCompositeConstraint.m in Sources */,
 				CE6D21441D3A099C002B780F /* SDWebImageCompat.m in Sources */,
 				CE6D21421D3A099C002B780F /* NSData+ImageContentType.m in Sources */,
@@ -1221,6 +1322,7 @@
 				CE048E6D1D51E0450023D286 /* ProductViewController.swift in Sources */,
 				CE048E771D51E8A10023D286 /* LineLabel.swift in Sources */,
 				CE6D214A1D3A099C002B780F /* UIButton+WebCache.m in Sources */,
+				CECE0D0D1D5973CE007B7FE4 /* ShoppingCarBottomView.swift in Sources */,
 				CE6D21381D3A099C002B780F /* NSArray+MASAdditions.m in Sources */,
 				CE6D214F1D3A099C002B780F /* UIView+WebCacheOperation.m in Sources */,
 				CE6D21351D3A099C002B780F /* MASLayoutConstraint.m in Sources */,
@@ -1232,6 +1334,7 @@
 				CE6D21461D3A099C002B780F /* SDWebImageDownloader.m in Sources */,
 				CE7BE55C1D3F5B5A00152B4F /* UIViewExt.swift in Sources */,
 				CE048E451D51917C0023D286 /* XDCollectionView.swift in Sources */,
+				CECE0D0B1D589776007B7FE4 /* ProductDetailViewController.swift in Sources */,
 				CED3182C1D46371C00780409 /* JSONHTTPClient.m in Sources */,
 				CE7BE5821D40694A00152B4F /* LocalizationManagerTool.swift in Sources */,
 				CE6D214E1D3A099C002B780F /* UIImageView+WebCache.m in Sources */,
@@ -1244,6 +1347,7 @@
 				51F46BD61D41EC9600D6B63A /* UILabelExtension.swift in Sources */,
 				CE4E8D951D54780000B03C2A /* StoreSearchView.swift in Sources */,
 				CE6D213E1D3A099C002B780F /* MBProgressHUD.m in Sources */,
+				CECE0CFB1D582F18007B7FE4 /* UserInfoManager.swift in Sources */,
 				CED318581D476CA600780409 /* XDHTTPServices.swift in Sources */,
 				CE048E751D51E4CD0023D286 /* OrderListTableViewCell.swift in Sources */,
 			);

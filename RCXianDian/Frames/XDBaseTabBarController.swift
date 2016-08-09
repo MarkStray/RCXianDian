@@ -111,7 +111,14 @@ extension XDBaseTabBarController: XDTabBarAction {
     }
 
     func shoppingCarHandle() {
-        printLog(" handle ...")
+        let carCount = ShoppingCarManager.sharedShoppingCar.getProductList().count
+        if carCount <= 0 {
+            showAlertView("亲，您的购物车空空如也!")
+            return
+        }
+        
+        let nav = navItemList[selectedIndex]
+        nav.pushViewController(ShoppingCarViewController(), animated: false)
     }
 }
 
@@ -141,10 +148,13 @@ class XDTabBar: UIView {
     // 定义代理对象
     var delegate: XDTabBarAction?
     
+    var redDot = RedDot.sharedRedDot
+    
     override init(frame: CGRect) {
         super.init(frame: frame)
      
         initUI(frame);
+        initRedDot();
     }
     
     required init?(coder aDecoder: NSCoder) {
@@ -204,8 +214,17 @@ class XDTabBar: UIView {
         self.backgroundColor = UIColor(patternImage: UIImage(named: "tabbar-background-\(Int(SCREEN_WIDTH))")!)
     }
     
+    func initRedDot() {
+        addSubview(redDot)
+        
+        redDot.snp_makeConstraints { (make) in
+            make.width.height.equalTo(20)
+            make.top.equalTo(self).offset(5)
+            make.right.equalTo(self).offset(-10)
+        }
+    }
+    
     func selectedItemChange(geture: UITapGestureRecognizer) {
-        //print("tag: \(geture.view?.tag)")
         
         let index = (geture.view?.tag)!-baseView_tag
         
@@ -230,7 +249,6 @@ class XDTabBar: UIView {
     }
     
     func shoppingCarHandle() {
-        //print("shop handle")
         delegate?.shoppingCarHandle()
     }
 

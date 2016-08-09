@@ -9,27 +9,46 @@
 import UIKit
 
 class XDBaseNavigationController: UINavigationController {
+    var isAnimation = true
+
+    lazy var backBtn: UIButton = {
+        let backBtn = UIButton(type: .Custom)
+        backBtn.setImage(UIImage(named: "backArrow"), forState: .Normal)
+        backBtn.addTarget(self, action: #selector(XDBaseNavigationController.backBtnClick), forControlEvents: .TouchUpInside)
+        backBtn.contentHorizontalAlignment = UIControlContentHorizontalAlignment.Left
+        backBtn.contentEdgeInsets = UIEdgeInsetsMake(0, -10, 0, 0)
+        let btnW: CGFloat = SCREEN_WIDTH > 375.0 ? 50 : 44
+        backBtn.frame = CGRectMake(0, 0, btnW, 40)
+        return backBtn
+    }()
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.interactivePopGestureRecognizer!.delegate = self;
+    }
+    
+    override func pushViewController(viewController: UIViewController, animated: Bool) {
+        super.pushViewController(viewController, animated: animated)
         
-        // Do any additional setup after loading the view.
+        viewController.navigationItem.hidesBackButton = true
+        
+        if viewControllers.count > 1 {
+            
+            viewController.navigationItem.leftBarButtonItem = UIBarButtonItem(customView: backBtn)
+            
+            (viewController as! XDBaseViewController).hideTabBar()
+        }
+        
     }
     
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    func backBtnClick() {
+        popViewControllerAnimated(isAnimation)
     }
-    
-    
-    /*
-     // MARK: - Navigation
-     
-     // In a storyboard-based application, you will often want to do a little preparation before navigation
-     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-     // Get the new view controller using segue.destinationViewController.
-     // Pass the selected object to the new view controller.
-     }
-     */
-    
+
+}
+
+extension XDBaseNavigationController: UIGestureRecognizerDelegate {
+    func gestureRecognizerShouldBegin(gestureRecognizer: UIGestureRecognizer) -> Bool {
+        return viewControllers.count > 1 ?true :false
+    }
 }

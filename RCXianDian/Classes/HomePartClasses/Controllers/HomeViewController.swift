@@ -31,6 +31,11 @@ class HomeViewController: XDBaseViewController {
         requestHomeData()
     }
     
+    override func viewWillAppear(animated: Bool) {
+        super.viewWillAppear(animated)
+        self.showTabBar()
+    }
+    
     //MARK:- UI Initial
     func initialHomeTableView() {
         homeTableView = XDTableView(frame: CGRectZero, style: .Grouped)
@@ -57,6 +62,10 @@ class HomeViewController: XDBaseViewController {
             
             self.homeCallInfoModel = homeCallInfo?.CallInfo
             
+            /*********************/
+            ShoppingCarManager.sharedShoppingCar.merchantShop = self.homeCallInfoModel?.presell?.first
+            /*********************/
+
             let advertiseList = self.homeCallInfoModel?.advertise
             
             let imagesArray = NSMutableArray()

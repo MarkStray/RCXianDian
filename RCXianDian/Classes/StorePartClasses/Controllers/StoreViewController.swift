@@ -51,6 +51,12 @@ class StoreViewController: XDBaseViewController {
         requestStoreData()
     }
     
+    override func viewWillAppear(animated: Bool) {
+        super.viewWillAppear(animated)
+        self.showTabBar()
+    }
+
+    
     //MARK:- UI Initial
     func initialSearchView() {
         headerSearchView = StoreSearchView(frame: CGRectZero, searchViewAction: {

@@ -10,6 +10,7 @@ import UIKit
 
 class ProductTableFooterView: UIView {
     
+    private let FOOTER_HEIGHT = CGFloat(80)
     private var titleLabel = UILabel()
     
     override init(frame: CGRect) {
@@ -23,6 +24,8 @@ class ProductTableFooterView: UIView {
         attrStr.addAttributes([NSForegroundColorAttributeName: GLOBAL_COLOR, NSFontAttributeName: FONTSIZE_BIG], range: NSMakeRange(0, 4))
         titleLabel.attributedText = attrStr
         self.addSubview(titleLabel)
+        
+        self.height = FOOTER_HEIGHT
         self.backgroundColor = UIColor.whiteColor()
     }
     
@@ -35,7 +38,7 @@ class ProductTableFooterView: UIView {
         
         titleLabel.snp_makeConstraints { (make) in
             make.top.left.right.equalTo(self)
-            make.height.equalTo(80)
+            make.height.equalTo(FOOTER_HEIGHT)
         }
     }
 }
