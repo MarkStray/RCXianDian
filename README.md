@@ -37,11 +37,11 @@
     //MARK:- xxxExtension
 
 `PS:` __善用语法标记__  
-    //MARK:  标记
-    //TODO:  待做
-    //FIXME: 修改
-    //???: 疑问
-    //!!!: 注意
+* //MARK:  标记
+* //TODO:  待做
+* //FIXME: 修改
+* //???: 疑问
+* //!!!: 注意
 
 ### 引入第三方库功能及使用
 1. model层处理使用ObjectMapper 弃用原来的JSONModel 使用参考HomeCallInfo类
