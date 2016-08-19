@@ -55,49 +55,30 @@ class ProductModel: Mappable {
     //产品模型辅助属性
     var count = 0
     
-    
     var avgprice: Double = 0
-
     var brandid: String?
-
     var spec: String?
-
     var firstcode: String?
-
     var childbrandid: String?
-
     var skuname: String?
-
     var channelid: String?
-
     var imgurl: String?
-
     var avgweight: String?
-
     var onsale: Int = 0
-
     var saleprice: String?
-
     var avgnum: String?
-
     var salestart: String?
-
     var skuid: String?
-
     var childbrandname: String?
-
     var id: String?
-
     var saleamount: String?
-
     var price: String?
-
     var remark: String?
-
     var brandname: String?
-
     var saleexpired: String?
     
+    var imageList: [ImageModel]?
+
     func mapping(map: Map) {
         id <- map["id"]
         skuid <- map["skuid"]
@@ -120,9 +101,25 @@ class ProductModel: Mappable {
         saleamount <- map["saleamount"]
         salestart <- map["salestart"]
         saleexpired <- map["saleexpired"]
+        
+        imageList <- map["imageList"]
     }
     
     required init?(_ map: Map){}
 }
 
+class ImageModel: Mappable {
+    
+    var id: String?
+    var imgurl: String?
+    var index: String?
+    
+    func mapping(map: Map) {
+        id <- map["id"]
+        imgurl <- map["imgurl"]
+        index <- map["index"]
+    }
+    
+    required init?(_ map: Map){}
+}
 

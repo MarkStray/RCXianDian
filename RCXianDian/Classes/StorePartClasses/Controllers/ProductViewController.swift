@@ -128,7 +128,10 @@ extension ProductViewController: UITableViewDataSource, UITableViewDelegate {
     }
     
     func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
-        //TODO:
+        let model = productDictList![categoryList[indexPath.section]]![indexPath.row]
+        let detailVC = ProductDetailViewController()
+        detailVC.productId = model.id
+        navigationController?.pushViewController(detailVC, animated: true)
     }
     
     //MARK:- Displaying

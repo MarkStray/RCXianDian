@@ -43,5 +43,55 @@ func showAnimationAlertView(msg: String) {
     animationAlert.dismissWithClickedButtonIndex(animationAlert.cancelButtonIndex, animated: true)
 }
 
+//MARK:- 加载图片
+
+func asyncImgVLoadingImage(imgV: UIImageView, urlStr: String?) {
+    let url = NSURL(string: urlStr!.stringByRemovingPercentEncoding!)
+    imgV.sd_setImageWithURL(url, placeholderImage: UIImage(named: "loading"))
+}
+
+func asyncBtnLoadingImage(btn: UIButton, urlStr: String?) {
+    let url = NSURL(string: urlStr!.stringByRemovingPercentEncoding!)
+    btn.sd_setImageWithURL(url, forState: .Normal, placeholderImage: UIImage(named: "loading"))
+}
+
+//MARK:- 计算宽高
+func height(miniH: CGFloat, str: String, width: CGFloat, fSize: CGFloat) -> CGFloat {
+    let constrainedSize = CGSizeMake(width, CGFloat.max)
+    
+    let paragraphStyle = NSMutableParagraphStyle()
+    paragraphStyle.lineBreakMode = .ByWordWrapping
+    let attributes = [NSFontAttributeName: UIFont.systemFontOfSize(fSize), NSParagraphStyleAttributeName: paragraphStyle]
+    
+    let size = NSString(string: str).boundingRectWithSize(constrainedSize, options: .UsesLineFragmentOrigin, attributes: attributes, context: nil).size
+
+    var height = CGFloat(ceilf(Float(size.height)))
+
+    if miniH > 0 {
+        height = height < miniH ?miniH :height+10;
+    }
+
+    return height
+}
+
+func width(miniW: CGFloat, str: String, height: CGFloat, fSize: CGFloat) -> CGFloat {
+    let constrainedSize = CGSizeMake(CGFloat.max, height)
+    
+    let paragraphStyle = NSMutableParagraphStyle()
+    paragraphStyle.lineBreakMode = .ByWordWrapping
+    let attributes = [NSFontAttributeName: UIFont.systemFontOfSize(fSize), NSParagraphStyleAttributeName: paragraphStyle]
+    
+    let size = NSString(string: str).boundingRectWithSize(constrainedSize, options: .UsesLineFragmentOrigin, attributes: attributes, context: nil).size
+    
+    var width = CGFloat(ceilf(Float(size.width)))
+    
+    if miniW > 0 {
+        width = width < miniW ?miniW :width;
+    }
+    
+    return width
+}
+
+
 
 

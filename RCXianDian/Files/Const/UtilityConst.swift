@@ -12,6 +12,9 @@ let SCREEN_WIDTH = UIScreen.mainScreen().bounds.size.width
 let SCREEN_HEIGHT = UIScreen.mainScreen().bounds.size.height
 
 let _TABBAR_TAG  = 9999  //TABBAR tag值
+let tabHeight = CGFloat(65)
+let right_retain = CGFloat(80) //购物车宽度
+
 
 //MARK:- 购物车 常量(最大购买量)
 let PURCHASE_MAXCOUNT = 999

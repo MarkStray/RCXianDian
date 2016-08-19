@@ -16,6 +16,11 @@ import UIKit
 
 class PurchaseView: UIView {
 
+    static var WH = CGFloat(25)
+    static var InputFont = FONTSIZE_DEFAULT
+    static var InputTextColor = UIColorFromHEX(0xff4f00)
+    static var InputBorderColor = LINE_COLOR
+    
     var isZeroShow = true
     //var canOperation = true
     
@@ -37,13 +42,13 @@ class PurchaseView: UIView {
     
     private lazy var inputLabel: UILabel = {
         let inputLabel = UILabel()
-        inputLabel.textColor = UIColorFromHEX(0xff4f00)
+        inputLabel.textColor = PurchaseView.InputTextColor
         inputLabel.textAlignment = .Center
-        inputLabel.font = FONTSIZE_DEFAULT
+        inputLabel.font = PurchaseView.InputFont
         inputLabel.text = "0"
 
         inputLabel.layer.masksToBounds = true
-        inputLabel.layer.borderColor = LINE_COLOR.CGColor
+        inputLabel.layer.borderColor = PurchaseView.InputBorderColor.CGColor
         inputLabel.layer.borderWidth = 0.5
         inputLabel.layer.cornerRadius = 3
         
@@ -84,11 +89,11 @@ class PurchaseView: UIView {
         super.layoutSubviews()
         // self size(80 25)
         addBtn.snp_makeConstraints { (make) in
-            make.width.height.equalTo(25)
+            make.width.height.equalTo(PurchaseView.WH)
             make.top.right.bottom.equalTo(self)
         }
         reduceBtn.snp_makeConstraints { (make) in
-            make.width.height.equalTo(25)
+            make.width.height.equalTo(PurchaseView.WH)
             make.top.left.bottom.equalTo(self)
         }
         inputLabel.snp_makeConstraints { (make) in

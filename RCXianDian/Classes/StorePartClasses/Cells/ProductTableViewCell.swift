@@ -172,7 +172,7 @@ extension ProductTableViewCell: PurchaseViewDelegate {
     }
     
     func purchaseViewInputViewClicked() {
-        printLog("input")
+        //InputViewController().show()
     }
 }
 

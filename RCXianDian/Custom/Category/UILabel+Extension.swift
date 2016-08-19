@@ -1,13 +1,14 @@
- //
- //  UIExtension.swift
- //  扩展
- //
- //  Created by timer_open on 16/7/21.
- //  Copyright © 2016年 timer_open. All rights reserved.
- //
- 
+//
+//  UILabel+Extension.swift
+//  RCXianDian
+//
+//  Created by user on 16/7/26.
+//  Copyright © 2016年 rrcc. All rights reserved.
+//
+
  import UIKit
  //MARK:UILabel
+
  extension UILabel{
 //    func left() ->CGFloat{
 //        return self.frame.origin.x
@@ -74,6 +75,7 @@
 //        point = CGPointMake(self.center.y,centerY)
 //        self.center = point
 //    }
+    
     //MARK:----------------------------字体划线-----------------------------
     func IsWithStrikeThrough(){
         let attr = NSMutableAttributedString(string: self.text!)
@@ -82,6 +84,7 @@
         self.attributedText = attr
         self.sizeToFit()
     }
+    
     //MARK:---------------------------富文本处理价格字符串-------------------
     func diverseStringOriginalStr(original : String, conversionStr :String, Font : UIFont, Color : UIColor){
         let attr = NSMutableAttributedString(string: original as String)
@@ -91,6 +94,70 @@
         self.attributedText = attr
     }
     
+    //MARK:---------------------------auto计算高度-------------------
+    
+    func resizeLabelVertical(minimumHeigh: CGFloat) {
+        var newFrame = self.frame
+        let constrainedSize = CGSizeMake(newFrame.size.width, CGFloat.max)
+        let text = self.text
+        let font = self.font
+        
+        var size = CGSizeZero
+        switch UIDevice.currentDevice().systemVersion.compare("8.0.0", options: NSStringCompareOptions.NumericSearch) {
+        case .OrderedSame, .OrderedDescending:
+            printLog("iOS >= 8.0")
+            
+            let paragraphStyle = NSMutableParagraphStyle()
+            paragraphStyle.lineBreakMode = .ByWordWrapping
+            let attributes = [NSFontAttributeName: font, NSParagraphStyleAttributeName: paragraphStyle]
+            
+            size = NSString(string: text!).boundingRectWithSize(constrainedSize, options: .UsesLineFragmentOrigin, attributes: attributes, context: nil).size
+        case .OrderedAscending:
+            printLog("iOS < 8.0")
+            
+        }
+
+        newFrame.size.height = CGFloat(ceilf(Float(size.height)))
+        
+        if minimumHeigh > 0 {
+            newFrame.size.height = (newFrame.size.height < minimumHeigh ? minimumHeigh : newFrame.size.height);
+        }
+        self.frame = newFrame;
+        //return self;
+    }
+    
+    //MARK:---------------------------auto计算宽度-------------------
+
+    func resizeLabelHorizontal(minimumWidth: CGFloat) {
+        var newFrame = self.frame
+        let constrainedSize = CGSizeMake(CGFloat.max, newFrame.size.height)
+        let text = self.text
+        let font = self.font
+        
+        var size = CGSizeZero
+        switch UIDevice.currentDevice().systemVersion.compare("8.0.0", options: NSStringCompareOptions.NumericSearch) {
+        case .OrderedSame, .OrderedDescending:
+            printLog("iOS >= 8.0")
+            
+            let paragraphStyle = NSMutableParagraphStyle()
+            paragraphStyle.lineBreakMode = .ByWordWrapping
+            let attributes = [NSFontAttributeName: font, NSParagraphStyleAttributeName: paragraphStyle]
+            
+            size = NSString(string: text!).boundingRectWithSize(constrainedSize, options: .UsesLineFragmentOrigin, attributes: attributes, context: nil).size
+        case .OrderedAscending:
+            printLog("iOS < 8.0")
+            
+        }
+        
+        newFrame.size.height = CGFloat(ceilf(Float(size.height)))
+        
+        if minimumWidth > 0 {
+            newFrame.size.width = (newFrame.size.width < minimumWidth ? minimumWidth: newFrame.size.width);
+        }
+        self.frame = newFrame;
+        //return self;
+    }
+
  }
  
  

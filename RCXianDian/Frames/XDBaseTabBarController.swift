@@ -29,7 +29,7 @@ class XDBaseTabBarController: UITabBarController {
     var navItemList: [XDBaseNavigationController] = [XDBaseNavigationController]()
     
     lazy var baseTabBar: XDTabBar = {
-        let tabbarFrame = CGRect(x: 0, y: self.view.height-65.0, width: self.view.width, height: 65.0)
+        let tabbarFrame = CGRect(x: 0, y: self.view.height-tabHeight, width: self.view.width, height: tabHeight)
         let _tabbar: XDTabBar = XDTabBar.init(frame: tabbarFrame)
         _tabbar.tag = _TABBAR_TAG
         _tabbar.delegate = self
@@ -132,7 +132,6 @@ extension XDBaseTabBarController: XDTabBarAction {
 //private 只有当前文件可以访问
 
 private let baseView_tag = 1001
-private let right_retain = CGFloat(80);
 
 // iamge size 35*35 
 // title size width*14
@@ -148,19 +147,30 @@ class XDTabBar: UIView {
     // 定义代理对象
     var delegate: XDTabBarAction?
     
-    var redDot = RedDot.sharedRedDot
+    var backgView: BottomShoppingCar!
     
     override init(frame: CGRect) {
         super.init(frame: frame)
      
+        initBackgView(frame)
         initUI(frame);
-        initRedDot();
     }
     
     required init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
     
+    func initBackgView(frame: CGRect) -> Void {
+        
+        //定义占有列表
+        backgView = BottomShoppingCar(frame: CGRectMake(0, 0, frame.width, frame.height), shoppingCarClick: { [weak self] () in
+            guard let strongSelf = self else { return }
+            strongSelf.delegate?.shoppingCarHandle()
+        })
+        addSubview(backgView)
+        
+        backgroundColor = UIColor.clearColor()
+    }
     
     func initUI(frame: CGRect) -> () {
         
@@ -203,24 +213,12 @@ class XDTabBar: UIView {
                 label.textColor = GLOBAL_COLOR
             }
             
-            if i == itemCount-1 {
+            /*if i == itemCount-1 {
                 let btnFrame = CGRect(x: view.right, y: 0, width: right_retain, height: frame.height)
                 let shoppingBtn = UIButton(frame: btnFrame)
                 shoppingBtn.addTarget(self, action: #selector(shoppingCarHandle), forControlEvents: .TouchUpInside)
                 self.addSubview(shoppingBtn)
-            }
-        }
-        
-        self.backgroundColor = UIColor(patternImage: UIImage(named: "tabbar-background-\(Int(SCREEN_WIDTH))")!)
-    }
-    
-    func initRedDot() {
-        addSubview(redDot)
-        
-        redDot.snp_makeConstraints { (make) in
-            make.width.height.equalTo(20)
-            make.top.equalTo(self).offset(5)
-            make.right.equalTo(self).offset(-10)
+            }*/
         }
     }
     
@@ -247,11 +245,6 @@ class XDTabBar: UIView {
             }
         }
     }
-    
-    func shoppingCarHandle() {
-        delegate?.shoppingCarHandle()
-    }
-
 }
 
 

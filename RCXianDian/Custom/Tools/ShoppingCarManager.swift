@@ -29,8 +29,9 @@ class ShoppingCarManager: NSObject {
     
     ///是否满足起订价
     func canGoHandle() -> (Bool, Float) {
-        if allPrice >= Float((merchantShop?.min_order)!)! {return (true, Float(0))}
-        return (false, Float((merchantShop?.min_order)!)! - allPrice)
+//        if allPrice >= Float((merchantShop?.min_order)!)! {return (true, Float(0))}
+//        return (false, Float((merchantShop?.min_order)!)! - allPrice)
+        return (true, Float(0))
     }
     
     ///购物车产品总价

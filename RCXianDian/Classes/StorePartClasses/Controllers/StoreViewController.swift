@@ -20,7 +20,7 @@ class StoreViewController: XDBaseViewController {
     var categoryList = [String]()//brandid list
     var categoryDict = [String: String?]()//brandid:brandname
 
-    var productCallInfo: ProductCallInfo? {
+    private var productCallInfo: ProductCallInfo? {
         didSet {
             
             for products in (productCallInfo?.CallInfo)! {
