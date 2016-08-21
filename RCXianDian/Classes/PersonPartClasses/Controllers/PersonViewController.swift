@@ -105,7 +105,37 @@ extension PersonViewController: UITableViewDelegate, UITableViewDataSource {
         
         return cell!
     }
-
+    
+    func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+        if indexPath.section == 0 {
+            if indexPath.row == 0 {
+                self.navigationController?.pushViewController(OrderListViewController(), animated: true)
+            }
+            if indexPath.row == 1 {
+                self.navigationController?.pushViewController(PurchaseRecordViewController(), animated: true)
+            }
+        }
+        
+        if indexPath.section == 1 {
+            self.navigationController?.pushViewController(BalanceViewController(), animated: true)
+        }
+        
+        if indexPath.section == 2 {
+            if indexPath.row == 0 {
+                //TODO: 客服电话
+            }
+            if indexPath.row == 1 {
+                self.navigationController?.pushViewController(QAViewController(), animated: true)
+            }
+            if indexPath.row == 2 {
+                //TODO: 修改密码
+            }
+        }
+        
+        if indexPath.section == 3 {
+            //TODO: 注销登录
+        }
+    }
 }
 
 

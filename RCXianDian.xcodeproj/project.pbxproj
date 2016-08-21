@@ -11,6 +11,23 @@
 		51F46BD61D41EC9600D6B63A /* UILabel+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51F46BD51D41EC9600D6B63A /* UILabel+Extension.swift */; };
 		51F46C151D41F8DB00D6B63A /* FileManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51F46C141D41F8DB00D6B63A /* FileManager.swift */; };
 		6A7B4020C5830F8CE7EE6E96 /* Pods_RCXianDian.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FAAC2AB1E963EBD33FA4E428 /* Pods_RCXianDian.framework */; };
+		B90BB6921D685161004C6607 /* OrderListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B90BB6911D685161004C6607 /* OrderListViewController.swift */; };
+		B90BB6941D6851E5004C6607 /* PurchaseRecordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B90BB6931D6851E5004C6607 /* PurchaseRecordViewController.swift */; };
+		B90BB6961D6851FC004C6607 /* BalanceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B90BB6951D6851FC004C6607 /* BalanceViewController.swift */; };
+		B90BB6981D685212004C6607 /* QAViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B90BB6971D685212004C6607 /* QAViewController.swift */; };
+		B90BB69A1D685242004C6607 /* OrderDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B90BB6991D685242004C6607 /* OrderDetailViewController.swift */; };
+		B90BB69C1D685250004C6607 /* OrderStatusViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B90BB69B1D685250004C6607 /* OrderStatusViewController.swift */; };
+		B90BB69E1D685263004C6607 /* OrderInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B90BB69D1D685263004C6607 /* OrderInfoViewController.swift */; };
+		B90BB6A01D68528A004C6607 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B90BB69F1D68528A004C6607 /* SearchViewController.swift */; };
+		B90BB6A21D6852AA004C6607 /* PayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B90BB6A11D6852AA004C6607 /* PayViewController.swift */; };
+		B90BB6A41D6852E2004C6607 /* PayResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B90BB6A31D6852E2004C6607 /* PayResultViewController.swift */; };
+		B90BB6A61D685356004C6607 /* AddressSearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B90BB6A51D685356004C6607 /* AddressSearchViewController.swift */; };
+		B90BB6A81D685361004C6607 /* SearchResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B90BB6A71D685361004C6607 /* SearchResultViewController.swift */; };
+		B90BB6AA1D685372004C6607 /* CityListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B90BB6A91D685372004C6607 /* CityListViewController.swift */; };
+		B90BB6AC1D6853E4004C6607 /* BalanceDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B90BB6AB1D6853E4004C6607 /* BalanceDetailViewController.swift */; };
+		B90BB6AE1D6853F5004C6607 /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B90BB6AD1D6853F5004C6607 /* WebViewController.swift */; };
+		B90BB6B01D685402004C6607 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B90BB6AF1D685402004C6607 /* LoginViewController.swift */; };
+		B90BB6B21D685431004C6607 /* GuideViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B90BB6B11D685431004C6607 /* GuideViewController.swift */; };
 		CE048E431D5191600023D286 /* XDTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE048E421D5191600023D286 /* XDTableView.swift */; };
 		CE048E451D51917C0023D286 /* XDCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE048E441D51917C0023D286 /* XDCollectionView.swift */; };
 		CE048E471D5195310023D286 /* DataStruct.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE048E461D5195310023D286 /* DataStruct.swift */; };
@@ -158,6 +175,23 @@
 		51F46C141D41F8DB00D6B63A /* FileManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FileManager.swift; sourceTree = "<group>"; };
 		556B400483AF4696CA230A97 /* Pods-RCXianDian.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RCXianDian.release.xcconfig"; path = "Pods/Target Support Files/Pods-RCXianDian/Pods-RCXianDian.release.xcconfig"; sourceTree = "<group>"; };
 		8D0975F48D38B57010D9C165 /* Pods-RCXianDian.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RCXianDian.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RCXianDian/Pods-RCXianDian.debug.xcconfig"; sourceTree = "<group>"; };
+		B90BB6911D685161004C6607 /* OrderListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OrderListViewController.swift; sourceTree = "<group>"; };
+		B90BB6931D6851E5004C6607 /* PurchaseRecordViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PurchaseRecordViewController.swift; sourceTree = "<group>"; };
+		B90BB6951D6851FC004C6607 /* BalanceViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BalanceViewController.swift; sourceTree = "<group>"; };
+		B90BB6971D685212004C6607 /* QAViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QAViewController.swift; sourceTree = "<group>"; };
+		B90BB6991D685242004C6607 /* OrderDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OrderDetailViewController.swift; sourceTree = "<group>"; };
+		B90BB69B1D685250004C6607 /* OrderStatusViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OrderStatusViewController.swift; sourceTree = "<group>"; };
+		B90BB69D1D685263004C6607 /* OrderInfoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OrderInfoViewController.swift; sourceTree = "<group>"; };
+		B90BB69F1D68528A004C6607 /* SearchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
+		B90BB6A11D6852AA004C6607 /* PayViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PayViewController.swift; sourceTree = "<group>"; };
+		B90BB6A31D6852E2004C6607 /* PayResultViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PayResultViewController.swift; sourceTree = "<group>"; };
+		B90BB6A51D685356004C6607 /* AddressSearchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddressSearchViewController.swift; sourceTree = "<group>"; };
+		B90BB6A71D685361004C6607 /* SearchResultViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchResultViewController.swift; sourceTree = "<group>"; };
+		B90BB6A91D685372004C6607 /* CityListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CityListViewController.swift; sourceTree = "<group>"; };
+		B90BB6AB1D6853E4004C6607 /* BalanceDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BalanceDetailViewController.swift; sourceTree = "<group>"; };
+		B90BB6AD1D6853F5004C6607 /* WebViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
+		B90BB6AF1D685402004C6607 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		B90BB6B11D685431004C6607 /* GuideViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GuideViewController.swift; sourceTree = "<group>"; };
 		CE048E421D5191600023D286 /* XDTableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XDTableView.swift; sourceTree = "<group>"; };
 		CE048E441D51917C0023D286 /* XDCollectionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XDCollectionView.swift; sourceTree = "<group>"; };
 		CE048E461D5195310023D286 /* DataStruct.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataStruct.swift; sourceTree = "<group>"; };
@@ -420,6 +454,9 @@
 			isa = PBXGroup;
 			children = (
 				CE6D20BF1D3A099C002B780F /* HomeViewController.swift */,
+				B90BB6A51D685356004C6607 /* AddressSearchViewController.swift */,
+				B90BB6A71D685361004C6607 /* SearchResultViewController.swift */,
+				B90BB6A91D685372004C6607 /* CityListViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -479,6 +516,17 @@
 			isa = PBXGroup;
 			children = (
 				CE7BE5721D3F627600152B4F /* PersonViewController.swift */,
+				B90BB6911D685161004C6607 /* OrderListViewController.swift */,
+				B90BB6991D685242004C6607 /* OrderDetailViewController.swift */,
+				B90BB69B1D685250004C6607 /* OrderStatusViewController.swift */,
+				B90BB69D1D685263004C6607 /* OrderInfoViewController.swift */,
+				B90BB6931D6851E5004C6607 /* PurchaseRecordViewController.swift */,
+				B90BB6951D6851FC004C6607 /* BalanceViewController.swift */,
+				B90BB6AB1D6853E4004C6607 /* BalanceDetailViewController.swift */,
+				B90BB6971D685212004C6607 /* QAViewController.swift */,
+				B90BB6AD1D6853F5004C6607 /* WebViewController.swift */,
+				B90BB6AF1D685402004C6607 /* LoginViewController.swift */,
+				B90BB6B11D685431004C6607 /* GuideViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -559,6 +607,7 @@
 				CE7BE5681D3F60DD00152B4F /* StoreViewController.swift */,
 				CE048E6C1D51E0450023D286 /* ProductViewController.swift */,
 				CECE0D0A1D589776007B7FE4 /* ProductDetailViewController.swift */,
+				B90BB69F1D68528A004C6607 /* SearchViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -960,6 +1009,8 @@
 			isa = PBXGroup;
 			children = (
 				CECE0D081D588827007B7FE4 /* ShoppingCarViewController.swift */,
+				B90BB6A11D6852AA004C6607 /* PayViewController.swift */,
+				B90BB6A31D6852E2004C6607 /* PayResultViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -1276,10 +1327,12 @@
 				CE6D21551D3A1721002B780F /* XDBaseTableViewController.swift in Sources */,
 				CE6D214B1D3A099C002B780F /* UIImage+GIF.m in Sources */,
 				518E6B941D46FED200814202 /* XDBaseADView.swift in Sources */,
+				B90BB69C1D685250004C6607 /* OrderStatusViewController.swift in Sources */,
 				CE6D21481D3A099C002B780F /* SDWebImageManager.m in Sources */,
 				51F46C151D41F8DB00D6B63A /* FileManager.swift in Sources */,
 				CE048E471D5195310023D286 /* DataStruct.swift in Sources */,
 				CE4E8D931D54692900B03C2A /* ProductTableFooterView.swift in Sources */,
+				B90BB6A41D6852E2004C6607 /* PayResultViewController.swift in Sources */,
 				CECE0D091D588827007B7FE4 /* ShoppingCarViewController.swift in Sources */,
 				CED3182E1D46371C00780409 /* JSONKeyMapper.m in Sources */,
 				CE6D21471D3A099C002B780F /* SDWebImageDownloaderOperation.m in Sources */,
@@ -1287,10 +1340,13 @@
 				CE7BE5841D4070C000152B4F /* ParsePlistUtil.swift in Sources */,
 				CED318091D460E6000780409 /* SVIndefiniteAnimatedView.m in Sources */,
 				CED318291D46371C00780409 /* JSONModelClassProperty.m in Sources */,
+				B90BB69A1D685242004C6607 /* OrderDetailViewController.swift in Sources */,
 				CECE0D0F1D59B57C007B7FE4 /* ShoppingCarEmptyView.swift in Sources */,
 				CE6D21331D3A099C002B780F /* MASConstraint.m in Sources */,
 				CECE0CFD1D582FCC007B7FE4 /* PurchaseInputViewManager.swift in Sources */,
+				B90BB6981D685212004C6607 /* QAViewController.swift in Sources */,
 				CED3182A1D46371C00780409 /* JSONModelError.m in Sources */,
+				B90BB6A81D685361004C6607 /* SearchResultViewController.swift in Sources */,
 				CED3182F1D46371C00780409 /* JSONValueTransformer.m in Sources */,
 				CE6D21431D3A099C002B780F /* SDImageCache.m in Sources */,
 				CE7BE55A1D3F5B0300152B4F /* UtilityConst.swift in Sources */,
@@ -1298,7 +1354,9 @@
 				CE4E8D8F1D5331F200B03C2A /* FunctionHelper.swift in Sources */,
 				CE7BE5731D3F627600152B4F /* PersonViewController.swift in Sources */,
 				CE6D21511D3A16CC002B780F /* XDBaseViewController.swift in Sources */,
+				B90BB6921D685161004C6607 /* OrderListViewController.swift in Sources */,
 				CE048E791D51F32B0023D286 /* ProductCallInfo.swift in Sources */,
+				B90BB6961D6851FC004C6607 /* BalanceViewController.swift in Sources */,
 				CE6D21361D3A099C002B780F /* MASViewAttribute.m in Sources */,
 				CECE0D631D615F43007B7FE4 /* ProductInputView.swift in Sources */,
 				CE6D213B1D3A099C002B780F /* ViewController+MASAdditions.m in Sources */,
@@ -1309,15 +1367,19 @@
 				CE048E6F1D51E0DE0023D286 /* CategoryTableViewCell.swift in Sources */,
 				CED640C41D4B55EF00DF53C9 /* ShopTableViewCell.swift in Sources */,
 				CED3182B1D46371C00780409 /* JSONAPI.m in Sources */,
+				B90BB6AA1D685372004C6607 /* CityListViewController.swift in Sources */,
 				CE6D21591D3A17DB002B780F /* XDBaseNavigationController.swift in Sources */,
 				CE6D21391D3A099C002B780F /* NSLayoutConstraint+MASDebugAdditions.m in Sources */,
 				CED3180D1D460E6000780409 /* SVRadialGradientLayer.m in Sources */,
 				CE048E431D5191600023D286 /* XDTableView.swift in Sources */,
+				B90BB6941D6851E5004C6607 /* PurchaseRecordViewController.swift in Sources */,
 				CE048E4B1D51C61C0023D286 /* PersonModel.swift in Sources */,
 				CE6D21491D3A099C002B780F /* SDWebImagePrefetcher.m in Sources */,
 				CE048E711D51E0F20023D286 /* ProductTableViewCell.swift in Sources */,
 				CECE0CF71D582EB0007B7FE4 /* PurchaseView.swift in Sources */,
 				CED640BC1D4AFB7100DF53C9 /* XDRESTServices.swift in Sources */,
+				B90BB69E1D685263004C6607 /* OrderInfoViewController.swift in Sources */,
+				B90BB6AE1D6853F5004C6607 /* WebViewController.swift in Sources */,
 				CE6D21301D3A099C002B780F /* AppDelegate.swift in Sources */,
 				CECE0CF91D582EE5007B7FE4 /* ShoppingCarManager.swift in Sources */,
 				CECE0CF51D580F7E007B7FE4 /* RedDot.swift in Sources */,
@@ -1332,15 +1394,20 @@
 				CE6D213A1D3A099C002B780F /* View+MASAdditions.m in Sources */,
 				CED3180F1D461C9D00780409 /* HomeCallInfo.swift in Sources */,
 				CE048E6D1D51E0450023D286 /* ProductViewController.swift in Sources */,
+				B90BB6AC1D6853E4004C6607 /* BalanceDetailViewController.swift in Sources */,
 				CECE0D5F1D5D7A7E007B7FE4 /* ProductDetailImageTableViewCell.swift in Sources */,
 				CECE0D5B1D5D6360007B7FE4 /* ProductDetailCallInfo.swift in Sources */,
+				B90BB6A61D685356004C6607 /* AddressSearchViewController.swift in Sources */,
+				B90BB6A01D68528A004C6607 /* SearchViewController.swift in Sources */,
 				CE048E771D51E8A10023D286 /* LineLabel.swift in Sources */,
+				B90BB6B01D685402004C6607 /* LoginViewController.swift in Sources */,
 				CE6D214A1D3A099C002B780F /* UIButton+WebCache.m in Sources */,
 				CECE0D0D1D5973CE007B7FE4 /* ShoppingCarBottomView.swift in Sources */,
 				CE6D21381D3A099C002B780F /* NSArray+MASAdditions.m in Sources */,
 				CE6D214F1D3A099C002B780F /* UIView+WebCacheOperation.m in Sources */,
 				CE6D21351D3A099C002B780F /* MASLayoutConstraint.m in Sources */,
 				CE048E491D51C51C0023D286 /* PersonTableViewCell.swift in Sources */,
+				B90BB6B21D685431004C6607 /* GuideViewController.swift in Sources */,
 				CE7BE57E1D40639D00152B4F /* XDTabBarModel.swift in Sources */,
 				CE6D212C1D3A099C002B780F /* HomeViewController.swift in Sources */,
 				CE048E731D51E1F10023D286 /* XDTableViewCell.swift in Sources */,
@@ -1356,6 +1423,7 @@
 				CE048E6B1D51CF6A0023D286 /* PersonHeaderView.swift in Sources */,
 				CECE0D5D1D5D7A6C007B7FE4 /* ProductDetailTableViewCell.swift in Sources */,
 				CED3182D1D46371C00780409 /* JSONModel+networking.m in Sources */,
+				B90BB6A21D6852AA004C6607 /* PayViewController.swift in Sources */,
 				CED3180A1D460E6000780409 /* SVProgressAnimatedView.m in Sources */,
 				CECE0D591D5C24C3007B7FE4 /* InputViewController.swift in Sources */,
 				CE6D214D1D3A099C002B780F /* UIImageView+HighlightedWebCache.m in Sources */,
