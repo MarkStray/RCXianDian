@@ -11,8 +11,6 @@ import UIKit
 class HomeViewController: XDBaseViewController {
     
     //MARK:- Instance Varible
-    let cellHeight = CGFloat(75);
-    
     var homeTableView: XDTableView!
     
     var adView = XDBaseADView(frame: CGRectMake(0, 0, SCREEN_WIDTH, 120))
@@ -104,7 +102,7 @@ extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
     }
     
     func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
-        return cellHeight;
+        return ShopTableViewCell.cellHeight;
     }
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
@@ -113,7 +111,7 @@ extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
         
         if cell == nil {
             cell = ShopTableViewCell(style: .Default, reuseIdentifier: reuseID)
-            cell?.height = cellHeight
+            cell?.height = ShopTableViewCell.cellHeight
         }
         
         let presellModel = homeDataSource[indexPath.row]

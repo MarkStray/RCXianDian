@@ -10,7 +10,7 @@ import UIKit
 import ObjectMapper
 
 class ProductCallInfo: XDBaseModel {
-    var CallInfo: [ProductModel]?;
+    var CallInfo: [ProductModel]?
 
     class func requestStoreData(completion:((productCallInfo: ProductCallInfo?) -> Void)) {
         
@@ -55,6 +55,11 @@ class ProductModel: Mappable {
     //产品模型辅助属性
     var count = 0
     
+    //详单
+    var ordercount: String?
+    var feature: String?
+    var total: String?
+
     var avgprice: Double = 0
     var brandid: String?
     var spec: String?
@@ -80,6 +85,11 @@ class ProductModel: Mappable {
     var imageList: [ImageModel]?
 
     func mapping(map: Map) {
+        
+        ordercount <- map["ordercount"]
+        feature <- map["feature"]
+        total <- map["total"]
+
         id <- map["id"]
         skuid <- map["skuid"]
         skuname <- map["skuname"]

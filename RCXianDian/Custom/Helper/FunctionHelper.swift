@@ -68,7 +68,7 @@ func height(miniH: CGFloat, str: String, width: CGFloat, fSize: CGFloat) -> CGFl
     var height = CGFloat(ceilf(Float(size.height)))
 
     if miniH > 0 {
-        height = height < miniH ?miniH :height+10;
+        height = height < miniH ?miniH :height;
     }
 
     return height

@@ -40,7 +40,7 @@ class XDTableViewCell: UITableViewCell {
      - returns: Void
      */
     func initialUI() {
-        fatalError("init(coder:) has not been implemented")
+        fatalError("method initialUI has not been implemented in subclass")
     }
     
     required init?(coder aDecoder: NSCoder) {

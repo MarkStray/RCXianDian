@@ -184,7 +184,8 @@ extension ProductDetailViewController: UITableViewDataSource, UITableViewDelegat
     }
     
     func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
-        return height(35, str: detailList[indexPath.row], width: SCREEN_WIDTH-16*2-60, fSize: 14)
+        let topSpace = CGFloat(8), bottomSpace = CGFloat(8)
+        return height(17, str: detailList[indexPath.row], width: SCREEN_WIDTH-16*2-60, fSize: 14) + topSpace+bottomSpace
     }
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {

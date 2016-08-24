@@ -10,6 +10,8 @@ import UIKit
 
 class ShopTableViewCell: XDTableViewCell {
     
+    static let cellHeight = CGFloat(75);
+    
     var avatarImageView = UIImageView()
     var arrowImageView = UIImageView()
     var nameLabel = UILabel()

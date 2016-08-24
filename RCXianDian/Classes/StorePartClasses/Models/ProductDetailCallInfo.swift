@@ -11,7 +11,7 @@ import ObjectMapper
 
 class ProductDetailCallInfo: XDBaseModel {
 
-    var CallInfo: ProductModel?;
+    var CallInfo: ProductModel?
     
     class func requestProductDetailDataWithProductId(productId: String?, completion:((productDetailCallInfo: ProductDetailCallInfo?) -> Void)) {
         // resId "19609" "13878"

@@ -54,15 +54,13 @@ class XDBaseModel: Mappable {
     var ErrorCode = -999;
     var ErrorMsg: String?;
     
-    required init?(_ map: Map) {
-        
-    }
-    
     func mapping(map: Map) {
         Success <- map["Success"]
         ErrorCode <- map["ErrorCode"]
         ErrorMsg <- map["ErrorMsg"]
     }
+    
+    required init?(_ map: Map) {}
 }
 
 

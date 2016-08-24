@@ -11,7 +11,7 @@ import ObjectMapper
 
 class HomeCallInfo: XDBaseModel {
     
-    var CallInfo: HomeCallInfoModel?;
+    var CallInfo: HomeCallInfoModel?
     
     
     class func requestHomeData(completion:((homeCallInfo: HomeCallInfo?)-> Void)) {

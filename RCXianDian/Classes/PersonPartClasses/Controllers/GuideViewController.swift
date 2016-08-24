@@ -9,7 +9,14 @@
 import UIKit
 
 class GuideViewController: XDBaseViewController {
-
+    
+    //MARK:- Instance Varible
+    //MARK:- Life Circle
+    //MARK:- UI Initial
+    //MARK:- Data Request
+    //MARK:- Action
+    //MARK:- Extension
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
