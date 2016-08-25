@@ -17,7 +17,7 @@ class PersonHeaderView: UIView {
     override init(frame: CGRect) {
         super.init(frame: frame)
         //背景图片
-        layer.contents = UIImage(named: "mine-background")?.CGImage
+        layer.contents = UIImage(imageNamed: .mineBGN)?.CGImage
         
         iconView.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(PersonHeaderView.iconViewAction)))
         addSubview(iconView)
@@ -57,7 +57,7 @@ class IconView: UIView {
     override init(frame: CGRect) {
       super.init(frame: frame)
         
-        iconImageView.image = UIImage(named: "portrait")
+        iconImageView.image = UIImage(imageNamed: .minePortraitN)
         addSubview(iconImageView)
         
         iconMobileLabel.font = UIFont.systemFontOfSize(18)

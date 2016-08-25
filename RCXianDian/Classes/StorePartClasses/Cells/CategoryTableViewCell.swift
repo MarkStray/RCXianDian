@@ -16,7 +16,7 @@ class CategoryTableViewCell: XDTableViewCell {
     override func initialUI() {
         contentView.backgroundColor = BACKGROUND_COLOR
         
-        backgView.image = UIImage(named: "cellSelected")
+        backgView.image = UIImage(imageNamed: .cellSelectedN)
         backgView.hidden = true
         contentView.addSubview(backgView)
         

@@ -28,14 +28,14 @@ class PurchaseView: UIView {
     
     private lazy var addBtn: UIButton = {
         let addBtn = UIButton(type: .Custom)
-        addBtn.setBackgroundImage(UIImage(named: "add"), forState: .Normal)
+        addBtn.setBackgroundImage(UIImage(imageNamed: .addN), forState: .Normal)
         addBtn.addTarget(self, action: #selector(PurchaseView.addClicked), forControlEvents: .TouchUpInside)
         return addBtn
     }()
     
     private lazy var reduceBtn: UIButton = {
         let reduceBtn = UIButton(type: .Custom)
-        reduceBtn.setBackgroundImage(UIImage(named: "reduce"), forState: .Normal)
+        reduceBtn.setBackgroundImage(UIImage(imageNamed: .reduceN), forState: .Normal)
         reduceBtn.addTarget(self, action: #selector(PurchaseView.reduceClicked), forControlEvents: .TouchUpInside)
         return reduceBtn
     }()

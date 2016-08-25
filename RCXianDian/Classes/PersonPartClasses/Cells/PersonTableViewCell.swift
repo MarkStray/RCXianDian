@@ -23,7 +23,7 @@ class PersonTableViewCell: XDTableViewCell {
         detailTitleLabel.textColor = CELL_LIGHT_COLOR
         titleLabel.font = UIFont.systemFontOfSize(12)
         
-        arrowImgView.image = UIImage(named: "mine-arrow")
+        arrowImgView.image = UIImage(imageNamed: .mineArrowN)
         
         self.contentView.addSubview(iconImgView)
         self.contentView.addSubview(arrowImgView)

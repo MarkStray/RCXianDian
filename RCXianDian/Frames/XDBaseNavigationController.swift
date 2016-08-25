@@ -13,7 +13,7 @@ class XDBaseNavigationController: UINavigationController {
 
     lazy var backBtn: UIButton = {
         let backBtn = UIButton(type: .Custom)
-        backBtn.setImage(UIImage(named: "backArrow"), forState: .Normal)
+        backBtn.setImage(UIImage(imageNamed: .backArrowN), forState: .Normal)
         backBtn.addTarget(self, action: #selector(XDBaseNavigationController.backBtnClick), forControlEvents: .TouchUpInside)
         backBtn.contentHorizontalAlignment = UIControlContentHorizontalAlignment.Left
         backBtn.contentEdgeInsets = UIEdgeInsetsMake(0, -10, 0, 0)

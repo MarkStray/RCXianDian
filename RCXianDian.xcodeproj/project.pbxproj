@@ -113,12 +113,28 @@
 		CE7BE5691D3F60DD00152B4F /* StoreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE7BE5681D3F60DD00152B4F /* StoreViewController.swift */; };
 		CE7BE5731D3F627600152B4F /* PersonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE7BE5721D3F627600152B4F /* PersonViewController.swift */; };
 		CE7BE5751D3F637A00152B4F /* BottomShoppingCar.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE7BE5741D3F637A00152B4F /* BottomShoppingCar.swift */; };
-		CE7BE57E1D40639D00152B4F /* XDTabBarModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE7BE57D1D40639D00152B4F /* XDTabBarModel.swift */; };
 		CE7BE5821D40694A00152B4F /* LocalizationManagerTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE7BE5811D40694A00152B4F /* LocalizationManagerTool.swift */; };
 		CE7BE5841D4070C000152B4F /* ParsePlistUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE7BE5831D4070C000152B4F /* ParsePlistUtil.swift */; };
 		CE81B69B1D6D91AD00CF0B6B /* OrderStatusTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE81B69A1D6D91AD00CF0B6B /* OrderStatusTableViewCell.swift */; };
 		CE81B69D1D6D91BB00CF0B6B /* OrderInfoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE81B69C1D6D91BB00CF0B6B /* OrderInfoTableViewCell.swift */; };
 		CE81B69F1D6D921B00CF0B6B /* BalanceTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE81B69E1D6D921B00CF0B6B /* BalanceTableViewCell.swift */; };
+		CE97C7EA1D6E7A4F00E920C5 /* agree@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CE97C7DC1D6E7A4F00E920C5 /* agree@2x.png */; };
+		CE97C7EB1D6E7A4F00E920C5 /* balance@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CE97C7DD1D6E7A4F00E920C5 /* balance@2x.png */; };
+		CE97C7EC1D6E7A4F00E920C5 /* credit-enough@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CE97C7DE1D6E7A4F00E920C5 /* credit-enough@2x.png */; };
+		CE97C7ED1D6E7A4F00E920C5 /* credit-notenough@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CE97C7DF1D6E7A4F00E920C5 /* credit-notenough@2x.png */; };
+		CE97C7EE1D6E7A4F00E920C5 /* credit-role@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CE97C7E01D6E7A4F00E920C5 /* credit-role@2x.png */; };
+		CE97C7EF1D6E7A4F00E920C5 /* disagree@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CE97C7E11D6E7A4F00E920C5 /* disagree@2x.png */; };
+		CE97C7F01D6E7A4F00E920C5 /* order-box@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CE97C7E21D6E7A4F00E920C5 /* order-box@2x.png */; };
+		CE97C7F11D6E7A4F00E920C5 /* Pay_Ali@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CE97C7E31D6E7A4F00E920C5 /* Pay_Ali@2x.png */; };
+		CE97C7F21D6E7A4F00E920C5 /* Pay_Balance@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CE97C7E41D6E7A4F00E920C5 /* Pay_Balance@2x.png */; };
+		CE97C7F31D6E7A4F00E920C5 /* Pay_Trading@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CE97C7E51D6E7A4F00E920C5 /* Pay_Trading@2x.png */; };
+		CE97C7F41D6E7A4F00E920C5 /* Pay_WeChat@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CE97C7E61D6E7A4F00E920C5 /* Pay_WeChat@2x.png */; };
+		CE97C7F51D6E7A4F00E920C5 /* redpaper-invalid@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CE97C7E71D6E7A4F00E920C5 /* redpaper-invalid@2x.png */; };
+		CE97C7F61D6E7A4F00E920C5 /* redpaper@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CE97C7E81D6E7A4F00E920C5 /* redpaper@2x.png */; };
+		CE97C7F71D6E7A4F00E920C5 /* score@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CE97C7E91D6E7A4F00E920C5 /* score@2x.png */; };
+		CE97C7F91D6E7A5D00E920C5 /* addr-box@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CE97C7F81D6E7A5D00E920C5 /* addr-box@2x.png */; };
+		CE97C7FB1D6E7F2B00E920C5 /* SafetyImageHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE97C7FA1D6E7F2B00E920C5 /* SafetyImageHelper.swift */; };
+		CE97C7FD1D6E89C500E920C5 /* XDTabBarModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE97C7FC1D6E89C500E920C5 /* XDTabBarModel.swift */; };
 		CE9D94031D6DA45E006270D3 /* PlayerModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9D94021D6DA45E006270D3 /* PlayerModel.swift */; };
 		CEB1B69E1D38C9F400F92B45 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CEB1B69D1D38C9F400F92B45 /* Assets.xcassets */; };
 		CEB1B6AC1D38C9F500F92B45 /* RCXianDianTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEB1B6AB1D38C9F500F92B45 /* RCXianDianTests.swift */; };
@@ -324,12 +340,28 @@
 		CE7BE5681D3F60DD00152B4F /* StoreViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StoreViewController.swift; sourceTree = "<group>"; };
 		CE7BE5721D3F627600152B4F /* PersonViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PersonViewController.swift; sourceTree = "<group>"; };
 		CE7BE5741D3F637A00152B4F /* BottomShoppingCar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BottomShoppingCar.swift; sourceTree = "<group>"; };
-		CE7BE57D1D40639D00152B4F /* XDTabBarModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XDTabBarModel.swift; sourceTree = "<group>"; };
 		CE7BE5811D40694A00152B4F /* LocalizationManagerTool.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocalizationManagerTool.swift; sourceTree = "<group>"; };
 		CE7BE5831D4070C000152B4F /* ParsePlistUtil.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ParsePlistUtil.swift; sourceTree = "<group>"; };
 		CE81B69A1D6D91AD00CF0B6B /* OrderStatusTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OrderStatusTableViewCell.swift; sourceTree = "<group>"; };
 		CE81B69C1D6D91BB00CF0B6B /* OrderInfoTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OrderInfoTableViewCell.swift; sourceTree = "<group>"; };
 		CE81B69E1D6D921B00CF0B6B /* BalanceTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BalanceTableViewCell.swift; sourceTree = "<group>"; };
+		CE97C7DC1D6E7A4F00E920C5 /* agree@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "agree@2x.png"; sourceTree = "<group>"; };
+		CE97C7DD1D6E7A4F00E920C5 /* balance@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "balance@2x.png"; sourceTree = "<group>"; };
+		CE97C7DE1D6E7A4F00E920C5 /* credit-enough@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "credit-enough@2x.png"; sourceTree = "<group>"; };
+		CE97C7DF1D6E7A4F00E920C5 /* credit-notenough@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "credit-notenough@2x.png"; sourceTree = "<group>"; };
+		CE97C7E01D6E7A4F00E920C5 /* credit-role@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "credit-role@2x.png"; sourceTree = "<group>"; };
+		CE97C7E11D6E7A4F00E920C5 /* disagree@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "disagree@2x.png"; sourceTree = "<group>"; };
+		CE97C7E21D6E7A4F00E920C5 /* order-box@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "order-box@2x.png"; sourceTree = "<group>"; };
+		CE97C7E31D6E7A4F00E920C5 /* Pay_Ali@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Pay_Ali@2x.png"; sourceTree = "<group>"; };
+		CE97C7E41D6E7A4F00E920C5 /* Pay_Balance@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Pay_Balance@2x.png"; sourceTree = "<group>"; };
+		CE97C7E51D6E7A4F00E920C5 /* Pay_Trading@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Pay_Trading@2x.png"; sourceTree = "<group>"; };
+		CE97C7E61D6E7A4F00E920C5 /* Pay_WeChat@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Pay_WeChat@2x.png"; sourceTree = "<group>"; };
+		CE97C7E71D6E7A4F00E920C5 /* redpaper-invalid@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "redpaper-invalid@2x.png"; sourceTree = "<group>"; };
+		CE97C7E81D6E7A4F00E920C5 /* redpaper@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "redpaper@2x.png"; sourceTree = "<group>"; };
+		CE97C7E91D6E7A4F00E920C5 /* score@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "score@2x.png"; sourceTree = "<group>"; };
+		CE97C7F81D6E7A5D00E920C5 /* addr-box@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "addr-box@2x.png"; sourceTree = "<group>"; };
+		CE97C7FA1D6E7F2B00E920C5 /* SafetyImageHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SafetyImageHelper.swift; sourceTree = "<group>"; };
+		CE97C7FC1D6E89C500E920C5 /* XDTabBarModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XDTabBarModel.swift; sourceTree = "<group>"; };
 		CE9D94021D6DA45E006270D3 /* PlayerModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlayerModel.swift; sourceTree = "<group>"; };
 		CEB1B6931D38C9F400F92B45 /* RCXianDian.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RCXianDian.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CEB1B69D1D38C9F400F92B45 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -556,6 +588,20 @@
 		CE6D20C71D3A099C002B780F /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				CE97C7DC1D6E7A4F00E920C5 /* agree@2x.png */,
+				CE97C7DD1D6E7A4F00E920C5 /* balance@2x.png */,
+				CE97C7DE1D6E7A4F00E920C5 /* credit-enough@2x.png */,
+				CE97C7DF1D6E7A4F00E920C5 /* credit-notenough@2x.png */,
+				CE97C7E01D6E7A4F00E920C5 /* credit-role@2x.png */,
+				CE97C7E11D6E7A4F00E920C5 /* disagree@2x.png */,
+				CE97C7E21D6E7A4F00E920C5 /* order-box@2x.png */,
+				CE97C7E31D6E7A4F00E920C5 /* Pay_Ali@2x.png */,
+				CE97C7E41D6E7A4F00E920C5 /* Pay_Balance@2x.png */,
+				CE97C7E51D6E7A4F00E920C5 /* Pay_Trading@2x.png */,
+				CE97C7E61D6E7A4F00E920C5 /* Pay_WeChat@2x.png */,
+				CE97C7E71D6E7A4F00E920C5 /* redpaper-invalid@2x.png */,
+				CE97C7E81D6E7A4F00E920C5 /* redpaper@2x.png */,
+				CE97C7E91D6E7A4F00E920C5 /* score@2x.png */,
 				CE695B311D6DBDA3005D80D9 /* shop-logo@2x.png */,
 				CE36C4FD1D6C3E8900360C9D /* a@2x.png */,
 				CE36C4FE1D6C3E8900360C9D /* q@2x.png */,
@@ -707,6 +753,7 @@
 		CE6D20D41D3A099C002B780F /* Config */ = {
 			isa = PBXGroup;
 			children = (
+				CE97C7FC1D6E89C500E920C5 /* XDTabBarModel.swift */,
 				CE048E461D5195310023D286 /* DataStruct.swift */,
 			);
 			path = Config;
@@ -725,8 +772,8 @@
 		CE6D20D61D3A099C002B780F /* Helper */ = {
 			isa = PBXGroup;
 			children = (
-				CE7BE57D1D40639D00152B4F /* XDTabBarModel.swift */,
 				CE4E8D8E1D5331F200B03C2A /* FunctionHelper.swift */,
+				CE97C7FA1D6E7F2B00E920C5 /* SafetyImageHelper.swift */,
 			);
 			path = Helper;
 			sourceTree = "<group>";
@@ -1045,6 +1092,7 @@
 		CECE0D041D5887F9007B7FE4 /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				CE97C7F81D6E7A5D00E920C5 /* addr-box@2x.png */,
 				CECE0D101D59B672007B7FE4 /* car@2x.png */,
 				CECE0D111D59B672007B7FE4 /* dustbin@2x.png */,
 			);
@@ -1256,28 +1304,43 @@
 				CE048E5E1D51CDCD0023D286 /* mine-call@2x.png in Resources */,
 				CE048E631D51CDCD0023D286 /* mine-redpage@2x.png in Resources */,
 				CE048E611D51CDCD0023D286 /* mine-history@2x.png in Resources */,
+				CE97C7F41D6E7A4F00E920C5 /* Pay_WeChat@2x.png in Resources */,
+				CE97C7F01D6E7A4F00E920C5 /* order-box@2x.png in Resources */,
+				CE97C7EF1D6E7A4F00E920C5 /* disagree@2x.png in Resources */,
+				CE97C7ED1D6E7A4F00E920C5 /* credit-notenough@2x.png in Resources */,
 				CE048E5C1D51CDCD0023D286 /* mine-background@2x.png in Resources */,
 				CECE0D131D59B672007B7FE4 /* dustbin@2x.png in Resources */,
+				CE97C7F91D6E7A5D00E920C5 /* addr-box@2x.png in Resources */,
+				CE97C7EB1D6E7A4F00E920C5 /* balance@2x.png in Resources */,
+				CE97C7F11D6E7A4F00E920C5 /* Pay_Ali@2x.png in Resources */,
 				CE048E661D51CDCD0023D286 /* mine-setting@2x.png in Resources */,
+				CE97C7EC1D6E7A4F00E920C5 /* credit-enough@2x.png in Resources */,
 				CE4E8D9B1D54810800B03C2A /* search_w@2x.png in Resources */,
 				CE4E8D9A1D54810800B03C2A /* search_b@2x.png in Resources */,
 				CE6D212E1D3A099C002B780F /* LaunchScreen.storyboard in Resources */,
 				CE048E641D51CDCD0023D286 /* mine-reset@2x.png in Resources */,
 				CE4E8D8C1D52EF7E00B03C2A /* operation@2x.png in Resources */,
 				CE048E691D51CDCD0023D286 /* portrait@2x.png in Resources */,
+				CE97C7EE1D6E7A4F00E920C5 /* credit-role@2x.png in Resources */,
+				CE97C7F51D6E7A4F00E920C5 /* redpaper-invalid@2x.png in Resources */,
+				CE97C7F61D6E7A4F00E920C5 /* redpaper@2x.png in Resources */,
 				CE695B321D6DBDA3005D80D9 /* shop-logo@2x.png in Resources */,
 				CE4E8D8A1D52EF7E00B03C2A /* cellSelected@2x.png in Resources */,
 				CE4E8D891D52EF7E00B03C2A /* add@2x.png in Resources */,
 				CED3180B1D460E6000780409 /* SVProgressHUD.bundle in Resources */,
 				CE6D212D1D3A099C002B780F /* Info.plist in Resources */,
+				CE97C7F21D6E7A4F00E920C5 /* Pay_Balance@2x.png in Resources */,
 				CE048E621D51CDCD0023D286 /* mine-order@2x.png in Resources */,
 				CEB1B69E1D38C9F400F92B45 /* Assets.xcassets in Resources */,
 				CE36C5001D6C3E8900360C9D /* q@2x.png in Resources */,
 				CE048E5D1D51CDCD0023D286 /* mine-balance@2x.png in Resources */,
+				CE97C7EA1D6E7A4F00E920C5 /* agree@2x.png in Resources */,
+				CE97C7F31D6E7A4F00E920C5 /* Pay_Trading@2x.png in Resources */,
 				CE048E5F1D51CDCD0023D286 /* mine-exit@2x.png in Resources */,
 				CE048E651D51CDCD0023D286 /* mine-score@2x.png in Resources */,
 				CE048E681D51CDCD0023D286 /* mine-update@2x.png in Resources */,
 				CE4E8D8B1D52EF7E00B03C2A /* onsale@2x.png in Resources */,
+				CE97C7F71D6E7A4F00E920C5 /* score@2x.png in Resources */,
 				CE6D212F1D3A099C002B780F /* Main.storyboard in Resources */,
 				CE36C4FF1D6C3E8900360C9D /* a@2x.png in Resources */,
 				CE048E671D51CDCD0023D286 /* mine-share@2x.png in Resources */,
@@ -1384,6 +1447,7 @@
 				CED3180C1D460E6000780409 /* SVProgressHUD.m in Sources */,
 				CE4E8D8F1D5331F200B03C2A /* FunctionHelper.swift in Sources */,
 				CE7BE5731D3F627600152B4F /* PersonViewController.swift in Sources */,
+				CE97C7FB1D6E7F2B00E920C5 /* SafetyImageHelper.swift in Sources */,
 				CE6D21511D3A16CC002B780F /* XDBaseViewController.swift in Sources */,
 				B90BB6921D685161004C6607 /* OrderListViewController.swift in Sources */,
 				CE048E791D51F32B0023D286 /* ProductCallInfo.swift in Sources */,
@@ -1417,6 +1481,7 @@
 				CE6D21321D3A099C002B780F /* MASCompositeConstraint.m in Sources */,
 				CE6D21441D3A099C002B780F /* SDWebImageCompat.m in Sources */,
 				CE6D21421D3A099C002B780F /* NSData+ImageContentType.m in Sources */,
+				CE97C7FD1D6E89C500E920C5 /* XDTabBarModel.swift in Sources */,
 				CE7BE5691D3F60DD00152B4F /* StoreViewController.swift in Sources */,
 				CE6D21451D3A099C002B780F /* SDWebImageDecoder.m in Sources */,
 				CED318281D46371C00780409 /* JSONModel.m in Sources */,
@@ -1439,7 +1504,6 @@
 				CE6D21351D3A099C002B780F /* MASLayoutConstraint.m in Sources */,
 				CE048E491D51C51C0023D286 /* PersonTableViewCell.swift in Sources */,
 				B90BB6B21D685431004C6607 /* GuideViewController.swift in Sources */,
-				CE7BE57E1D40639D00152B4F /* XDTabBarModel.swift in Sources */,
 				CE6D212C1D3A099C002B780F /* HomeViewController.swift in Sources */,
 				CE048E731D51E1F10023D286 /* XDTableViewCell.swift in Sources */,
 				CE6D21371D3A099C002B780F /* MASViewConstraint.m in Sources */,

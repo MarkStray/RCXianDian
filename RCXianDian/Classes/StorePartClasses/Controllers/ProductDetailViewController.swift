@@ -23,7 +23,7 @@ class ProductDetailViewController: XDBaseViewController {
 
     private lazy var backBtn: UIButton = {
         let backBtn = UIButton(type: .Custom)
-        backBtn.setBackgroundImage(UIImage(named: "backArrow"), forState: .Normal)
+        backBtn.setBackgroundImage(UIImage(imageNamed: .backArrowN), forState: .Normal)
         backBtn.addTarget(self, action: #selector(backBtnAction), forControlEvents: .TouchUpInside)
         backBtn.layer.masksToBounds = true
         backBtn.layer.cornerRadius = 15

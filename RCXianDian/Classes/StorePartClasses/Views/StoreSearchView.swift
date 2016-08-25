@@ -35,7 +35,7 @@ class StoreSearchView: UIView {
         titleLabel.text = "搜索产品名称"
         backgView.addSubview(titleLabel)
         
-        imgView.image = UIImage(named: "search_b")
+        imgView.image = UIImage(imageNamed: .searchBGN)
         backgView.addSubview(imgView)
         
         lineView.backgroundColor = LINE_COLOR

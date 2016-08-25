@@ -23,8 +23,8 @@ class QATableViewCell: XDTableViewCell {
         aLabel.font = UIFont.systemFontOfSize(14)
         aLabel.numberOfLines = 0
         
-        qImgView.image = UIImage(named: "q")
-        aImgView.image = UIImage(named: "a")
+        qImgView.image = UIImage(imageNamed: .questionN)
+        aImgView.image = UIImage(imageNamed: .answerN)
         
         lineView.hidden = true
 

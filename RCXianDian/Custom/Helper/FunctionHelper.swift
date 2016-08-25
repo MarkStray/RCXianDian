@@ -47,12 +47,12 @@ func showAnimationAlertView(msg: String) {
 
 func asyncImgVLoadingImage(imgV: UIImageView, urlStr: String?) {
     let url = NSURL(string: urlStr!.stringByRemovingPercentEncoding!)
-    imgV.sd_setImageWithURL(url, placeholderImage: UIImage(named: "loading"))
+    imgV.sd_setImageWithURL(url, placeholderImage: UIImage(imageNamed: .loadingN))
 }
 
 func asyncBtnLoadingImage(btn: UIButton, urlStr: String?) {
     let url = NSURL(string: urlStr!.stringByRemovingPercentEncoding!)
-    btn.sd_setImageWithURL(url, forState: .Normal, placeholderImage: UIImage(named: "loading"))
+    btn.sd_setImageWithURL(url, forState: .Normal, placeholderImage: UIImage(imageNamed: .loadingN))
 }
 
 //MARK:- 计算宽高
@@ -91,6 +91,9 @@ func width(miniW: CGFloat, str: String, height: CGFloat, fSize: CGFloat) -> CGFl
     
     return width
 }
+
+//MARK:- 定义局部scope来分隔代码
+func local(closure: ()->()) {closure()}
 
 
 

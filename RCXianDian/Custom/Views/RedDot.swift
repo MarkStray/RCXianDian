@@ -55,7 +55,7 @@ class RedDot: UIView {
     override init(frame: CGRect) {
         super.init(frame: frame)
         
-        redDotImgView.image = UIImage(named: "redDot")
+        redDotImgView.image = UIImage(imageNamed: .redDotN)
         addSubview(redDotImgView)
         
         numberLabel.textColor = UIColor.whiteColor()

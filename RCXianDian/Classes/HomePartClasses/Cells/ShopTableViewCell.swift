@@ -22,7 +22,7 @@ class ShopTableViewCell: XDTableViewCell {
         avatarImageView.layer.masksToBounds = true
         avatarImageView.layer.cornerRadius = 5
         
-        arrowImageView.image = UIImage(named: "rightArrow")
+        arrowImageView.image = UIImage(imageNamed: .rightArrowN)
         
         nameLabel.textColor = CELL_DARK_COLOR
         nameLabel.font = UIFont.systemFontOfSize(16)
@@ -79,7 +79,7 @@ class ShopTableViewCell: XDTableViewCell {
     func updateUIWithModel(model: PresellModel?) {
         //let url = NSURL(string: model!.imgurl!.stringByReplacingPercentEscapesUsingEncoding(NSUTF8StringEncoding)!)
         let url = NSURL(string: model!.logo!.stringByRemovingPercentEncoding!)
-        avatarImageView.sd_setImageWithURL(url, placeholderImage: UIImage(named: "loading"))
+        avatarImageView.sd_setImageWithURL(url, placeholderImage: UIImage(imageNamed: .loadingN))
         
         nameLabel.text = model?.contact
         

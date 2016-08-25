@@ -11,7 +11,7 @@ import UIKit
 class ShoppingCarEmptyView: UIView {
 
     private lazy var carImgView = {
-        return UIImageView(image: UIImage(named: "car"))
+        return UIImageView(image: UIImage(imageNamed: .shoppingCarN)!)
     }()
     
     private lazy var emptyLabel: UILabel = {

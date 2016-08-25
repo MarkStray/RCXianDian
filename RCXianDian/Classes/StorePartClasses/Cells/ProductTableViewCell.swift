@@ -39,7 +39,7 @@ class ProductTableViewCell: XDTableViewCell {
         brandLabel.text = "鲜店"
         brandLabel.textAlignment = .Center
         brandLabel.textColor = GLOBAL_COLOR
-        onsaleImgView.image = UIImage(named: "onsale")
+        onsaleImgView.image = UIImage(imageNamed: .onsaleN)
         
         nameLabel.textColor = CELL_DARK_COLOR
         specLabel.textColor = CELL_LIGHT_COLOR
@@ -127,7 +127,7 @@ class ProductTableViewCell: XDTableViewCell {
         purchaseView.number = (model?.count)!
         
         let url = NSURL(string: model!.imgurl!.stringByRemovingPercentEncoding!)
-        logoImgView.sd_setImageWithURL(url, placeholderImage: UIImage(named: "loading"))
+        logoImgView.sd_setImageWithURL(url, placeholderImage: UIImage(imageNamed: .loadingN))
         
         onsaleImgView.hidden = model?.onsale == 0
         

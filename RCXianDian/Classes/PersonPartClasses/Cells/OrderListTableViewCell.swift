@@ -51,7 +51,7 @@ class OrderListTableViewCell: XDTableViewCell {
             centerLine.backgroundColor = LINE_COLOR
             centerView.addSubview(centerLine)
             
-            logoImgView.image = UIImage(named: "shop-logo")
+            logoImgView.image = UIImage(imageNamed: .shopLogoN)
             centerView.addSubview(logoImgView)
             
             shopLabel.font = FONTSIZE_DEFAULT
