@@ -56,6 +56,8 @@
 		CE048E751D51E4CD0023D286 /* OrderListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE048E741D51E4CD0023D286 /* OrderListTableViewCell.swift */; };
 		CE048E771D51E8A10023D286 /* LineLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE048E761D51E8A10023D286 /* LineLabel.swift */; };
 		CE048E791D51F32B0023D286 /* ProductCallInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE048E781D51F32B0023D286 /* ProductCallInfo.swift */; };
+		CE0832791D75915F00FB1D94 /* OrderInfoHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE0832781D75915F00FB1D94 /* OrderInfoHeaderView.swift */; };
+		CE08327B1D7594EB00FB1D94 /* OrderDetailInfoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE08327A1D7594EB00FB1D94 /* OrderDetailInfoTableViewCell.swift */; };
 		CE36C4FA1D6C36C300360C9D /* OrderCallInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE36C4F91D6C36C300360C9D /* OrderCallInfo.swift */; };
 		CE36C4FC1D6C3CFB00360C9D /* QATableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE36C4FB1D6C3CFB00360C9D /* QATableViewCell.swift */; };
 		CE36C4FF1D6C3E8900360C9D /* a@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CE36C4FD1D6C3E8900360C9D /* a@2x.png */; };
@@ -246,6 +248,8 @@
 		CE048E741D51E4CD0023D286 /* OrderListTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OrderListTableViewCell.swift; sourceTree = "<group>"; };
 		CE048E761D51E8A10023D286 /* LineLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LineLabel.swift; sourceTree = "<group>"; };
 		CE048E781D51F32B0023D286 /* ProductCallInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductCallInfo.swift; sourceTree = "<group>"; };
+		CE0832781D75915F00FB1D94 /* OrderInfoHeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OrderInfoHeaderView.swift; sourceTree = "<group>"; };
+		CE08327A1D7594EB00FB1D94 /* OrderDetailInfoTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OrderDetailInfoTableViewCell.swift; sourceTree = "<group>"; };
 		CE36C4F91D6C36C300360C9D /* OrderCallInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OrderCallInfo.swift; sourceTree = "<group>"; };
 		CE36C4FB1D6C3CFB00360C9D /* QATableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QATableViewCell.swift; sourceTree = "<group>"; };
 		CE36C4FD1D6C3E8900360C9D /* a@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "a@2x.png"; sourceTree = "<group>"; };
@@ -564,6 +568,7 @@
 				CE048E741D51E4CD0023D286 /* OrderListTableViewCell.swift */,
 				CE81B69A1D6D91AD00CF0B6B /* OrderStatusTableViewCell.swift */,
 				CE81B69C1D6D91BB00CF0B6B /* OrderInfoTableViewCell.swift */,
+				CE08327A1D7594EB00FB1D94 /* OrderDetailInfoTableViewCell.swift */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -647,6 +652,7 @@
 			isa = PBXGroup;
 			children = (
 				CE048E6A1D51CF6A0023D286 /* PersonHeaderView.swift */,
+				CE0832781D75915F00FB1D94 /* OrderInfoHeaderView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -1451,6 +1457,7 @@
 				CE4E8D8F1D5331F200B03C2A /* FunctionHelper.swift in Sources */,
 				CE7BE5731D3F627600152B4F /* PersonViewController.swift in Sources */,
 				CE4271D11D73C280002F809B /* TopMenu.swift in Sources */,
+				CE08327B1D7594EB00FB1D94 /* OrderDetailInfoTableViewCell.swift in Sources */,
 				CE97C7FB1D6E7F2B00E920C5 /* SafetyImageHelper.swift in Sources */,
 				CE6D21511D3A16CC002B780F /* XDBaseViewController.swift in Sources */,
 				B90BB6921D685161004C6607 /* OrderListViewController.swift in Sources */,
@@ -1501,6 +1508,7 @@
 				B90BB6A01D68528A004C6607 /* SearchViewController.swift in Sources */,
 				CE048E771D51E8A10023D286 /* LineLabel.swift in Sources */,
 				B90BB6B01D685402004C6607 /* LoginViewController.swift in Sources */,
+				CE0832791D75915F00FB1D94 /* OrderInfoHeaderView.swift in Sources */,
 				CE6D214A1D3A099C002B780F /* UIButton+WebCache.m in Sources */,
 				CECE0D0D1D5973CE007B7FE4 /* ShoppingCarBottomView.swift in Sources */,
 				CE6D21381D3A099C002B780F /* NSArray+MASAdditions.m in Sources */,
