@@ -9,28 +9,49 @@
 import UIKit
 
 class OrderDetailViewController: XDBaseViewController {
-
+    
+    //MARK:- Instance Varible
+    var orderDetailModel: OrderModel? {
+        didSet {
+            setupTopMenu()
+        }
+    }
+    
+    var topMenu: TopMenu!
+    
+    
+    
+    //MARK:- Life Circle
     override func viewDidLoad() {
         super.viewDidLoad()
         title = "订单详情"
-
-        // Do any additional setup after loading the view.
-    }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+        
+        requestOrderDetailData()
+        
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    //MARK:- UI Initial
+    
+    func setupTopMenu() {
+        let orderStatusVC = OrderStatusViewController()
+        orderStatusVC.title = "订单状态"
+        orderStatusVC.orderDetailModel = orderDetailModel
+        
+        let orderInfoVC = OrderInfoViewController()
+        orderInfoVC.title = "订单信息"
+        orderInfoVC.orderDetailModel = orderDetailModel
+        
+        topMenu = TopMenu(frame: CGRectMake(0, 0, SCREEN_WIDTH, view.height), viewControllers: [orderStatusVC, orderInfoVC])
+        topMenu.backgroundColor = BACKGROUND_COLOR
+        view.addSubview(topMenu)
     }
-    */
-
+    
+    //MARK:- Data Request
+    func requestOrderDetailData() {
+        
+        OrderDetailCallInfo.requestOrderDetailsData { (orderDetailCallInfo) in
+            printLog(orderDetailCallInfo!.toJSON())
+            self.orderDetailModel = orderDetailCallInfo?.CallInfo
+        }
+    }
 }

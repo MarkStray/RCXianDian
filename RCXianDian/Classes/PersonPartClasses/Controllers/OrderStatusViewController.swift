@@ -12,13 +12,9 @@ class OrderStatusViewController: XDBaseViewController {
 
     //MARK:- Instance Varible
     
-    var orderDetailModel: OrderModel? {
-        didSet {
-            orderStatusTableView.reloadData()
-        }
-    }
+    var orderDetailModel: OrderModel?
     
-    var orderStatusTableView = XDTableView(frame: CGRectMake(0, 0, SCREEN_WIDTH, SCREEN_HEIGHT-64), style: .Plain)
+    var orderStatusTableView: XDTableView!
     
     var bottomView = UIView()
     
@@ -26,25 +22,18 @@ class OrderStatusViewController: XDBaseViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        initialUI()
-        
-        requestOrderDetailData()
+        initialTableView()
     }
     
     //MARK:- UI Initial
-    func initialUI() {
+    func initialTableView() {
+        orderStatusTableView = XDTableView(frame: CGRectMake(0, 0, view.width, view.height), style: .Plain)
+        orderStatusTableView.scrollEnabled = true
         orderStatusTableView.delegate = self
         orderStatusTableView.dataSource = self
         view.addSubview(orderStatusTableView)
-    }
-    
-    //MARK:- Data Request
-    func requestOrderDetailData() {
         
-        OrderDetailCallInfo.requestOrderDetailsData { (orderDetailCallInfo) in
-            printLog(orderDetailCallInfo!.toJSON())
-            self.orderDetailModel = orderDetailCallInfo?.CallInfo
-        }
+        orderStatusTableView.reloadData()
     }
     
     //MARK:- Action
@@ -101,5 +90,9 @@ extension OrderStatusViewController: UITableViewDelegate, UITableViewDataSource 
             
             return cell!
         }
+    
+    func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+        printLog(indexPath.row)
+    }
         
 }

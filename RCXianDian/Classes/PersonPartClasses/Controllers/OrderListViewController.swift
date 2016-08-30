@@ -100,7 +100,8 @@ extension OrderListViewController: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
         //let model = orderList![indexPath.section]
-        self.navigationController?.pushViewController(OrderStatusViewController(), animated: true)
+        //self.navigationController?.pushViewController(OrderStatusViewController(), animated: true)
+        self.navigationController?.pushViewController(OrderDetailViewController(), animated: true)
     }
     
 }

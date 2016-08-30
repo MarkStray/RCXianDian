@@ -33,7 +33,7 @@ class QAViewController: XDBaseViewController {
 
     //MARK:- UI Initial
     func initialQATableView() {
-        qaTableView = XDTableView(frame: CGRectMake(0, 0, SCREEN_WIDTH, SCREEN_HEIGHT-64), style: .Grouped)
+        qaTableView = XDTableView(frame: CGRectMake(0, 0, SCREEN_WIDTH, view.height), style: .Grouped)
         qaTableView.delegate = self
         qaTableView.dataSource = self
         /**
@@ -46,6 +46,8 @@ class QAViewController: XDBaseViewController {
         //qaTableView.estimatedRowHeight = UITableViewAutomaticDimension
         
         view.addSubview(qaTableView)
+        
+        
     }
     
     //MARK:- Data Request

@@ -10,6 +10,8 @@ import UIKit
 
 class OrderInfoViewController: XDBaseViewController {
 
+    var orderDetailModel: OrderModel?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 

@@ -16,8 +16,10 @@ class XDBaseViewController: UIViewController {
         super.viewDidLoad()
         
         self.edgesForExtendedLayout = .Bottom
-        view.backgroundColor = UIColor.whiteColor()
+        self.automaticallyAdjustsScrollViewInsets = false
+        view.height = SCREEN_HEIGHT-64
         
+        view.backgroundColor = UIColor.whiteColor()
         view.backgroundColor = UIColor.randomColor()
     }
     

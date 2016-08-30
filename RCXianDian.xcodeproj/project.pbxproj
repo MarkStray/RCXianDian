@@ -60,6 +60,7 @@
 		CE36C4FC1D6C3CFB00360C9D /* QATableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE36C4FB1D6C3CFB00360C9D /* QATableViewCell.swift */; };
 		CE36C4FF1D6C3E8900360C9D /* a@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CE36C4FD1D6C3E8900360C9D /* a@2x.png */; };
 		CE36C5001D6C3E8900360C9D /* q@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CE36C4FE1D6C3E8900360C9D /* q@2x.png */; };
+		CE4271D11D73C280002F809B /* TopMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE4271D01D73C280002F809B /* TopMenu.swift */; };
 		CE4E8D891D52EF7E00B03C2A /* add@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CE4E8D841D52EF7E00B03C2A /* add@2x.png */; };
 		CE4E8D8A1D52EF7E00B03C2A /* cellSelected@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CE4E8D851D52EF7E00B03C2A /* cellSelected@2x.png */; };
 		CE4E8D8B1D52EF7E00B03C2A /* onsale@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CE4E8D861D52EF7E00B03C2A /* onsale@2x.png */; };
@@ -249,6 +250,7 @@
 		CE36C4FB1D6C3CFB00360C9D /* QATableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QATableViewCell.swift; sourceTree = "<group>"; };
 		CE36C4FD1D6C3E8900360C9D /* a@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "a@2x.png"; sourceTree = "<group>"; };
 		CE36C4FE1D6C3E8900360C9D /* q@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "q@2x.png"; sourceTree = "<group>"; };
+		CE4271D01D73C280002F809B /* TopMenu.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TopMenu.swift; sourceTree = "<group>"; };
 		CE4E8D841D52EF7E00B03C2A /* add@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "add@2x.png"; sourceTree = "<group>"; };
 		CE4E8D851D52EF7E00B03C2A /* cellSelected@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "cellSelected@2x.png"; sourceTree = "<group>"; };
 		CE4E8D861D52EF7E00B03C2A /* onsale@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "onsale@2x.png"; sourceTree = "<group>"; };
@@ -798,6 +800,7 @@
 				CECE0CF41D580F7E007B7FE4 /* RedDot.swift */,
 				CE7BE5741D3F637A00152B4F /* BottomShoppingCar.swift */,
 				CECE0CF61D582EB0007B7FE4 /* PurchaseView.swift */,
+				CE4271D01D73C280002F809B /* TopMenu.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -1447,6 +1450,7 @@
 				CED3180C1D460E6000780409 /* SVProgressHUD.m in Sources */,
 				CE4E8D8F1D5331F200B03C2A /* FunctionHelper.swift in Sources */,
 				CE7BE5731D3F627600152B4F /* PersonViewController.swift in Sources */,
+				CE4271D11D73C280002F809B /* TopMenu.swift in Sources */,
 				CE97C7FB1D6E7F2B00E920C5 /* SafetyImageHelper.swift in Sources */,
 				CE6D21511D3A16CC002B780F /* XDBaseViewController.swift in Sources */,
 				B90BB6921D685161004C6607 /* OrderListViewController.swift in Sources */,
