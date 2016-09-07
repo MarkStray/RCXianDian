@@ -10,8 +10,6 @@ import UIKit
 
 class XDBaseViewController: UIViewController {
     
-    
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         
