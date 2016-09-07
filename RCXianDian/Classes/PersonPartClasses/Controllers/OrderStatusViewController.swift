@@ -28,12 +28,12 @@ class OrderStatusViewController: XDBaseViewController {
     //MARK:- UI Initial
     func initialTableView() {
         orderStatusTableView = XDTableView(frame: CGRectMake(0, 0, view.width, view.height), style: .Plain)
-        orderStatusTableView.scrollEnabled = true
+        printLog("enable \(orderStatusTableView.scrollEnabled)")
         orderStatusTableView.delegate = self
         orderStatusTableView.dataSource = self
         view.addSubview(orderStatusTableView)
         
-        orderStatusTableView.reloadData()
+        //orderStatusTableView.reloadData()
     }
     
     //MARK:- Action

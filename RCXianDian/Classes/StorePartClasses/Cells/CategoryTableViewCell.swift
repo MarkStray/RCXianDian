@@ -14,6 +14,7 @@ class CategoryTableViewCell: XDTableViewCell {
     var backgView = UIImageView()
     
     override func initialUI() {
+        lineView.hidden = false
         contentView.backgroundColor = BACKGROUND_COLOR
         
         backgView.image = UIImage(imageNamed: .cellSelectedN)
@@ -36,6 +37,11 @@ class CategoryTableViewCell: XDTableViewCell {
         
         titleLabel.snp_makeConstraints { (make) in
             make.top.left.right.bottom.equalTo(contentView)
+        }
+        
+        lineView.snp_makeConstraints { (make) in
+            make.left.right.bottom.equalTo(contentView)
+            make.height.equalTo(1)
         }
     }
 

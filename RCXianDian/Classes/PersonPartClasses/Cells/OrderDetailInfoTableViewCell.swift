@@ -14,6 +14,8 @@ class OrderDetailInfoTableViewCell: XDTableViewCell {
     var detailLabel = UILabel()
 
     override func initialUI() {
+        lineView.hidden = false
+        
         titleLabel.font = FONTSIZE_BIG
         titleLabel.textColor = CELL_DARK_COLOR
         contentView.addSubview(titleLabel)
@@ -40,7 +42,7 @@ class OrderDetailInfoTableViewCell: XDTableViewCell {
             make.bottom.equalTo(contentView).offset(-10)
         }
         
-        lineView.snp_updateConstraints { (make) in
+        lineView.snp_makeConstraints { (make) in
             make.bottom.equalTo(contentView.snp_bottom)
             make.left.equalTo(contentView.snp_left).offset(16)
             make.right.equalTo(contentView.snp_right).offset(-16)

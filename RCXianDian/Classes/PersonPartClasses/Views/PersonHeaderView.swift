@@ -76,7 +76,7 @@ class IconView: UIView {
         iconImageView.snp_makeConstraints { (make) in
             make.top.equalTo(self.snp_top).offset(5)
             make.width.height.equalTo(80)
-            make.centerX.equalTo(self.centerX)
+            make.centerX.equalTo(self.snp_centerX)
         }
         
         iconMobileLabel.snp_makeConstraints { (make) in

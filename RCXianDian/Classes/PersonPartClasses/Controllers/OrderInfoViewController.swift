@@ -42,6 +42,7 @@ class OrderInfoViewController: XDBaseViewController {
     //MARK:- UI Initial
     func initialTableView() {
         orderInfoTableView = XDTableView(frame: CGRectMake(0, 0, view.width, view.height), style: .Grouped)
+        printLog("enable \(orderInfoTableView.scrollEnabled)")
         orderInfoTableView.delegate = self
         orderInfoTableView.dataSource = self
         
@@ -58,7 +59,7 @@ class OrderInfoViewController: XDBaseViewController {
         
         view.addSubview(orderInfoTableView)
         
-        orderInfoTableView.reloadData()
+        //orderInfoTableView.reloadData()
     }
     
     //MARK:- Build Data

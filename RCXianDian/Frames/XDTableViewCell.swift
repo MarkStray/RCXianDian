@@ -23,15 +23,8 @@ class XDTableViewCell: UITableViewCell {
         
         lineView.backgroundColor = LINE_COLOR
         contentView.addSubview(lineView)
-    }
-
-    override func layoutSubviews() {
-        super.layoutSubviews()
         
-        lineView.snp_makeConstraints { (make) in
-            make.left.right.bottom.equalTo(contentView)
-            make.height.equalTo(1)
-        }
+        lineView.hidden = true
     }
     
     /**

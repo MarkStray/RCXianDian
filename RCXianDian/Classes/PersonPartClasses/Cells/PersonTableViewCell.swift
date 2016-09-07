@@ -16,6 +16,7 @@ class PersonTableViewCell: XDTableViewCell {
     var arrowImgView = UIImageView()
     
     override func initialUI() {
+        lineView.hidden = false
         
         titleLabel.textColor = CELL_DARK_COLOR
         titleLabel.font = UIFont.systemFontOfSize(14)
@@ -59,7 +60,7 @@ class PersonTableViewCell: XDTableViewCell {
             make.height.equalTo(21)
         }
         
-        lineView.snp_updateConstraints { (make) in
+        lineView.snp_makeConstraints { (make) in
             make.bottom.equalTo(contentView.snp_bottom)
             make.left.equalTo(contentView.snp_left).offset(16)
             make.right.equalTo(contentView.snp_right).offset(-16)

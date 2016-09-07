@@ -56,7 +56,7 @@ class OrderStatusTableViewCell: XDTableViewCell {
     }
     
     override func layoutSubviews() {
-        super.layoutSubviews()
+        //super.layoutSubviews()
         
         do {
             upView.snp_makeConstraints { (make) in

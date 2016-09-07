@@ -129,7 +129,7 @@ class XDRESTServices: NSObject {
         if resId == nil {return}
         if resId!.isEmpty {return}
         
-        if isNeedAuth {return}
+        if !isNeedAuth {return}
         
         var queryStr = res!+"/"+resId!+"?"
         

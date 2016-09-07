@@ -18,7 +18,7 @@ class TopMenu: UIView {
     private let menuItemHeight = CGFloat(43)
 
     private var menuScrollView = UIScrollView()
-    private var containerScrollView = UIScrollView()
+    private var containerScrollView = MyScrollView()
     
     private var lineView: UIView!
 
@@ -38,7 +38,11 @@ class TopMenu: UIView {
     convenience init(frame: CGRect, viewControllers: [UIViewController]) {
         self.init(frame: frame)
         _viewControllers = viewControllers
-        
+        for vc in _viewControllers {
+            guard let _ = vc.title else {
+                fatalError("viewControllers contained by \"TopMenu\" must be has a title")
+            }
+        }
         setupMenus()
         setupContents()
         setupContentSize()
@@ -56,13 +60,20 @@ class TopMenu: UIView {
         containerScrollView.bounces = false
         containerScrollView.pagingEnabled = true
         containerScrollView.userInteractionEnabled = true
+        containerScrollView.delaysContentTouches = false
+        
+        containerScrollView.scrollEnabled = false ///////
+        
         containerScrollView.showsHorizontalScrollIndicator = false
+        containerScrollView.showsVerticalScrollIndicator = false
         containerScrollView.backgroundColor = BACKGROUND_COLOR
         addSubview(containerScrollView)
         
         lineView = UIView(frame: CGRectMake(0, menuItemHeight, menuItemWidth, lineViewHeight))
         lineView.backgroundColor = GLOBAL_COLOR
         menuScrollView.addSubview(lineView)
+        
+        self.userInteractionEnabled = true
     }
     
     func setupContentSize() {
@@ -118,7 +129,6 @@ class TopMenu: UIView {
         }
         self.containerScrollView.scrollRectToVisible(CGRectMake(SCREEN_WIDTH*CGFloat(index), 0, SCREEN_WIDTH, self.height-menuViewHeight), animated: true)
     }
-
     
     //MARK:- Layout
     override func layoutSubviews() {
@@ -149,3 +159,22 @@ extension TopMenu: UIScrollViewDelegate {
         }
     }
 }
+
+///////////////////////////////////
+///////////////////////////////////
+///////////////////////////////////
+
+class MyScrollView: UIScrollView {
+    
+//    func gestureRecognizer(gestureRecognizer: UIGestureRecognizer, shouldRequireFailureOfGestureRecognizer otherGestureRecognizer: UIGestureRecognizer) -> Bool {
+//        guard ((otherGestureRecognizer.view?.isKindOfClass(NSClassFromString("UITableViewWrapperView")!)) != nil) else {
+//            printLog("1111")
+//            return true
+//        }
+//        printLog("-------1111")
+//
+//        return false
+//    }
+}
+
+

@@ -24,6 +24,7 @@ class ProductTableViewCell: XDTableViewCell {
     private var productModel: ProductModel!
     
     override func initialUI() {
+        lineView.hidden = false
         
         brandLabel.font = UIFont.systemFontOfSize(14)
         nameLabel.font = UIFont.systemFontOfSize(14)
@@ -113,7 +114,7 @@ class ProductTableViewCell: XDTableViewCell {
             make.height.equalTo(25)
         }
         
-        lineView.snp_updateConstraints { (make) in
+        lineView.snp_makeConstraints { (make) in
             make.bottom.equalTo(contentView.snp_bottom)
             make.left.equalTo(contentView.snp_left).offset(8)
             make.right.equalTo(contentView.snp_right).offset(-8)

@@ -25,7 +25,6 @@ class OrderListTableViewCell: XDTableViewCell {
     var datatimeLabel = UILabel()
     
     override func initialUI() {
-        lineView.hidden = true
         
         addSubview(topView)
         addSubview(centerView)

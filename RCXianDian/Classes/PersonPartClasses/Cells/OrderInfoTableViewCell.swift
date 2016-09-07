@@ -20,6 +20,7 @@ class OrderInfoTableViewCell: XDTableViewCell {
     override func initialUI() {
         
         do {
+            lineView.hidden = false
             contentView.addSubview(productLogo)
         }
         
@@ -96,6 +97,11 @@ class OrderInfoTableViewCell: XDTableViewCell {
                 make.centerY.equalTo(avgLabel)
                 make.centerX.equalTo(priceLabel)
             })
+        }
+        
+        lineView.snp_makeConstraints { (make) in
+            make.left.right.bottom.equalTo(contentView)
+            make.height.equalTo(1)
         }
     }
     

@@ -15,7 +15,8 @@ class QATableViewCell: XDTableViewCell {
     var aLabel = UILabel()
     
     override func initialUI() {
-        
+        lineView.hidden = true
+
         qLabel.textColor = CELL_DARK_COLOR
         qLabel.font = UIFont.systemFontOfSize(14)
         
@@ -25,8 +26,6 @@ class QATableViewCell: XDTableViewCell {
         
         qImgView.image = UIImage(imageNamed: .questionN)
         aImgView.image = UIImage(imageNamed: .answerN)
-        
-        lineView.hidden = true
 
         self.contentView.addSubview(qImgView)
         self.contentView.addSubview(aImgView)
@@ -41,13 +40,13 @@ class QATableViewCell: XDTableViewCell {
         qImgView.snp_makeConstraints { (make) in
             make.top.equalTo(self.contentView).offset(8)
             make.left.equalTo(self.contentView).offset(16)
-            make.width.height.equalTo(24)
+            make.width.height.equalTo(24).priority(999)
         }
         
         aImgView.snp_makeConstraints { (make) in
             make.top.equalTo(qImgView.snp_bottom).offset(10)
             make.left.equalTo(self.contentView).offset(16)
-            make.width.height.equalTo(24)
+            make.width.height.equalTo(24).priority(999)
         }
         
         qLabel.snp_makeConstraints { (make) in
