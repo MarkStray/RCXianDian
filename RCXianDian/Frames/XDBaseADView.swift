@@ -52,9 +52,10 @@ class XDBaseADView: UIView,UIScrollViewDelegate {
         self.scrollview.delegate = self
         self.addSubview(self.scrollview)
         self.addSubview(self.pagecontrol)
+        
         if ismotion == true {
             self.addTimer()
-        }else{
+        } else {
             return
         }
 
