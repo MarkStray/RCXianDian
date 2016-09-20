@@ -7,9 +7,11 @@
 //
 
 import UIKit
+
 protocol BaseADViewdelegate:NSObjectProtocol {
     func BaseADViewClickIndex(index:NSInteger)
 }
+
 class XDBaseADView: UIView,UIScrollViewDelegate {
     var pagecontrol:UIPageControl = UIPageControl()
     var scrollview : UIScrollView = UIScrollView()
@@ -60,21 +62,21 @@ class XDBaseADView: UIView,UIScrollViewDelegate {
         }
 
     }
+    
 //MARK:==================BaseADViewdelegate=======================
     func tapHandler(sender:UITapGestureRecognizer) {
         if ((self.delegate) != nil) {
           self.delegate?.BaseADViewClickIndex((sender.view?.tag)!-1000)
         }
-    
-        
-        
     }
+    
 //MARK:==================PAGE点击触发方法================================
     func pageChangeValue() {
         
         self.scrollview.setContentOffset(CGPointMake((CGFloat)(self.pagecontrol.currentPage) * self.frame.size.width, 0), animated: true)
         
     }
+    
 //MARK:=======================代理方法================================
     func scrollViewDidScroll(scrollView: UIScrollView) {
         let scrollview_W:CGFloat = scrollView.frame.size.width
@@ -82,6 +84,7 @@ class XDBaseADView: UIView,UIScrollViewDelegate {
         let page:Int = (Int)(x / scrollview_W)
         self.pagecontrol.currentPage = page
     }
+    
     func scrollViewWillBeginDragging(scrollView: UIScrollView) {
         if ismotion == true {
             self.removeTimer()
@@ -89,6 +92,7 @@ class XDBaseADView: UIView,UIScrollViewDelegate {
             return
         }
     }
+    
     func scrollViewDidEndDragging(scrollView: UIScrollView, willDecelerate decelerate: Bool) {
         if ismotion == true {
             self.addTimer()
@@ -96,14 +100,17 @@ class XDBaseADView: UIView,UIScrollViewDelegate {
             return
         }
     }
+    
 //MARK:=======================计时器方法================================
     func addTimer(){
         self.timer = NSTimer.scheduledTimerWithTimeInterval(2, target: self, selector: #selector(nextImage), userInfo: nil, repeats: true)
         NSRunLoop.currentRunLoop().addTimer(self.timer, forMode: NSRunLoopCommonModes)
     }
+    
     func removeTimer(){
         self.timer.invalidate()
     }
+    
     func nextImage(sender:AnyObject!){
         var page:Int = self.pagecontrol.currentPage
         if (page == self.totlecount-1) {
